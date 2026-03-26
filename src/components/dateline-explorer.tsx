@@ -327,8 +327,8 @@ export function DatelineExplorer() {
           <WorldMap markers={selectedMarkers} />
         </div>
 
-        <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-start">
-          <div className="flex flex-col gap-6 lg:col-start-1 lg:row-start-1">
+        <div className="grid gap-x-8 gap-y-3 lg:grid-cols-[1.05fr_0.95fr] lg:items-start">
+          <div className="flex flex-col gap-3">
             <h1 className="font-[Iowan_Old_Style,Baskerville,Palatino,'Times_New_Roman',serif] text-4xl font-semibold tracking-tight text-balance text-stone-50 md:text-6xl">
               NYT Dateline Viewer
             </h1>
@@ -350,9 +350,40 @@ export function DatelineExplorer() {
                 </p>
               </div>
             </div>
+            {selectedDatePanels.length > 0 ? (
+              <div className="flex flex-col gap-3">
+                {selectedDatePanels.map((panel) => (
+                  <div
+                    key={panel.dateKey}
+                    className="rounded-[1.5rem] border border-stone-800 bg-stone-900/50 p-4"
+                  >
+                    <p className="text-lg font-semibold text-stone-50">
+                      {panel.label}
+                    </p>
+                    <div className="mt-3 grid gap-x-8 gap-y-1 text-sm leading-6 text-stone-300 md:grid-cols-2">
+                      {splitIntoColumns(panel.locations).map((column, columnIndex) => (
+                        <div
+                          key={`${panel.dateKey}-column-${columnIndex}`}
+                          className="space-y-1"
+                        >
+                          {column.map((location) => (
+                            <p key={`${panel.dateKey}-${location}`}>{location}</p>
+                          ))}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <div className="rounded-[1.5rem] border border-dashed border-stone-800 bg-stone-900/30 p-4 text-sm leading-6 text-stone-500">
+                Select a date on the calendar to list that day&apos;s datelines
+                here.
+              </div>
+            )}
           </div>
 
-          <div className="rounded-[1.75rem] border border-stone-800 bg-stone-950/70 p-6 md:p-8 lg:col-start-2 lg:row-span-2 lg:row-start-1">
+          <div className="rounded-[1.75rem] border border-stone-800 bg-stone-950/70 p-6 md:p-8">
             <div className="flex items-center justify-between gap-4">
               <div>
                 <h2 className="mt-2 text-2xl font-semibold text-stone-50">
@@ -412,7 +443,7 @@ export function DatelineExplorer() {
                       isActive
                         ? "border-stone-800 bg-stone-900/80 hover:-translate-y-0.5 hover:bg-stone-900"
                         : "cursor-default border-transparent bg-stone-950/60 text-stone-600",
-                      isSelected || isAnimationChecked
+                      showCheckmark
                         ? "border-[#d0a06d] bg-[#d0a06d] text-stone-950 shadow-lg"
                         : "",
                     ].join(" ")}
@@ -448,77 +479,43 @@ export function DatelineExplorer() {
                 );
               })}
             </div>
-
-            <div className="mt-6 rounded-[1.5rem] border border-stone-800 bg-stone-900/70 p-4">
-              <p className="text-xs font-semibold uppercase tracking-[0.22em] text-stone-400">
-                Data status
-              </p>
-              <p className="mt-3 text-sm leading-6 text-stone-400">
-                Generated data is live. The map uses deduplicated markers across
-                selected dates, and the review count tracks rows that still
-                deserve a human glance.
-              </p>
-              <div className="mt-4 grid gap-3 sm:grid-cols-3">
-                <div className="rounded-2xl border border-stone-800 bg-stone-950 px-4 py-3">
-                  <p className="text-xs uppercase tracking-[0.18em] text-stone-500">
-                    Resolved
-                  </p>
-                  <p className="mt-2 text-2xl font-semibold text-stone-50">
-                    {datelineData.meta.resolvedLocationCount}
-                  </p>
-                </div>
-                <div className="rounded-2xl border border-stone-800 bg-stone-950 px-4 py-3">
-                  <p className="text-xs uppercase tracking-[0.18em] text-stone-500">
-                    Review
-                  </p>
-                  <p className="mt-2 text-2xl font-semibold text-stone-50">
-                    {datelineData.meta.reviewLocationCount}
-                  </p>
-                </div>
-                <div className="rounded-2xl border border-stone-800 bg-stone-950 px-4 py-3">
-                  <p className="text-xs uppercase tracking-[0.18em] text-stone-500">
-                    Unresolved
-                  </p>
-                  <p className="mt-2 text-2xl font-semibold text-stone-50">
-                    {datelineData.meta.unresolvedLocationCount}
-                  </p>
-                </div>
-              </div>
-            </div>
           </div>
+        </div>
 
-          <div className="lg:col-start-1 lg:row-start-2">
-            {selectedDatePanels.length > 0 ? (
-              <div className="flex flex-col gap-3">
-                {selectedDatePanels.map((panel) => (
-                  <div
-                    key={panel.dateKey}
-                    className="rounded-[1.5rem] border border-stone-800 bg-stone-900/50 p-4"
-                  >
-                    <p className="text-lg font-semibold text-stone-50">
-                      {panel.label}
-                    </p>
-                    <div className="mt-3 grid gap-x-8 gap-y-1 text-sm leading-6 text-stone-300 md:grid-cols-2">
-                      {splitIntoColumns(panel.locations).map((column, columnIndex) => (
-                        <div
-                          key={`${panel.dateKey}-column-${columnIndex}`}
-                          className="space-y-1"
-                        >
-                          {column.map((location) => (
-                            <p key={`${panel.dateKey}-${location}`}>{location}</p>
-                          ))}
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            ) : (
-              <div className="rounded-[1.5rem] border border-dashed border-stone-800 bg-stone-900/30 p-4 text-sm leading-6 text-stone-500">
-                Select a date on the calendar to list that day&apos;s datelines
-                here.
-              </div>
-            )}
+        <div className="rounded-[1.5rem] border border-stone-800 bg-stone-900/70 p-4">
+          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-stone-400">
+            Data status
+          </p>
+          <p className="mt-3 text-sm leading-6 text-stone-400">
+            Generated data is live. The map uses deduplicated markers across
+            selected dates, and the review count tracks rows that still deserve
+            a human glance.
+          </p>
+          <div className="mt-4 grid gap-3 sm:grid-cols-3">
+            <div className="rounded-2xl border border-stone-800 bg-stone-950 px-4 py-3">
+              <p className="text-xs uppercase tracking-[0.18em] text-stone-500">
+                Resolved
+              </p>
+              <p className="mt-2 text-2xl font-semibold text-stone-50">
+                {datelineData.meta.resolvedLocationCount}
+              </p>
+            </div>
+            <div className="rounded-2xl border border-stone-800 bg-stone-950 px-4 py-3">
+              <p className="text-xs uppercase tracking-[0.18em] text-stone-500">
+                Review
+              </p>
+              <p className="mt-2 text-2xl font-semibold text-stone-50">
+                {datelineData.meta.reviewLocationCount}
+              </p>
+            </div>
+            <div className="rounded-2xl border border-stone-800 bg-stone-950 px-4 py-3">
+              <p className="text-xs uppercase tracking-[0.18em] text-stone-500">
+                Unresolved
+              </p>
+              <p className="mt-2 text-2xl font-semibold text-stone-50">
+                {datelineData.meta.unresolvedLocationCount}
+              </p>
+            </div>
           </div>
         </div>
       </div>
