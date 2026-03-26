@@ -323,15 +323,17 @@ export function DatelineExplorer() {
   return (
     <main className="min-h-screen bg-[#111214] px-4 py-6 text-stone-100 md:px-8 md:py-8">
       <div className="mx-auto flex max-w-7xl flex-col gap-8">
-        <div>
+        <div className="relative">
+          <div className="pointer-events-none absolute inset-x-0 top-5 z-10 flex justify-center px-6">
+            <h1 className="font-[Iowan_Old_Style,Baskerville,Palatino,'Times_New_Roman',serif] text-3xl font-semibold tracking-tight text-stone-50 drop-shadow-[0_2px_10px_rgba(0,0,0,0.65)] md:text-5xl">
+              NYT Dateline Viewer
+            </h1>
+          </div>
           <WorldMap markers={selectedMarkers} />
         </div>
 
         <div className="grid gap-x-8 gap-y-3 lg:grid-cols-[1.05fr_0.95fr] lg:items-start">
           <div className="flex flex-col gap-3">
-            <h1 className="font-[Iowan_Old_Style,Baskerville,Palatino,'Times_New_Roman',serif] text-4xl font-semibold tracking-tight text-balance text-stone-50 md:text-6xl">
-              NYT Dateline Viewer
-            </h1>
             <div className="grid gap-3 text-sm text-stone-200 md:grid-cols-2">
               <div className="rounded-2xl border border-stone-800 bg-stone-900/70 px-4 py-3">
                 <p className="text-3xl font-semibold text-stone-50">
@@ -346,7 +348,7 @@ export function DatelineExplorer() {
                   {selectedMarkers.length}
                 </p>
                 <p className="mt-2 text-xs uppercase tracking-[0.18em] text-stone-400">
-                  {selectedMarkers.length} unique datelines
+                  Unique datelines
                 </p>
               </div>
             </div>
