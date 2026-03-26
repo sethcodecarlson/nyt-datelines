@@ -1,0 +1,5107 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-25T22:58:29.054Z",
+    "rowCount": 520,
+    "uniqueRawLocations": 244,
+    "resolvedLocationCount": 221,
+    "unresolvedLocationCount": 0,
+    "reviewLocationCount": 48
+  },
+  "locations": {
+    "washington_dc_38_9072_-77_0369": {
+      "id": "washington_dc_38_9072_-77_0369",
+      "label": "Washington, DC",
+      "latitude": 38.9072,
+      "longitude": -77.0369,
+      "sourceNames": [
+        "Washington, DC"
+      ],
+      "sourceDates": [
+        "2026-03-05",
+        "2026-03-06",
+        "2026-03-07",
+        "2026-03-08",
+        "2026-03-09",
+        "2026-03-10",
+        "2026-03-11",
+        "2026-03-12",
+        "2026-03-13",
+        "2026-03-14",
+        "2026-03-15",
+        "2026-03-16",
+        "2026-03-17",
+        "2026-03-18",
+        "2026-03-19",
+        "2026-03-20",
+        "2026-03-21",
+        "2026-03-22",
+        "2026-03-23",
+        "2026-03-24",
+        "2026-03-25"
+      ]
+    },
+    "los_angeles_california_34_0522_-118_2437": {
+      "id": "los_angeles_california_34_0522_-118_2437",
+      "label": "Los Angeles, California",
+      "latitude": 34.0522,
+      "longitude": -118.2437,
+      "sourceNames": [
+        "Los Angeles",
+        "Los Angeles County",
+        "Los Angeles Superior Court"
+      ],
+      "sourceDates": [
+        "2026-03-06",
+        "2026-03-07",
+        "2026-03-09",
+        "2026-03-11",
+        "2026-03-12",
+        "2026-03-13",
+        "2026-03-14",
+        "2026-03-15",
+        "2026-03-16",
+        "2026-03-18",
+        "2026-03-19",
+        "2026-03-24",
+        "2026-03-25"
+      ]
+    },
+    "san_francisco_california_37_7749_-122_4194": {
+      "id": "san_francisco_california_37_7749_-122_4194",
+      "label": "San Francisco, California",
+      "latitude": 37.7749,
+      "longitude": -122.4194,
+      "sourceNames": [
+        "Hall of Justice, San Francisco",
+        "San Francisco",
+        "San Francisco, Calif.",
+        "U.S. District Court, San Francisco"
+      ],
+      "sourceDates": [
+        "2026-03-05",
+        "2026-03-08",
+        "2026-03-09",
+        "2026-03-10",
+        "2026-03-12",
+        "2026-03-15",
+        "2026-03-16",
+        "2026-03-17",
+        "2026-03-18",
+        "2026-03-19",
+        "2026-03-20",
+        "2026-03-21",
+        "2026-03-24",
+        "2026-03-25"
+      ]
+    },
+    "london_england_51_5085_-0_1257": {
+      "id": "london_england_51_5085_-0_1257",
+      "label": "London, England",
+      "latitude": 51.5085,
+      "longitude": -0.1257,
+      "sourceNames": [
+        "Heathrow Airport, London",
+        "London",
+        "London, England",
+        "Westminster Magistrates’ Court, London"
+      ],
+      "sourceDates": [
+        "2026-03-06",
+        "2026-03-07",
+        "2026-03-08",
+        "2026-03-09",
+        "2026-03-10",
+        "2026-03-11",
+        "2026-03-12",
+        "2026-03-13",
+        "2026-03-14",
+        "2026-03-15",
+        "2026-03-16",
+        "2026-03-17",
+        "2026-03-18",
+        "2026-03-19",
+        "2026-03-20",
+        "2026-03-21",
+        "2026-03-23",
+        "2026-03-24",
+        "2026-03-25"
+      ]
+    },
+    "beirut_lebanon_33_8933_35_5016": {
+      "id": "beirut_lebanon_33_8933_35_5016",
+      "label": "Beirut, Lebanon",
+      "latitude": 33.8933,
+      "longitude": 35.5016,
+      "sourceNames": [
+        "Beirut, Lebanon"
+      ],
+      "sourceDates": [
+        "2026-03-05",
+        "2026-03-06",
+        "2026-03-07",
+        "2026-03-10",
+        "2026-03-11",
+        "2026-03-12",
+        "2026-03-13",
+        "2026-03-14",
+        "2026-03-16",
+        "2026-03-17",
+        "2026-03-18",
+        "2026-03-20",
+        "2026-03-21",
+        "2026-03-22",
+        "2026-03-24",
+        "2026-03-25"
+      ]
+    },
+    "oakland_california_37_8044_-122_2708": {
+      "id": "oakland_california_37_8044_-122_2708",
+      "label": "Oakland, California",
+      "latitude": 37.8044,
+      "longitude": -122.2708,
+      "sourceNames": [
+        "Oakland, Calif."
+      ],
+      "sourceDates": [
+        "2026-03-25"
+      ]
+    },
+    "dubai_united_arab_emirates_25_0772_55_3093": {
+      "id": "dubai_united_arab_emirates_25_0772_55_3093",
+      "label": "Dubai, United Arab Emirates",
+      "latitude": 25.0772,
+      "longitude": 55.3093,
+      "sourceNames": [
+        "Dubai",
+        "Dubai International Airport",
+        "Dubai, the United Arab Emirates",
+        "Dubai, United Arab Emirates"
+      ],
+      "sourceDates": [
+        "2026-03-05",
+        "2026-03-09",
+        "2026-03-19",
+        "2026-03-24",
+        "2026-03-25"
+      ]
+    },
+    "juneau_united_states_58_3019_-134_4197": {
+      "id": "juneau_united_states_58_3019_-134_4197",
+      "label": "Juneau, United States",
+      "latitude": 58.3019,
+      "longitude": -134.4197,
+      "sourceNames": [
+        "Juneau, Alaska"
+      ],
+      "sourceDates": [
+        "2026-03-25"
+      ]
+    },
+    "berlin_germany_52_5244_13_4105": {
+      "id": "berlin_germany_52_5244_13_4105",
+      "label": "Berlin, Germany",
+      "latitude": 52.5244,
+      "longitude": 13.4105,
+      "sourceNames": [
+        "Berlin",
+        "Deutsche Oper, Berlin"
+      ],
+      "sourceDates": [
+        "2026-03-06",
+        "2026-03-07",
+        "2026-03-10",
+        "2026-03-11",
+        "2026-03-13",
+        "2026-03-16",
+        "2026-03-17",
+        "2026-03-18",
+        "2026-03-19",
+        "2026-03-20",
+        "2026-03-25"
+      ]
+    },
+    "rome_italy_41_8919_12_5113": {
+      "id": "rome_italy_41_8919_12_5113",
+      "label": "Rome, Italy",
+      "latitude": 41.8919,
+      "longitude": 12.5113,
+      "sourceNames": [
+        "Rome"
+      ],
+      "sourceDates": [
+        "2026-03-12",
+        "2026-03-13",
+        "2026-03-15",
+        "2026-03-17",
+        "2026-03-18",
+        "2026-03-21",
+        "2026-03-23",
+        "2026-03-24",
+        "2026-03-25"
+      ]
+    },
+    "brussels_belgium_50_8505_4_3488": {
+      "id": "brussels_belgium_50_8505_4_3488",
+      "label": "Brussels, Belgium",
+      "latitude": 50.8505,
+      "longitude": 4.3488,
+      "sourceNames": [
+        "Brussels"
+      ],
+      "sourceDates": [
+        "2026-03-07",
+        "2026-03-08",
+        "2026-03-09",
+        "2026-03-17",
+        "2026-03-18",
+        "2026-03-19",
+        "2026-03-22",
+        "2026-03-24",
+        "2026-03-25"
+      ]
+    },
+    "zaporizhzhia_ukraine_47_8388_35_1396": {
+      "id": "zaporizhzhia_ukraine_47_8388_35_1396",
+      "label": "Zaporizhzhia, Ukraine",
+      "latitude": 47.8388,
+      "longitude": 35.1396,
+      "sourceNames": [
+        "Zaporizhzhia, Ukraine"
+      ],
+      "sourceDates": [
+        "2026-03-25"
+      ]
+    },
+    "kyiv_ukraine_50_4547_30_5238": {
+      "id": "kyiv_ukraine_50_4547_30_5238",
+      "label": "Kyiv, Ukraine",
+      "latitude": 50.4547,
+      "longitude": 30.5238,
+      "sourceNames": [
+        "Kyiv, Ukraine"
+      ],
+      "sourceDates": [
+        "2026-03-07",
+        "2026-03-12",
+        "2026-03-16",
+        "2026-03-18",
+        "2026-03-19",
+        "2026-03-21",
+        "2026-03-23",
+        "2026-03-24",
+        "2026-03-25"
+      ]
+    },
+    "sydney_australia_-33_8678_151_2073": {
+      "id": "sydney_australia_-33_8678_151_2073",
+      "label": "Sydney, Australia",
+      "latitude": -33.8678,
+      "longitude": 151.2073,
+      "sourceNames": [
+        "Sydney",
+        "Sydney, Australia"
+      ],
+      "sourceDates": [
+        "2026-03-09",
+        "2026-03-10",
+        "2026-03-15",
+        "2026-03-20",
+        "2026-03-24",
+        "2026-03-25"
+      ]
+    },
+    "san_jose_california_37_3394_-121_895": {
+      "id": "san_jose_california_37_3394_-121_895",
+      "label": "San Jose, California",
+      "latitude": 37.3394,
+      "longitude": -121.895,
+      "sourceNames": [
+        "San Jose, Calif."
+      ],
+      "sourceDates": [
+        "2026-03-13",
+        "2026-03-16",
+        "2026-03-25"
+      ]
+    },
+    "nashville_united_states_36_1659_-86_7844": {
+      "id": "nashville_united_states_36_1659_-86_7844",
+      "label": "Nashville, United States",
+      "latitude": 36.1659,
+      "longitude": -86.7844,
+      "sourceNames": [
+        "Nashville"
+      ],
+      "sourceDates": [
+        "2026-03-07",
+        "2026-03-09",
+        "2026-03-19",
+        "2026-03-22",
+        "2026-03-25"
+      ]
+    },
+    "upper_marlboro_maryland_38_816_-76_7497": {
+      "id": "upper_marlboro_maryland_38_816_-76_7497",
+      "label": "Upper Marlboro, Maryland",
+      "latitude": 38.816,
+      "longitude": -76.7497,
+      "sourceNames": [
+        "Upper Marlboro, Md."
+      ],
+      "sourceDates": [
+        "2026-03-25"
+      ]
+    },
+    "canterbury_england_51_279_1_0799": {
+      "id": "canterbury_england_51_279_1_0799",
+      "label": "Canterbury, England",
+      "latitude": 51.279,
+      "longitude": 1.0799,
+      "sourceNames": [
+        "Canterbury, England"
+      ],
+      "sourceDates": [
+        "2026-03-20",
+        "2026-03-25"
+      ]
+    },
+    "dakar_senegal_14_6937_-17_4441": {
+      "id": "dakar_senegal_14_6937_-17_4441",
+      "label": "Dakar, Senegal",
+      "latitude": 14.6937,
+      "longitude": -17.4441,
+      "sourceNames": [
+        "Dakar, Senegal"
+      ],
+      "sourceDates": [
+        "2026-03-17",
+        "2026-03-25"
+      ]
+    },
+    "jinack_island_gambia_13_1833_-16_7667": {
+      "id": "jinack_island_gambia_13_1833_-16_7667",
+      "label": "Jinack Island, Gambia",
+      "latitude": 13.1833,
+      "longitude": -16.7667,
+      "sourceNames": [
+        "Jinack, Gambia"
+      ],
+      "sourceDates": [
+        "2026-03-25"
+      ]
+    },
+    "copenhagen_denmark_55_6759_12_5655": {
+      "id": "copenhagen_denmark_55_6759_12_5655",
+      "label": "Copenhagen, Denmark",
+      "latitude": 55.6759,
+      "longitude": 12.5655,
+      "sourceNames": [
+        "Copenhagen"
+      ],
+      "sourceDates": [
+        "2026-03-24"
+      ]
+    },
+    "atlanta_georgia_33_749_-84_388": {
+      "id": "atlanta_georgia_33_749_-84_388",
+      "label": "Atlanta, Georgia",
+      "latitude": 33.749,
+      "longitude": -84.388,
+      "sourceNames": [
+        "Atlanta"
+      ],
+      "sourceDates": [
+        "2026-03-05",
+        "2026-03-19",
+        "2026-03-24"
+      ]
+    },
+    "houston_texas_29_7633_-95_3633": {
+      "id": "houston_texas_29_7633_-95_3633",
+      "label": "Houston, Texas",
+      "latitude": 29.7633,
+      "longitude": -95.3633,
+      "sourceNames": [
+        "Houston"
+      ],
+      "sourceDates": [
+        "2026-03-06",
+        "2026-03-17",
+        "2026-03-20",
+        "2026-03-23",
+        "2026-03-24"
+      ]
+    },
+    "newark_united_states_40_7357_-74_1724": {
+      "id": "newark_united_states_40_7357_-74_1724",
+      "label": "Newark, United States",
+      "latitude": 40.7357,
+      "longitude": -74.1724,
+      "sourceNames": [
+        "Newark"
+      ],
+      "sourceDates": [
+        "2026-03-24"
+      ]
+    },
+    "guantanamo_bay_cuba_19_906_-75_128": {
+      "id": "guantanamo_bay_cuba_19_906_-75_128",
+      "label": "Guantanamo Bay, Cuba",
+      "latitude": 19.906,
+      "longitude": -75.128,
+      "sourceNames": [
+        "Guantánamo Bay, Cuba"
+      ],
+      "sourceDates": [
+        "2026-03-24"
+      ]
+    },
+    "new_york_city_40_7128_-74_006": {
+      "id": "new_york_city_40_7128_-74_006",
+      "label": "New York City",
+      "latitude": 40.7128,
+      "longitude": -74.006,
+      "sourceNames": [
+        "New York"
+      ],
+      "sourceDates": [
+        "2026-03-05",
+        "2026-03-06",
+        "2026-03-07",
+        "2026-03-09",
+        "2026-03-10",
+        "2026-03-11",
+        "2026-03-12",
+        "2026-03-13",
+        "2026-03-14",
+        "2026-03-15",
+        "2026-03-17",
+        "2026-03-19",
+        "2026-03-21",
+        "2026-03-23",
+        "2026-03-24"
+      ]
+    },
+    "hawkesbury_canada_45_6001_-74_6159": {
+      "id": "hawkesbury_canada_45_6001_-74_6159",
+      "label": "Hawkesbury, Canada",
+      "latitude": 45.6001,
+      "longitude": -74.6159,
+      "sourceNames": [
+        "Hawkesbury, Ontario"
+      ],
+      "sourceDates": [
+        "2026-03-24"
+      ]
+    },
+    "istanbul_turkiye_41_0138_28_9497": {
+      "id": "istanbul_turkiye_41_0138_28_9497",
+      "label": "Istanbul, Türkiye",
+      "latitude": 41.0138,
+      "longitude": 28.9497,
+      "sourceNames": [
+        "Istanbul",
+        "Istanbul, Turkey"
+      ],
+      "sourceDates": [
+        "2026-03-08",
+        "2026-03-09",
+        "2026-03-13",
+        "2026-03-18",
+        "2026-03-20",
+        "2026-03-24"
+      ]
+    },
+    "rehovot_israel_31_8948_34_8113": {
+      "id": "rehovot_israel_31_8948_34_8113",
+      "label": "Rehovot, Israel",
+      "latitude": 31.8948,
+      "longitude": 34.8113,
+      "sourceNames": [
+        "Rehovot, Israel"
+      ],
+      "sourceDates": [
+        "2026-03-16",
+        "2026-03-24"
+      ]
+    },
+    "rockingham_county_north_carolina_36_3956_-79_7754": {
+      "id": "rockingham_county_north_carolina_36_3956_-79_7754",
+      "label": "Rockingham County, North Carolina",
+      "latitude": 36.3956,
+      "longitude": -79.7754,
+      "sourceNames": [
+        "Rockingham County, N.C."
+      ],
+      "sourceDates": [
+        "2026-03-24"
+      ]
+    },
+    "raleigh_north_carolina_35_7721_-78_6386": {
+      "id": "raleigh_north_carolina_35_7721_-78_6386",
+      "label": "Raleigh, North Carolina",
+      "latitude": 35.7721,
+      "longitude": -78.6386,
+      "sourceNames": [
+        "Raleigh, N.C."
+      ],
+      "sourceDates": [
+        "2026-03-24"
+      ]
+    },
+    "tel_aviv_israel_32_0809_34_7806": {
+      "id": "tel_aviv_israel_32_0809_34_7806",
+      "label": "Tel Aviv, Israel",
+      "latitude": 32.0809,
+      "longitude": 34.7806,
+      "sourceNames": [
+        "Tel Aviv"
+      ],
+      "sourceDates": [
+        "2026-03-08",
+        "2026-03-12",
+        "2026-03-18",
+        "2026-03-22",
+        "2026-03-23",
+        "2026-03-24"
+      ]
+    },
+    "miami_florida_25_7743_-80_1937": {
+      "id": "miami_florida_25_7743_-80_1937",
+      "label": "Miami, Florida",
+      "latitude": 25.7743,
+      "longitude": -80.1937,
+      "sourceNames": [
+        "Doral, Miami",
+        "Miami",
+        "Miami, Fla."
+      ],
+      "sourceDates": [
+        "2026-03-05",
+        "2026-03-07",
+        "2026-03-10",
+        "2026-03-11",
+        "2026-03-12",
+        "2026-03-14",
+        "2026-03-16",
+        "2026-03-17",
+        "2026-03-24"
+      ]
+    },
+    "san_martin_argentina_-33_081_-68_4681": {
+      "id": "san_martin_argentina_-33_081_-68_4681",
+      "label": "San Martín, Argentina",
+      "latitude": -33.081,
+      "longitude": -68.4681,
+      "sourceNames": [
+        "San Martín, northern Ecuador"
+      ],
+      "sourceDates": [
+        "2026-03-24"
+      ]
+    },
+    "minneapolis_minnesota_44_98_-93_2638": {
+      "id": "minneapolis_minnesota_44_98_-93_2638",
+      "label": "Minneapolis, Minnesota",
+      "latitude": 44.98,
+      "longitude": -93.2638,
+      "sourceNames": [
+        "Minneapolis"
+      ],
+      "sourceDates": [
+        "2026-03-24"
+      ]
+    },
+    "sacramento_california_38_5816_-121_4944": {
+      "id": "sacramento_california_38_5816_-121_4944",
+      "label": "Sacramento, California",
+      "latitude": 38.5816,
+      "longitude": -121.4944,
+      "sourceNames": [
+        "Sacramento"
+      ],
+      "sourceDates": [
+        "2026-03-13",
+        "2026-03-18",
+        "2026-03-19",
+        "2026-03-24"
+      ]
+    },
+    "cynthiana_kentucky_38_3903_-84_2941": {
+      "id": "cynthiana_kentucky_38_3903_-84_2941",
+      "label": "Cynthiana, Kentucky",
+      "latitude": 38.3903,
+      "longitude": -84.2941,
+      "sourceNames": [
+        "Cynthiana, Ky."
+      ],
+      "sourceDates": [
+        "2026-03-24"
+      ]
+    },
+    "new_delhi_india_28_6358_77_2245": {
+      "id": "new_delhi_india_28_6358_77_2245",
+      "label": "New Delhi, India",
+      "latitude": 28.6358,
+      "longitude": 77.2245,
+      "sourceNames": [
+        "New Delhi",
+        "New Delhi, India"
+      ],
+      "sourceDates": [
+        "2026-03-05",
+        "2026-03-06",
+        "2026-03-12",
+        "2026-03-13",
+        "2026-03-16",
+        "2026-03-19",
+        "2026-03-22",
+        "2026-03-24"
+      ]
+    },
+    "seoul_south_korea_37_566_126_9784": {
+      "id": "seoul_south_korea_37_566_126_9784",
+      "label": "Seoul, South Korea",
+      "latitude": 37.566,
+      "longitude": 126.9784,
+      "sourceNames": [
+        "Seoul"
+      ],
+      "sourceDates": [
+        "2026-03-09",
+        "2026-03-10",
+        "2026-03-12",
+        "2026-03-13",
+        "2026-03-20",
+        "2026-03-21",
+        "2026-03-23",
+        "2026-03-24"
+      ]
+    },
+    "kabul_afghanistan_34_5281_69_1723": {
+      "id": "kabul_afghanistan_34_5281_69_1723",
+      "label": "Kabul, Afghanistan",
+      "latitude": 34.5281,
+      "longitude": 69.1723,
+      "sourceNames": [
+        "Kabul, Afghanistan",
+        "Kabul, the border of Pakistan and Afghanistan"
+      ],
+      "sourceDates": [
+        "2026-03-15",
+        "2026-03-17",
+        "2026-03-18",
+        "2026-03-24"
+      ]
+    },
+    "paris_france_48_8534_2_3488": {
+      "id": "paris_france_48_8534_2_3488",
+      "label": "Paris, France",
+      "latitude": 48.8534,
+      "longitude": 2.3488,
+      "sourceNames": [
+        "Paris"
+      ],
+      "sourceDates": [
+        "2026-03-05",
+        "2026-03-06",
+        "2026-03-07",
+        "2026-03-08",
+        "2026-03-09",
+        "2026-03-10",
+        "2026-03-11",
+        "2026-03-15",
+        "2026-03-22",
+        "2026-03-23",
+        "2026-03-24"
+      ]
+    },
+    "buenos_aires_argentina_-34_6131_-58_3772": {
+      "id": "buenos_aires_argentina_-34_6131_-58_3772",
+      "label": "Buenos Aires, Argentina",
+      "latitude": -34.6131,
+      "longitude": -58.3772,
+      "sourceNames": [
+        "Buenos Aires"
+      ],
+      "sourceDates": [
+        "2026-03-13",
+        "2026-03-19",
+        "2026-03-24"
+      ]
+    },
+    "philadelphia_united_states_39_9523_-75_1638": {
+      "id": "philadelphia_united_states_39_9523_-75_1638",
+      "label": "Philadelphia, United States",
+      "latitude": 39.9523,
+      "longitude": -75.1638,
+      "sourceNames": [
+        "Philadelphia"
+      ],
+      "sourceDates": [
+        "2026-03-09",
+        "2026-03-10",
+        "2026-03-12",
+        "2026-03-23",
+        "2026-03-24"
+      ]
+    },
+    "karachi_pakistan_24_8608_67_0104": {
+      "id": "karachi_pakistan_24_8608_67_0104",
+      "label": "Karachi, Pakistan",
+      "latitude": 24.8608,
+      "longitude": 67.0104,
+      "sourceNames": [
+        "Karachi, Pakistan"
+      ],
+      "sourceDates": [
+        "2026-03-24"
+      ]
+    },
+    "islamabad_pakistan_33_7215_73_0433": {
+      "id": "islamabad_pakistan_33_7215_73_0433",
+      "label": "Islamabad, Pakistan",
+      "latitude": 33.7215,
+      "longitude": 73.0433,
+      "sourceNames": [
+        "Islamabad, Pakistan"
+      ],
+      "sourceDates": [
+        "2026-03-06",
+        "2026-03-07",
+        "2026-03-10",
+        "2026-03-14",
+        "2026-03-18",
+        "2026-03-24"
+      ]
+    },
+    "hong_kong_22_267_114_188": {
+      "id": "hong_kong_22_267_114_188",
+      "label": "Hong Kong",
+      "latitude": 22.267,
+      "longitude": 114.188,
+      "sourceNames": [
+        "Hong Kong"
+      ],
+      "sourceDates": [
+        "2026-03-07",
+        "2026-03-09",
+        "2026-03-10",
+        "2026-03-11",
+        "2026-03-14",
+        "2026-03-17",
+        "2026-03-20",
+        "2026-03-21",
+        "2026-03-23",
+        "2026-03-24"
+      ]
+    },
+    "woodbine_georgia_30_964_-81_7242": {
+      "id": "woodbine_georgia_30_964_-81_7242",
+      "label": "Woodbine, Georgia",
+      "latitude": 30.964,
+      "longitude": -81.7242,
+      "sourceNames": [
+        "Woodbine, Ga."
+      ],
+      "sourceDates": [
+        "2026-03-24"
+      ]
+    },
+    "memphis_united_states_35_1495_-90_049": {
+      "id": "memphis_united_states_35_1495_-90_049",
+      "label": "Memphis, United States",
+      "latitude": 35.1495,
+      "longitude": -90.049,
+      "sourceNames": [
+        "Memphis"
+      ],
+      "sourceDates": [
+        "2026-03-23",
+        "2026-03-24"
+      ]
+    },
+    "ottawa_canada_45_4112_-75_6981": {
+      "id": "ottawa_canada_45_4112_-75_6981",
+      "label": "Ottawa, Canada",
+      "latitude": 45.4112,
+      "longitude": -75.6981,
+      "sourceNames": [
+        "Ottawa"
+      ],
+      "sourceDates": [
+        "2026-03-23"
+      ]
+    },
+    "jerusalem_israel_31_769_35_2163": {
+      "id": "jerusalem_israel_31_769_35_2163",
+      "label": "Jerusalem, Israel",
+      "latitude": 31.769,
+      "longitude": 35.2163,
+      "sourceNames": [
+        "Jerusalem"
+      ],
+      "sourceDates": [
+        "2026-03-08",
+        "2026-03-09",
+        "2026-03-11",
+        "2026-03-12",
+        "2026-03-14",
+        "2026-03-15",
+        "2026-03-16",
+        "2026-03-17",
+        "2026-03-18",
+        "2026-03-19",
+        "2026-03-20",
+        "2026-03-21",
+        "2026-03-22",
+        "2026-03-23"
+      ]
+    },
+    "santa_monica_california_34_0194_-118_4912": {
+      "id": "santa_monica_california_34_0194_-118_4912",
+      "label": "Santa Monica, California",
+      "latitude": 34.0194,
+      "longitude": -118.4912,
+      "sourceNames": [
+        "Santa Monica, Calif."
+      ],
+      "sourceDates": [
+        "2026-03-10",
+        "2026-03-23"
+      ]
+    },
+    "bogota_colombia_4_6097_-74_0817": {
+      "id": "bogota_colombia_4_6097_-74_0817",
+      "label": "Bogotá, Colombia",
+      "latitude": 4.6097,
+      "longitude": -74.0817,
+      "sourceNames": [
+        "Bogotá, Colombia"
+      ],
+      "sourceDates": [
+        "2026-03-07",
+        "2026-03-08",
+        "2026-03-23"
+      ]
+    },
+    "alameda_california_37_771_-122_2609": {
+      "id": "alameda_california_37_771_-122_2609",
+      "label": "Alameda, California",
+      "latitude": 37.771,
+      "longitude": -122.2609,
+      "sourceNames": [
+        "Alameda, Calif."
+      ],
+      "sourceDates": [
+        "2026-03-23"
+      ]
+    },
+    "new_orleans_united_states_29_9547_-90_0751": {
+      "id": "new_orleans_united_states_29_9547_-90_0751",
+      "label": "New Orleans, United States",
+      "latitude": 29.9547,
+      "longitude": -90.0751,
+      "sourceNames": [
+        "New Orleans"
+      ],
+      "sourceDates": [
+        "2026-03-08",
+        "2026-03-23"
+      ]
+    },
+    "gaza_palestine_31_5016_34_4667": {
+      "id": "gaza_palestine_31_5016_34_4667",
+      "label": "Gaza, Palestine",
+      "latitude": 31.5016,
+      "longitude": 34.4667,
+      "sourceNames": [
+        "Deir al Balah, Gaza"
+      ],
+      "sourceDates": [
+        "2026-03-23"
+      ]
+    },
+    "sheffield_england_53_383_-1_4659": {
+      "id": "sheffield_england_53_383_-1_4659",
+      "label": "Sheffield, England",
+      "latitude": 53.383,
+      "longitude": -1.4659,
+      "sourceNames": [
+        "Sheffield, England"
+      ],
+      "sourceDates": [
+        "2026-03-23"
+      ]
+    },
+    "cambridge_bay_nunavut_canada_69_1171_-105_0534": {
+      "id": "cambridge_bay_nunavut_canada_69_1171_-105_0534",
+      "label": "Cambridge Bay, Nunavut, Canada",
+      "latitude": 69.1171,
+      "longitude": -105.0534,
+      "sourceNames": [
+        "Cambridge Bay, Nunavut, Canada"
+      ],
+      "sourceDates": [
+        "2026-03-23"
+      ]
+    },
+    "minneapolis_st_paul_44_9537_-93_09": {
+      "id": "minneapolis_st_paul_44_9537_-93_09",
+      "label": "Minneapolis-St. Paul",
+      "latitude": 44.9537,
+      "longitude": -93.09,
+      "sourceNames": [
+        "Minneapolis-St. Paul"
+      ],
+      "sourceDates": [
+        "2026-03-23"
+      ]
+    },
+    "central_virginia_37_5407_-78_5": {
+      "id": "central_virginia_37_5407_-78_5",
+      "label": "Central Virginia",
+      "latitude": 37.5407,
+      "longitude": -78.5,
+      "sourceNames": [
+        "central Virginia"
+      ],
+      "sourceDates": [
+        "2026-03-23"
+      ]
+    },
+    "iowa_41_878_-93_0977": {
+      "id": "iowa_41_878_-93_0977",
+      "label": "Iowa",
+      "latitude": 41.878,
+      "longitude": -93.0977,
+      "sourceNames": [
+        "Iowa"
+      ],
+      "sourceDates": [
+        "2026-03-23"
+      ]
+    },
+    "central_cameroon_5_9_12_7": {
+      "id": "central_cameroon_5_9_12_7",
+      "label": "Central Cameroon",
+      "latitude": 5.9,
+      "longitude": 12.7,
+      "sourceNames": [
+        "central Cameroon"
+      ],
+      "sourceDates": [
+        "2026-03-23"
+      ]
+    },
+    "northern_cameroon_8_6_13_6": {
+      "id": "northern_cameroon_8_6_13_6",
+      "label": "Northern Cameroon",
+      "latitude": 8.6,
+      "longitude": 13.6,
+      "sourceNames": [
+        "northern Cameroon"
+      ],
+      "sourceDates": [
+        "2026-03-23"
+      ]
+    },
+    "taipei_taiwan_25_0478_121_5319": {
+      "id": "taipei_taiwan_25_0478_121_5319",
+      "label": "Taipei, Taiwan",
+      "latitude": 25.0478,
+      "longitude": 121.5319,
+      "sourceNames": [
+        "Taipei, Taiwan"
+      ],
+      "sourceDates": [
+        "2026-03-09",
+        "2026-03-11",
+        "2026-03-17",
+        "2026-03-19",
+        "2026-03-23"
+      ]
+    },
+    "yazdan_iran_33_8675_51_8247": {
+      "id": "yazdan_iran_33_8675_51_8247",
+      "label": "Yazdan, Iran",
+      "latitude": 33.8675,
+      "longitude": 51.8247,
+      "sourceNames": [
+        "Afghanistan-Iran border"
+      ],
+      "sourceDates": [
+        "2026-03-23"
+      ]
+    },
+    "herat_afghanistan_34_3529_62_204": {
+      "id": "herat_afghanistan_34_3529_62_204",
+      "label": "Herat, Afghanistan",
+      "latitude": 34.3529,
+      "longitude": 62.204,
+      "sourceNames": [
+        "Herat, Afghanistan"
+      ],
+      "sourceDates": [
+        "2026-03-17",
+        "2026-03-18",
+        "2026-03-23"
+      ]
+    },
+    "aalborg_denmark_57_048_9_9187": {
+      "id": "aalborg_denmark_57_048_9_9187",
+      "label": "Aalborg, Denmark",
+      "latitude": 57.048,
+      "longitude": 9.9187,
+      "sourceNames": [
+        "Aalborg"
+      ],
+      "sourceDates": [
+        "2026-03-23"
+      ]
+    },
+    "chicago_illinois_41_85_-87_65": {
+      "id": "chicago_illinois_41_85_-87_65",
+      "label": "Chicago, Illinois",
+      "latitude": 41.85,
+      "longitude": -87.65,
+      "sourceNames": [
+        "Chicago"
+      ],
+      "sourceDates": [
+        "2026-03-06",
+        "2026-03-07",
+        "2026-03-12",
+        "2026-03-16",
+        "2026-03-18",
+        "2026-03-23"
+      ]
+    },
+    "arad_israel_31_2588_35_2128": {
+      "id": "arad_israel_31_2588_35_2128",
+      "label": "Arad, Israel",
+      "latitude": 31.2588,
+      "longitude": 35.2128,
+      "sourceNames": [
+        "Arad, Israel"
+      ],
+      "sourceDates": [
+        "2026-03-22"
+      ]
+    },
+    "dimona_israel_31_0708_35_0327": {
+      "id": "dimona_israel_31_0708_35_0327",
+      "label": "Dimona, Israel",
+      "latitude": 31.0708,
+      "longitude": 35.0327,
+      "sourceNames": [
+        "Dimona, Israel"
+      ],
+      "sourceDates": [
+        "2026-03-22"
+      ]
+    },
+    "midland_texas_31_9974_-102_0779": {
+      "id": "midland_texas_31_9974_-102_0779",
+      "label": "Midland, Texas",
+      "latitude": 31.9974,
+      "longitude": -102.0779,
+      "sourceNames": [
+        "Midland, Texas"
+      ],
+      "sourceDates": [
+        "2026-03-22"
+      ]
+    },
+    "odessa_texas_31_8457_-102_3676": {
+      "id": "odessa_texas_31_8457_-102_3676",
+      "label": "Odessa, Texas",
+      "latitude": 31.8457,
+      "longitude": -102.3676,
+      "sourceNames": [
+        "Odessa, Texas"
+      ],
+      "sourceDates": [
+        "2026-03-22"
+      ]
+    },
+    "wadsworth_united_states_41_0256_-81_7298": {
+      "id": "wadsworth_united_states_41_0256_-81_7298",
+      "label": "Wadsworth, United States",
+      "latitude": 41.0256,
+      "longitude": -81.7298,
+      "sourceNames": [
+        "Wadsworth, Ohio"
+      ],
+      "sourceDates": [
+        "2026-03-22"
+      ]
+    },
+    "whatcom_county_washington_48_8465_-121_719": {
+      "id": "whatcom_county_washington_48_8465_-121_719",
+      "label": "Whatcom County, Washington",
+      "latitude": 48.8465,
+      "longitude": -121.719,
+      "sourceNames": [
+        "Whatcom County, Wash."
+      ],
+      "sourceDates": [
+        "2026-03-22"
+      ]
+    },
+    "verona_italy_45_4299_10_9844": {
+      "id": "verona_italy_45_4299_10_9844",
+      "label": "Verona, Italy",
+      "latitude": 45.4299,
+      "longitude": 10.9844,
+      "sourceNames": [
+        "Verona, Italy"
+      ],
+      "sourceDates": [
+        "2026-03-07",
+        "2026-03-22"
+      ]
+    },
+    "west_palm_beach_florida_26_7153_-80_0534": {
+      "id": "west_palm_beach_florida_26_7153_-80_0534",
+      "label": "West Palm Beach, Florida",
+      "latitude": 26.7153,
+      "longitude": -80.0534,
+      "sourceNames": [
+        "West Palm Beach, Fla."
+      ],
+      "sourceDates": [
+        "2026-03-22"
+      ]
+    },
+    "diyarbakir_turkey_37_9144_40_2306": {
+      "id": "diyarbakir_turkey_37_9144_40_2306",
+      "label": "Diyarbakir, Turkey",
+      "latitude": 37.9144,
+      "longitude": 40.2306,
+      "sourceNames": [
+        "Diyarbakir, Turkey"
+      ],
+      "sourceDates": [
+        "2026-03-21"
+      ]
+    },
+    "st_paul_canada_53_9835_-111_2851": {
+      "id": "st_paul_canada_53_9835_-111_2851",
+      "label": "St. Paul, Canada",
+      "latitude": 53.9835,
+      "longitude": -111.2851,
+      "sourceNames": [
+        "St. Paul, Minn."
+      ],
+      "sourceDates": [
+        "2026-03-11",
+        "2026-03-21"
+      ]
+    },
+    "colombo_sri_lanka_6_9355_79_8487": {
+      "id": "colombo_sri_lanka_6_9355_79_8487",
+      "label": "Colombo, Sri Lanka",
+      "latitude": 6.9355,
+      "longitude": 79.8487,
+      "sourceNames": [
+        "Colombo, Sri Lanka"
+      ],
+      "sourceDates": [
+        "2026-03-12",
+        "2026-03-20",
+        "2026-03-21"
+      ]
+    },
+    "mexico_city_mexico_19_4285_-99_1277": {
+      "id": "mexico_city_mexico_19_4285_-99_1277",
+      "label": "Mexico City, Mexico",
+      "latitude": 19.4285,
+      "longitude": -99.1277,
+      "sourceNames": [
+        "Mexico City"
+      ],
+      "sourceDates": [
+        "2026-03-05",
+        "2026-03-06",
+        "2026-03-07",
+        "2026-03-13",
+        "2026-03-14",
+        "2026-03-16",
+        "2026-03-21"
+      ]
+    },
+    "wenatchee_washington_47_4235_-120_3103": {
+      "id": "wenatchee_washington_47_4235_-120_3103",
+      "label": "Wenatchee, Washington",
+      "latitude": 47.4235,
+      "longitude": -120.3103,
+      "sourceNames": [
+        "Wenatchee, Wash."
+      ],
+      "sourceDates": [
+        "2026-03-21"
+      ]
+    },
+    "fresno_california_36_7477_-119_7724": {
+      "id": "fresno_california_36_7477_-119_7724",
+      "label": "Fresno, California",
+      "latitude": 36.7477,
+      "longitude": -119.7724,
+      "sourceNames": [
+        "Fresno, Calif."
+      ],
+      "sourceDates": [
+        "2026-03-20"
+      ]
+    },
+    "geneva_switzerland_46_2044_6_1432": {
+      "id": "geneva_switzerland_46_2044_6_1432",
+      "label": "Geneva, Switzerland",
+      "latitude": 46.2044,
+      "longitude": 6.1432,
+      "sourceNames": [
+        "Geneva"
+      ],
+      "sourceDates": [
+        "2026-03-17",
+        "2026-03-20"
+      ]
+    },
+    "mexico_philippines_15_0646_120_7198": {
+      "id": "mexico_philippines_15_0646_120_7198",
+      "label": "Mexico, Philippines",
+      "latitude": 15.0646,
+      "longitude": 120.7198,
+      "sourceNames": [
+        "Yucatán Peninsula, Mexico"
+      ],
+      "sourceDates": [
+        "2026-03-20"
+      ]
+    },
+    "oahu_hawaii_21_4389_-158_0001": {
+      "id": "oahu_hawaii_21_4389_-158_0001",
+      "label": "Oahu, Hawaii",
+      "latitude": 21.4389,
+      "longitude": -158.0001,
+      "sourceNames": [
+        "Oahu"
+      ],
+      "sourceDates": [
+        "2026-03-20"
+      ]
+    },
+    "greeley_colorado_40_4233_-104_7091": {
+      "id": "greeley_colorado_40_4233_-104_7091",
+      "label": "Greeley, Colorado",
+      "latitude": 40.4233,
+      "longitude": -104.7091,
+      "sourceNames": [
+        "Greeley, Colo."
+      ],
+      "sourceDates": [
+        "2026-03-20"
+      ]
+    },
+    "brasilia_brazil_-15_7797_-47_9297": {
+      "id": "brasilia_brazil_-15_7797_-47_9297",
+      "label": "Brasília, Brazil",
+      "latitude": -15.7797,
+      "longitude": -47.9297,
+      "sourceNames": [
+        "Brasília, Brazil"
+      ],
+      "sourceDates": [
+        "2026-03-13",
+        "2026-03-20"
+      ]
+    },
+    "sao_paulo_brazil_-23_5475_-46_6361": {
+      "id": "sao_paulo_brazil_-23_5475_-46_6361",
+      "label": "São Paulo, Brazil",
+      "latitude": -23.5475,
+      "longitude": -46.6361,
+      "sourceNames": [
+        "São Paulo, Brazil"
+      ],
+      "sourceDates": [
+        "2026-03-20"
+      ]
+    },
+    "bucharest_romania_44_4323_26_1063": {
+      "id": "bucharest_romania_44_4323_26_1063",
+      "label": "Bucharest, Romania",
+      "latitude": 44.4323,
+      "longitude": 26.1063,
+      "sourceNames": [
+        "Bucharest, Romania"
+      ],
+      "sourceDates": [
+        "2026-03-20"
+      ]
+    },
+    "cluj_napoca_romania_46_7712_23_6236": {
+      "id": "cluj_napoca_romania_46_7712_23_6236",
+      "label": "Cluj-Napoca, Romania",
+      "latitude": 46.7712,
+      "longitude": 23.6236,
+      "sourceNames": [
+        "Cluj, Romania"
+      ],
+      "sourceDates": [
+        "2026-03-20"
+      ]
+    },
+    "tokyo_japan_35_6895_139_6917": {
+      "id": "tokyo_japan_35_6895_139_6917",
+      "label": "Tokyo, Japan",
+      "latitude": 35.6895,
+      "longitude": 139.6917,
+      "sourceNames": [
+        "Tokyo",
+        "Tokyo, Japan"
+      ],
+      "sourceDates": [
+        "2026-03-06",
+        "2026-03-09",
+        "2026-03-13",
+        "2026-03-18",
+        "2026-03-19",
+        "2026-03-20"
+      ]
+    },
+    "samut_sakhon_thailand_13_5475_100_2736": {
+      "id": "samut_sakhon_thailand_13_5475_100_2736",
+      "label": "Samut Sakhon, Thailand",
+      "latitude": 13.5475,
+      "longitude": 100.2736,
+      "sourceNames": [
+        "Samut Sakhon, Thailand"
+      ],
+      "sourceDates": [
+        "2026-03-20"
+      ]
+    },
+    "chonburi_thailand_13_3611_100_9847": {
+      "id": "chonburi_thailand_13_3611_100_9847",
+      "label": "Chonburi, Thailand",
+      "latitude": 13.3611,
+      "longitude": 100.9847,
+      "sourceNames": [
+        "Chonburi, Thailand"
+      ],
+      "sourceDates": [
+        "2026-03-20"
+      ]
+    },
+    "rosario_philippines_13_8635_122_2731": {
+      "id": "rosario_philippines_13_8635_122_2731",
+      "label": "Rosario, Philippines",
+      "latitude": 13.8635,
+      "longitude": 122.2731,
+      "sourceNames": [
+        "Rosario, the Philippines"
+      ],
+      "sourceDates": [
+        "2026-03-20"
+      ]
+    },
+    "hanoi_vietnam_21_0245_105_8412": {
+      "id": "hanoi_vietnam_21_0245_105_8412",
+      "label": "Hanoi, Vietnam",
+      "latitude": 21.0245,
+      "longitude": 105.8412,
+      "sourceNames": [
+        "Hanoi, Vietnam"
+      ],
+      "sourceDates": [
+        "2026-03-20"
+      ]
+    },
+    "madrid_spain_40_4165_-3_7026": {
+      "id": "madrid_spain_40_4165_-3_7026",
+      "label": "Madrid, Spain",
+      "latitude": 40.4165,
+      "longitude": -3.7026,
+      "sourceNames": [
+        "Madrid"
+      ],
+      "sourceDates": [
+        "2026-03-20"
+      ]
+    },
+    "montreal_quebec_canada_45_5017_-73_5673": {
+      "id": "montreal_quebec_canada_45_5017_-73_5673",
+      "label": "Montreal, Quebec, Canada",
+      "latitude": 45.5017,
+      "longitude": -73.5673,
+      "sourceNames": [
+        "Montreal"
+      ],
+      "sourceDates": [
+        "2026-03-17",
+        "2026-03-19"
+      ]
+    },
+    "tbilisi_georgia_41_6941_44_8337": {
+      "id": "tbilisi_georgia_41_6941_44_8337",
+      "label": "Tbilisi, Georgia",
+      "latitude": 41.6941,
+      "longitude": 44.8337,
+      "sourceNames": [
+        "Tbilisi, Georgia"
+      ],
+      "sourceDates": [
+        "2026-03-19"
+      ]
+    },
+    "seattle_washington_47_6062_-122_3321": {
+      "id": "seattle_washington_47_6062_-122_3321",
+      "label": "Seattle, Washington",
+      "latitude": 47.6062,
+      "longitude": -122.3321,
+      "sourceNames": [
+        "Seattle"
+      ],
+      "sourceDates": [
+        "2026-03-19"
+      ]
+    },
+    "nairobi_kenya_-1_2833_36_8167": {
+      "id": "nairobi_kenya_-1_2833_36_8167",
+      "label": "Nairobi, Kenya",
+      "latitude": -1.2833,
+      "longitude": 36.8167,
+      "sourceNames": [
+        "Nairobi, Kenya"
+      ],
+      "sourceDates": [
+        "2026-03-19"
+      ]
+    },
+    "vilnius_lithuania_54_6892_25_2798": {
+      "id": "vilnius_lithuania_54_6892_25_2798",
+      "label": "Vilnius, Lithuania",
+      "latitude": 54.6892,
+      "longitude": 25.2798,
+      "sourceNames": [
+        "Vilnius, Lithuania"
+      ],
+      "sourceDates": [
+        "2026-03-19"
+      ]
+    },
+    "riyadh_saudi_arabia_24_6877_46_7219": {
+      "id": "riyadh_saudi_arabia_24_6877_46_7219",
+      "label": "Riyadh, Saudi Arabia",
+      "latitude": 24.6877,
+      "longitude": 46.7219,
+      "sourceNames": [
+        "Riyadh, Saudi Arabia"
+      ],
+      "sourceDates": [
+        "2026-03-08",
+        "2026-03-10",
+        "2026-03-14",
+        "2026-03-17",
+        "2026-03-19"
+      ]
+    },
+    "bakersfield_california_35_3733_-119_0187": {
+      "id": "bakersfield_california_35_3733_-119_0187",
+      "label": "Bakersfield, California",
+      "latitude": 35.3733,
+      "longitude": -119.0187,
+      "sourceNames": [
+        "Bakersfield, Calif."
+      ],
+      "sourceDates": [
+        "2026-03-19"
+      ]
+    },
+    "velykyi_doroshiv_ukraine_49_9509_24_0587": {
+      "id": "velykyi_doroshiv_ukraine_49_9509_24_0587",
+      "label": "Velykyi Doroshiv, Ukraine",
+      "latitude": 49.9509,
+      "longitude": 24.0587,
+      "sourceNames": [
+        "Velykyi Doroshiv, Ukraine"
+      ],
+      "sourceDates": [
+        "2026-03-19"
+      ]
+    },
+    "lviv_ukraine_49_8383_24_0232": {
+      "id": "lviv_ukraine_49_8383_24_0232",
+      "label": "Lviv, Ukraine",
+      "latitude": 49.8383,
+      "longitude": 24.0232,
+      "sourceNames": [
+        "Lviv, Ukraine"
+      ],
+      "sourceDates": [
+        "2026-03-19"
+      ]
+    },
+    "budapest_hungary_47_4984_19_0404": {
+      "id": "budapest_hungary_47_4984_19_0404",
+      "label": "Budapest, Hungary",
+      "latitude": 47.4984,
+      "longitude": 19.0404,
+      "sourceNames": [
+        "Budapest"
+      ],
+      "sourceDates": [
+        "2026-03-10",
+        "2026-03-19"
+      ]
+    },
+    "stavenhagen_germany_53_6976_12_5658": {
+      "id": "stavenhagen_germany_53_6976_12_5658",
+      "label": "Stavenhagen, Germany",
+      "latitude": 53.6976,
+      "longitude": 12.5658,
+      "sourceNames": [
+        "Stavenhagen, Germany"
+      ],
+      "sourceDates": [
+        "2026-03-19"
+      ]
+    },
+    "genesee_county_new_york_43_-78_19": {
+      "id": "genesee_county_new_york_43_-78_19",
+      "label": "Genesee County, New York",
+      "latitude": 43,
+      "longitude": -78.19,
+      "sourceNames": [
+        "Genesee County, N.Y."
+      ],
+      "sourceDates": [
+        "2026-03-17"
+      ]
+    },
+    "khirbet_humsa_al_fawqa_west_bank_32_2648_35_4369": {
+      "id": "khirbet_humsa_al_fawqa_west_bank_32_2648_35_4369",
+      "label": "Khirbet Humsa al-Fawqa, West Bank",
+      "latitude": 32.2648,
+      "longitude": 35.4369,
+      "sourceNames": [
+        "Khirbet Humsa, the West Bank"
+      ],
+      "sourceDates": [
+        "2026-03-18"
+      ]
+    },
+    "montserrat_16_7425_-62_1874": {
+      "id": "montserrat_16_7425_-62_1874",
+      "label": "Montserrat",
+      "latitude": 16.7425,
+      "longitude": -62.1874,
+      "sourceNames": [
+        "the island of Montserrat"
+      ],
+      "sourceDates": [
+        "2026-03-18"
+      ]
+    },
+    "austin_texas_30_2672_-97_7431": {
+      "id": "austin_texas_30_2672_-97_7431",
+      "label": "Austin, Texas",
+      "latitude": 30.2672,
+      "longitude": -97.7431,
+      "sourceNames": [
+        "Austin, Texas"
+      ],
+      "sourceDates": [
+        "2026-03-18"
+      ]
+    },
+    "lyubertsy_russia_55_6772_37_8932": {
+      "id": "lyubertsy_russia_55_6772_37_8932",
+      "label": "Lyubertsy, Russia",
+      "latitude": 55.6772,
+      "longitude": 37.8932,
+      "sourceNames": [
+        "Lyubertsy, Russia"
+      ],
+      "sourceDates": [
+        "2026-03-18"
+      ]
+    },
+    "pasadena_texas_29_6911_-95_2091": {
+      "id": "pasadena_texas_29_6911_-95_2091",
+      "label": "Pasadena, Texas",
+      "latitude": 29.6911,
+      "longitude": -95.2091,
+      "sourceNames": [
+        "Pasadena"
+      ],
+      "sourceDates": [
+        "2026-03-18"
+      ]
+    },
+    "middleburgh_new_york_42_5987_-74_3329": {
+      "id": "middleburgh_new_york_42_5987_-74_3329",
+      "label": "Middleburgh, New York",
+      "latitude": 42.5987,
+      "longitude": -74.3329,
+      "sourceNames": [
+        "Middleburgh, N.Y."
+      ],
+      "sourceDates": [
+        "2026-03-18"
+      ]
+    },
+    "faroe_islands_62_-6_8": {
+      "id": "faroe_islands_62_-6_8",
+      "label": "Faroe Islands",
+      "latitude": 62,
+      "longitude": -6.8,
+      "sourceNames": [
+        "the Faroe Islands"
+      ],
+      "sourceDates": [
+        "2026-03-18"
+      ]
+    },
+    "florida_27_6648_-81_5158": {
+      "id": "florida_27_6648_-81_5158",
+      "label": "Florida",
+      "latitude": 27.6648,
+      "longitude": -81.5158,
+      "sourceNames": [
+        "Florida"
+      ],
+      "sourceDates": [
+        "2026-03-10",
+        "2026-03-13",
+        "2026-03-16",
+        "2026-03-18"
+      ]
+    },
+    "colombia_colombia_3_3761_-74_8015": {
+      "id": "colombia_colombia_3_3761_-74_8015",
+      "label": "Colombia, Colombia",
+      "latitude": 3.3761,
+      "longitude": -74.8015,
+      "sourceNames": [
+        "Putumayo, Colombia"
+      ],
+      "sourceDates": [
+        "2026-03-17"
+      ]
+    },
+    "hialeah_florida_25_8576_-80_2781": {
+      "id": "hialeah_florida_25_8576_-80_2781",
+      "label": "Hialeah, Florida",
+      "latitude": 25.8576,
+      "longitude": -80.2781,
+      "sourceNames": [
+        "Hialeah, Fla."
+      ],
+      "sourceDates": [
+        "2026-03-17"
+      ]
+    },
+    "maiduguri_nigeria_11_8469_13_1571": {
+      "id": "maiduguri_nigeria_11_8469_13_1571",
+      "label": "Maiduguri, Nigeria",
+      "latitude": 11.8469,
+      "longitude": 13.1571,
+      "sourceNames": [
+        "Maiduguri, Nigeria"
+      ],
+      "sourceDates": [
+        "2026-03-17"
+      ]
+    },
+    "mobile_alabama_30_6944_-88_043": {
+      "id": "mobile_alabama_30_6944_-88_043",
+      "label": "Mobile, Alabama",
+      "latitude": 30.6944,
+      "longitude": -88.043,
+      "sourceNames": [
+        "Mobile, Ala."
+      ],
+      "sourceDates": [
+        "2026-03-17"
+      ]
+    },
+    "phoenix_united_states_33_4484_-112_074": {
+      "id": "phoenix_united_states_33_4484_-112_074",
+      "label": "Phoenix, United States",
+      "latitude": 33.4484,
+      "longitude": -112.074,
+      "sourceNames": [
+        "Phoenix",
+        "Phoenix, Arizona"
+      ],
+      "sourceDates": [
+        "2026-03-14",
+        "2026-03-17"
+      ]
+    },
+    "culiacan_mexico_24_7903_-107_3878": {
+      "id": "culiacan_mexico_24_7903_-107_3878",
+      "label": "Culiacán, Mexico",
+      "latitude": 24.7903,
+      "longitude": -107.3878,
+      "sourceNames": [
+        "Culiacán, Mexico"
+      ],
+      "sourceDates": [
+        "2026-03-11",
+        "2026-03-17"
+      ]
+    },
+    "fairford_england_51_7082_-1_7813": {
+      "id": "fairford_england_51_7082_-1_7813",
+      "label": "Fairford, England",
+      "latitude": 51.7082,
+      "longitude": -1.7813,
+      "sourceNames": [
+        "Fairford, England"
+      ],
+      "sourceDates": [
+        "2026-03-17"
+      ]
+    },
+    "mazatlan_mexico_23_2329_-106_4062": {
+      "id": "mazatlan_mexico_23_2329_-106_4062",
+      "label": "Mazatlán, Mexico",
+      "latitude": 23.2329,
+      "longitude": -106.4062,
+      "sourceNames": [
+        "Mazatlán, Mexico"
+      ],
+      "sourceDates": [
+        "2026-03-16"
+      ]
+    },
+    "moscow_russia_55_7522_37_6156": {
+      "id": "moscow_russia_55_7522_37_6156",
+      "label": "Moscow, Russia",
+      "latitude": 55.7522,
+      "longitude": 37.6156,
+      "sourceNames": [
+        "Moscow"
+      ],
+      "sourceDates": [
+        "2026-03-16"
+      ]
+    },
+    "west_hollywood_california_34_09_-118_3617": {
+      "id": "west_hollywood_california_34_09_-118_3617",
+      "label": "West Hollywood, California",
+      "latitude": 34.09,
+      "longitude": -118.3617,
+      "sourceNames": [
+        "West Hollywood, Calif."
+      ],
+      "sourceDates": [
+        "2026-03-16"
+      ]
+    },
+    "lusaka_zambia_-15_4067_28_2871": {
+      "id": "lusaka_zambia_-15_4067_28_2871",
+      "label": "Lusaka, Zambia",
+      "latitude": -15.4067,
+      "longitude": 28.2871,
+      "sourceNames": [
+        "Lusaka, Zambia"
+      ],
+      "sourceDates": [
+        "2026-03-16"
+      ]
+    },
+    "senegal_14_-14": {
+      "id": "senegal_14_-14",
+      "label": "Senegal",
+      "latitude": 14,
+      "longitude": -14,
+      "sourceNames": [
+        "Senegal"
+      ],
+      "sourceDates": [
+        "2026-03-16"
+      ]
+    },
+    "birmingham_alabama_33_5207_-86_8025": {
+      "id": "birmingham_alabama_33_5207_-86_8025",
+      "label": "Birmingham, Alabama",
+      "latitude": 33.5207,
+      "longitude": -86.8025,
+      "sourceNames": [
+        "Birmingham, Ala."
+      ],
+      "sourceDates": [
+        "2026-03-10",
+        "2026-03-16"
+      ]
+    },
+    "vancouver_canada_49_2497_-123_1193": {
+      "id": "vancouver_canada_49_2497_-123_1193",
+      "label": "Vancouver, Canada",
+      "latitude": 49.2497,
+      "longitude": -123.1193,
+      "sourceNames": [
+        "Vancouver, British Columbia"
+      ],
+      "sourceDates": [
+        "2026-03-16"
+      ]
+    },
+    "dhaka_bangladesh_23_7104_90_4074": {
+      "id": "dhaka_bangladesh_23_7104_90_4074",
+      "label": "Dhaka, Bangladesh",
+      "latitude": 23.7104,
+      "longitude": 90.4074,
+      "sourceNames": [
+        "Dhaka, Bangladesh"
+      ],
+      "sourceDates": [
+        "2026-03-16"
+      ]
+    },
+    "tammun_west_bank_32_2833_35_3833": {
+      "id": "tammun_west_bank_32_2833_35_3833",
+      "label": "Tammun, West Bank",
+      "latitude": 32.2833,
+      "longitude": 35.3833,
+      "sourceNames": [
+        "Tammun, the West Bank"
+      ],
+      "sourceDates": [
+        "2026-03-15"
+      ]
+    },
+    "torkham_34_1217_71_1031": {
+      "id": "torkham_34_1217_71_1031",
+      "label": "Torkham",
+      "latitude": 34.1217,
+      "longitude": 71.1031,
+      "sourceNames": [
+        "Torkham, the border of Pakistan and Afghanistan"
+      ],
+      "sourceDates": [
+        "2026-03-15"
+      ]
+    },
+    "oslo_norway_59_9127_10_7461": {
+      "id": "oslo_norway_59_9127_10_7461",
+      "label": "Oslo, Norway",
+      "latitude": 59.9127,
+      "longitude": 10.7461,
+      "sourceNames": [
+        "Oslo"
+      ],
+      "sourceDates": [
+        "2026-03-08",
+        "2026-03-15"
+      ]
+    },
+    "beverly_hills_california_34_0736_-118_4004": {
+      "id": "beverly_hills_california_34_0736_-118_4004",
+      "label": "Beverly Hills, California",
+      "latitude": 34.0736,
+      "longitude": -118.4004,
+      "sourceNames": [
+        "Beverly Hills, Calif."
+      ],
+      "sourceDates": [
+        "2026-03-15"
+      ]
+    },
+    "kiryat_shmona_israel_33_2073_35_5728": {
+      "id": "kiryat_shmona_israel_33_2073_35_5728",
+      "label": "Kiryat Shmona, Israel",
+      "latitude": 33.2073,
+      "longitude": 35.5728,
+      "sourceNames": [
+        "Kiryat Shmona, Israel"
+      ],
+      "sourceDates": [
+        "2026-03-15"
+      ]
+    },
+    "mountain_view_california_37_386_-122_0838": {
+      "id": "mountain_view_california_37_386_-122_0838",
+      "label": "Mountain View, California",
+      "latitude": 37.386,
+      "longitude": -122.0838,
+      "sourceNames": [
+        "Mountain View, Calif."
+      ],
+      "sourceDates": [
+        "2026-03-15"
+      ]
+    },
+    "mount_vernon_new_york_40_9126_-73_8371": {
+      "id": "mount_vernon_new_york_40_9126_-73_8371",
+      "label": "Mount Vernon, New York",
+      "latitude": 40.9126,
+      "longitude": -73.8371,
+      "sourceNames": [
+        "Mount Vernon, N.Y."
+      ],
+      "sourceDates": [
+        "2026-03-15"
+      ]
+    },
+    "las_vegas_united_states_36_175_-115_1372": {
+      "id": "las_vegas_united_states_36_175_-115_1372",
+      "label": "Las Vegas, United States",
+      "latitude": 36.175,
+      "longitude": -115.1372,
+      "sourceNames": [
+        "Las Vegas"
+      ],
+      "sourceDates": [
+        "2026-03-10",
+        "2026-03-15"
+      ]
+    },
+    "nederland_colorado_39_9614_-105_5108": {
+      "id": "nederland_colorado_39_9614_-105_5108",
+      "label": "Nederland, Colorado",
+      "latitude": 39.9614,
+      "longitude": -105.5108,
+      "sourceNames": [
+        "Nederland, Colo."
+      ],
+      "sourceDates": [
+        "2026-03-15"
+      ]
+    },
+    "buffalo_new_york_42_8865_-78_8784": {
+      "id": "buffalo_new_york_42_8865_-78_8784",
+      "label": "Buffalo, New York",
+      "latitude": 42.8865,
+      "longitude": -78.8784,
+      "sourceNames": [
+        "Buffalo"
+      ],
+      "sourceDates": [
+        "2026-03-15"
+      ]
+    },
+    "marseille_france_43_297_5_3811": {
+      "id": "marseille_france_43_297_5_3811",
+      "label": "Marseille, France",
+      "latitude": 43.297,
+      "longitude": 5.3811,
+      "sourceNames": [
+        "Marseille, France"
+      ],
+      "sourceDates": [
+        "2026-03-06",
+        "2026-03-15"
+      ]
+    },
+    "johannesburg_south_africa_-26_2023_28_0436": {
+      "id": "johannesburg_south_africa_-26_2023_28_0436",
+      "label": "Johannesburg, South Africa",
+      "latitude": -26.2023,
+      "longitude": 28.0436,
+      "sourceNames": [
+        "Johannesburg"
+      ],
+      "sourceDates": [
+        "2026-03-15"
+      ]
+    },
+    "grindavik_iceland_63_8424_-22_4338": {
+      "id": "grindavik_iceland_63_8424_-22_4338",
+      "label": "Grindavik, Iceland",
+      "latitude": 63.8424,
+      "longitude": -22.4338,
+      "sourceNames": [
+        "Grindavik, Iceland"
+      ],
+      "sourceDates": [
+        "2026-03-15"
+      ]
+    },
+    "husavik_iceland_66_0449_-17_3389": {
+      "id": "husavik_iceland_66_0449_-17_3389",
+      "label": "Husavik, Iceland",
+      "latitude": 66.0449,
+      "longitude": -17.3389,
+      "sourceNames": [
+        "Husavik, Iceland"
+      ],
+      "sourceDates": [
+        "2026-03-15"
+      ]
+    },
+    "florence_italy_43_7792_11_2463": {
+      "id": "florence_italy_43_7792_11_2463",
+      "label": "Florence, Italy",
+      "latitude": 43.7792,
+      "longitude": 11.2463,
+      "sourceNames": [
+        "Florence, Italy"
+      ],
+      "sourceDates": [
+        "2026-03-14"
+      ]
+    },
+    "mombasa_kenya_-4_0547_39_6636": {
+      "id": "mombasa_kenya_-4_0547_39_6636",
+      "label": "Mombasa, Kenya",
+      "latitude": -4.0547,
+      "longitude": 39.6636,
+      "sourceNames": [
+        "Mombasa, Kenya"
+      ],
+      "sourceDates": [
+        "2026-03-14"
+      ]
+    },
+    "barcelona_spain_41_3888_2_159": {
+      "id": "barcelona_spain_41_3888_2_159",
+      "label": "Barcelona, Spain",
+      "latitude": 41.3888,
+      "longitude": 2.159,
+      "sourceNames": [
+        "Barcelona, Spain"
+      ],
+      "sourceDates": [
+        "2026-03-08",
+        "2026-03-14"
+      ]
+    },
+    "west_bloomfield_michigan_42_5684_-83_3833": {
+      "id": "west_bloomfield_michigan_42_5684_-83_3833",
+      "label": "West Bloomfield, Michigan",
+      "latitude": 42.5684,
+      "longitude": -83.3833,
+      "sourceNames": [
+        "West Bloomfield, Mich."
+      ],
+      "sourceDates": [
+        "2026-03-13"
+      ]
+    },
+    "dallas_texas_32_7831_-96_8067": {
+      "id": "dallas_texas_32_7831_-96_8067",
+      "label": "Dallas, Texas",
+      "latitude": 32.7831,
+      "longitude": -96.8067,
+      "sourceNames": [
+        "Dallas"
+      ],
+      "sourceDates": [
+        "2026-03-13"
+      ]
+    },
+    "havana_cuba_23_133_-82_383": {
+      "id": "havana_cuba_23_133_-82_383",
+      "label": "Havana, Cuba",
+      "latitude": 23.133,
+      "longitude": -82.383,
+      "sourceNames": [
+        "Havana"
+      ],
+      "sourceDates": [
+        "2026-03-13"
+      ]
+    },
+    "adana_turkiye_36_9862_35_3253": {
+      "id": "adana_turkiye_36_9862_35_3253",
+      "label": "Adana, Türkiye",
+      "latitude": 36.9862,
+      "longitude": 35.3253,
+      "sourceNames": [
+        "Adana, Turkey"
+      ],
+      "sourceDates": [
+        "2026-03-13"
+      ]
+    },
+    "kiev_ukraine_50_4501_30_5234": {
+      "id": "kiev_ukraine_50_4501_30_5234",
+      "label": "Kiev, Ukraine",
+      "latitude": 50.4501,
+      "longitude": 30.5234,
+      "sourceNames": [
+        "secret site in Ukraine"
+      ],
+      "sourceDates": [
+        "2026-03-13"
+      ]
+    },
+    "akrotiri_cyprus_34_6258_32_9524": {
+      "id": "akrotiri_cyprus_34_6258_32_9524",
+      "label": "Akrotiri, Cyprus",
+      "latitude": 34.6258,
+      "longitude": 32.9524,
+      "sourceNames": [
+        "Akrotiri, Cyprus"
+      ],
+      "sourceDates": [
+        "2026-03-13"
+      ]
+    },
+    "belfast_united_kingdom_54_5968_-5_9254": {
+      "id": "belfast_united_kingdom_54_5968_-5_9254",
+      "label": "Belfast, United Kingdom",
+      "latitude": 54.5968,
+      "longitude": -5.9254,
+      "sourceNames": [
+        "Belfast"
+      ],
+      "sourceDates": [
+        "2026-03-13"
+      ]
+    },
+    "dilley_texas_28_6675_-99_1706": {
+      "id": "dilley_texas_28_6675_-99_1706",
+      "label": "Dilley, Texas",
+      "latitude": 28.6675,
+      "longitude": -99.1706,
+      "sourceNames": [
+        "Dilley Immigration Processing Center, Texas",
+        "Dilley, Texas"
+      ],
+      "sourceDates": [
+        "2026-03-09",
+        "2026-03-13"
+      ]
+    },
+    "lower_mainland_british_columbia_49_2463_-122_9805": {
+      "id": "lower_mainland_british_columbia_49_2463_-122_9805",
+      "label": "Lower Mainland, British Columbia",
+      "latitude": 49.2463,
+      "longitude": -122.9805,
+      "sourceNames": [
+        "Lower Mainland, British Columbia"
+      ],
+      "sourceDates": [
+        "2026-03-13"
+      ]
+    },
+    "pacific_palisades_california_34_0827_-118_5357": {
+      "id": "pacific_palisades_california_34_0827_-118_5357",
+      "label": "Pacific Palisades, California",
+      "latitude": 34.0827,
+      "longitude": -118.5357,
+      "sourceNames": [
+        "Pacific Palisades, Calif."
+      ],
+      "sourceDates": [
+        "2026-03-13"
+      ]
+    },
+    "bangkok_thailand_13_754_100_5014": {
+      "id": "bangkok_thailand_13_754_100_5014",
+      "label": "Bangkok, Thailand",
+      "latitude": 13.754,
+      "longitude": 100.5014,
+      "sourceNames": [
+        "Bangkok",
+        "Bangkok, Thailand"
+      ],
+      "sourceDates": [
+        "2026-03-09",
+        "2026-03-13"
+      ]
+    },
+    "boston_united_states_42_3584_-71_0598": {
+      "id": "boston_united_states_42_3584_-71_0598",
+      "label": "Boston, United States",
+      "latitude": 42.3584,
+      "longitude": -71.0598,
+      "sourceNames": [
+        "Boston"
+      ],
+      "sourceDates": [
+        "2026-03-13"
+      ]
+    },
+    "ho_chi_minh_city_vietnam_10_823_106_6296": {
+      "id": "ho_chi_minh_city_vietnam_10_823_106_6296",
+      "label": "Ho Chi Minh City, Vietnam",
+      "latitude": 10.823,
+      "longitude": 106.6296,
+      "sourceNames": [
+        "Ho Chi Minh City",
+        "Ho Chi Minh City, Vietnam"
+      ],
+      "sourceDates": [
+        "2026-03-09",
+        "2026-03-13"
+      ]
+    },
+    "yellowknife_canada_62_4541_-114_3725": {
+      "id": "yellowknife_canada_62_4541_-114_3725",
+      "label": "Yellowknife, Canada",
+      "latitude": 62.4541,
+      "longitude": -114.3725,
+      "sourceNames": [
+        "Yellowknife, Northwest Territories"
+      ],
+      "sourceDates": [
+        "2026-03-13"
+      ]
+    },
+    "dearborn_heights_michigan_42_337_-83_2733": {
+      "id": "dearborn_heights_michigan_42_337_-83_2733",
+      "label": "Dearborn Heights, Michigan",
+      "latitude": 42.337,
+      "longitude": -83.2733,
+      "sourceNames": [
+        "Dearborn Heights, Mich."
+      ],
+      "sourceDates": [
+        "2026-03-13"
+      ]
+    },
+    "goma_dr_congo_-1_6741_29_2284": {
+      "id": "goma_dr_congo_-1_6741_29_2284",
+      "label": "Goma, DR Congo",
+      "latitude": -1.6741,
+      "longitude": 29.2284,
+      "sourceNames": [
+        "Goma, Democratic Republic of Congo"
+      ],
+      "sourceDates": [
+        "2026-03-12"
+      ]
+    },
+    "santiago_chile_-33_4569_-70_6483": {
+      "id": "santiago_chile_-33_4569_-70_6483",
+      "label": "Santiago, Chile",
+      "latitude": -33.4569,
+      "longitude": -70.6483,
+      "sourceNames": [
+        "Santiago, Chile"
+      ],
+      "sourceDates": [
+        "2026-03-12"
+      ]
+    },
+    "southaven_mississippi_34_989_-90_0126": {
+      "id": "southaven_mississippi_34_989_-90_0126",
+      "label": "Southaven, Mississippi",
+      "latitude": 34.989,
+      "longitude": -90.0126,
+      "sourceNames": [
+        "Southaven, Miss."
+      ],
+      "sourceDates": [
+        "2026-03-12"
+      ]
+    },
+    "death_valley_california_36_5054_-117_0794": {
+      "id": "death_valley_california_36_5054_-117_0794",
+      "label": "Death Valley, California",
+      "latitude": 36.5054,
+      "longitude": -117.0794,
+      "sourceNames": [
+        "Death Valley, Calif."
+      ],
+      "sourceDates": [
+        "2026-03-12"
+      ]
+    },
+    "galle_sri_lanka_6_0461_80_2103": {
+      "id": "galle_sri_lanka_6_0461_80_2103",
+      "label": "Galle, Sri Lanka",
+      "latitude": 6.0461,
+      "longitude": 80.2103,
+      "sourceNames": [
+        "Galle, Sri Lanka"
+      ],
+      "sourceDates": [
+        "2026-03-05",
+        "2026-03-12"
+      ]
+    },
+    "palo_alto_california_37_4419_-122_143": {
+      "id": "palo_alto_california_37_4419_-122_143",
+      "label": "Palo Alto, California",
+      "latitude": 37.4419,
+      "longitude": -122.143,
+      "sourceNames": [
+        "Palo Alto, Calif."
+      ],
+      "sourceDates": [
+        "2026-03-12"
+      ]
+    },
+    "hebron_kentucky_39_0659_-84_7011": {
+      "id": "hebron_kentucky_39_0659_-84_7011",
+      "label": "Hebron, Kentucky",
+      "latitude": 39.0659,
+      "longitude": -84.7011,
+      "sourceNames": [
+        "Hebron, Ky."
+      ],
+      "sourceDates": [
+        "2026-03-12"
+      ]
+    },
+    "new_york_city_new_york_40_7143_-74_006": {
+      "id": "new_york_city_new_york_40_7143_-74_006",
+      "label": "New York City, New York",
+      "latitude": 40.7143,
+      "longitude": -74.006,
+      "sourceNames": [
+        "New York City"
+      ],
+      "sourceDates": [
+        "2026-03-11"
+      ]
+    },
+    "toronto_canada_43_7001_-79_4163": {
+      "id": "toronto_canada_43_7001_-79_4163",
+      "label": "Toronto, Canada",
+      "latitude": 43.7001,
+      "longitude": -79.4163,
+      "sourceNames": [
+        "Toronto"
+      ],
+      "sourceDates": [
+        "2026-03-10",
+        "2026-03-11"
+      ]
+    },
+    "doral_florida_25_8195_-80_3553": {
+      "id": "doral_florida_25_8195_-80_3553",
+      "label": "Doral, Florida",
+      "latitude": 25.8195,
+      "longitude": -80.3553,
+      "sourceNames": [
+        "Doral, Fla."
+      ],
+      "sourceDates": [
+        "2026-03-09",
+        "2026-03-11"
+      ]
+    },
+    "caracas_venezuela_10_488_-66_8792": {
+      "id": "caracas_venezuela_10_488_-66_8792",
+      "label": "Caracas, Venezuela",
+      "latitude": 10.488,
+      "longitude": -66.8792,
+      "sourceNames": [
+        "Caracas, Venezuela"
+      ],
+      "sourceDates": [
+        "2026-03-06",
+        "2026-03-11"
+      ]
+    },
+    "kankakee_county_illinois_41_1377_-87_8615": {
+      "id": "kankakee_county_illinois_41_1377_-87_8615",
+      "label": "Kankakee County, Illinois",
+      "latitude": 41.1377,
+      "longitude": -87.8615,
+      "sourceNames": [
+        "Kankakee County, Ill."
+      ],
+      "sourceDates": [
+        "2026-03-11"
+      ]
+    },
+    "western_indiana_39_7684_-87_3": {
+      "id": "western_indiana_39_7684_-87_3",
+      "label": "Western Indiana",
+      "latitude": 39.7684,
+      "longitude": -87.3,
+      "sourceNames": [
+        "western Indiana"
+      ],
+      "sourceDates": [
+        "2026-03-11"
+      ]
+    },
+    "charleston_south_carolina_32_7766_-79_9309": {
+      "id": "charleston_south_carolina_32_7766_-79_9309",
+      "label": "Charleston, South Carolina",
+      "latitude": 32.7766,
+      "longitude": -79.9309,
+      "sourceNames": [
+        "Charleston, S.C."
+      ],
+      "sourceDates": [
+        "2026-03-11"
+      ]
+    },
+    "sendai_miyagi_japan_38_2682_140_8694": {
+      "id": "sendai_miyagi_japan_38_2682_140_8694",
+      "label": "Sendai, Miyagi, Japan",
+      "latitude": 38.2682,
+      "longitude": 140.8694,
+      "sourceNames": [
+        "Sakunami, Japan"
+      ],
+      "sourceDates": [
+        "2026-03-11"
+      ]
+    },
+    "milton_keynes_england_52_0417_-0_7558": {
+      "id": "milton_keynes_england_52_0417_-0_7558",
+      "label": "Milton Keynes, England",
+      "latitude": 52.0417,
+      "longitude": -0.7558,
+      "sourceNames": [
+        "Milton Keynes, England"
+      ],
+      "sourceDates": [
+        "2026-03-11"
+      ]
+    },
+    "chatham_new_york_42_3642_-73_5948": {
+      "id": "chatham_new_york_42_3642_-73_5948",
+      "label": "Chatham, New York",
+      "latitude": 42.3642,
+      "longitude": -73.5948,
+      "sourceNames": [
+        "Chatham, N.Y."
+      ],
+      "sourceDates": [
+        "2026-03-11"
+      ]
+    },
+    "los_lunas_new_mexico_34_8062_-106_7334": {
+      "id": "los_lunas_new_mexico_34_8062_-106_7334",
+      "label": "Los Lunas, New Mexico",
+      "latitude": 34.8062,
+      "longitude": -106.7334,
+      "sourceNames": [
+        "Los Lunas, N.M."
+      ],
+      "sourceDates": [
+        "2026-03-11"
+      ]
+    },
+    "heber_springs_arkansas_35_4915_-92_0313": {
+      "id": "heber_springs_arkansas_35_4915_-92_0313",
+      "label": "Heber Springs, Arkansas",
+      "latitude": 35.4915,
+      "longitude": -92.0313,
+      "sourceNames": [
+        "Heber Springs, Ark."
+      ],
+      "sourceDates": [
+        "2026-03-11"
+      ]
+    },
+    "dublin_ireland_53_3331_-6_2489": {
+      "id": "dublin_ireland_53_3331_-6_2489",
+      "label": "Dublin, Ireland",
+      "latitude": 53.3331,
+      "longitude": -6.2489,
+      "sourceNames": [
+        "Dublin"
+      ],
+      "sourceDates": [
+        "2026-03-11"
+      ]
+    },
+    "ashland_kentucky_38_4784_-82_6379": {
+      "id": "ashland_kentucky_38_4784_-82_6379",
+      "label": "Ashland, Kentucky",
+      "latitude": 38.4784,
+      "longitude": -82.6379,
+      "sourceNames": [
+        "Ashland, Ky."
+      ],
+      "sourceDates": [
+        "2026-03-11"
+      ]
+    },
+    "rawalpindi_pakistan_33_5973_73_0479": {
+      "id": "rawalpindi_pakistan_33_5973_73_0479",
+      "label": "Rawalpindi, Pakistan",
+      "latitude": 33.5973,
+      "longitude": 73.0479,
+      "sourceNames": [
+        "Rawalpindi, Pakistan"
+      ],
+      "sourceDates": [
+        "2026-03-10"
+      ]
+    },
+    "anchorage_united_states_61_2181_-149_9003": {
+      "id": "anchorage_united_states_61_2181_-149_9003",
+      "label": "Anchorage, United States",
+      "latitude": 61.2181,
+      "longitude": -149.9003,
+      "sourceNames": [
+        "Anchorage"
+      ],
+      "sourceDates": [
+        "2026-03-10"
+      ]
+    },
+    "fort_chipewyan_alberta_58_767_-111_1176": {
+      "id": "fort_chipewyan_alberta_58_767_-111_1176",
+      "label": "Fort Chipewyan, Alberta",
+      "latitude": 58.767,
+      "longitude": -111.1176,
+      "sourceNames": [
+        "Fort Chipewyan, Alberta"
+      ],
+      "sourceDates": [
+        "2026-03-10"
+      ]
+    },
+    "fort_mckay_alberta_57_1846_-111_6405": {
+      "id": "fort_mckay_alberta_57_1846_-111_6405",
+      "label": "Fort McKay, Alberta",
+      "latitude": 57.1846,
+      "longitude": -111.6405,
+      "sourceNames": [
+        "Fort McKay, Alberta"
+      ],
+      "sourceDates": [
+        "2026-03-10"
+      ]
+    },
+    "fort_mcmurray_canada_56_7268_-111_381": {
+      "id": "fort_mcmurray_canada_56_7268_-111_381",
+      "label": "Fort McMurray, Canada",
+      "latitude": 56.7268,
+      "longitude": -111.381,
+      "sourceNames": [
+        "Fort McMurray, Alberta"
+      ],
+      "sourceDates": [
+        "2026-03-10"
+      ]
+    },
+    "manila_philippines_14_6042_120_9822": {
+      "id": "manila_philippines_14_6042_120_9822",
+      "label": "Manila, Philippines",
+      "latitude": 14.6042,
+      "longitude": 120.9822,
+      "sourceNames": [
+        "Manila"
+      ],
+      "sourceDates": [
+        "2026-03-10"
+      ]
+    },
+    "kathmandu_nepal_27_7017_85_3206": {
+      "id": "kathmandu_nepal_27_7017_85_3206",
+      "label": "Kathmandu, Nepal",
+      "latitude": 27.7017,
+      "longitude": 85.3206,
+      "sourceNames": [
+        "Kathmandu, Nepal"
+      ],
+      "sourceDates": [
+        "2026-03-08",
+        "2026-03-10"
+      ]
+    },
+    "albany_new_york_42_6526_-73_7562": {
+      "id": "albany_new_york_42_6526_-73_7562",
+      "label": "Albany, New York",
+      "latitude": 42.6526,
+      "longitude": -73.7562,
+      "sourceNames": [
+        "Albany, N.Y."
+      ],
+      "sourceDates": [
+        "2026-03-09"
+      ]
+    },
+    "gold_coast_australia_-28_0003_153_4309": {
+      "id": "gold_coast_australia_-28_0003_153_4309",
+      "label": "Gold Coast, Australia",
+      "latitude": -28.0003,
+      "longitude": 153.4309,
+      "sourceNames": [
+        "Gold Coast, Australia"
+      ],
+      "sourceDates": [
+        "2026-03-09"
+      ]
+    },
+    "muscat_oman_23_5841_58_4078": {
+      "id": "muscat_oman_23_5841_58_4078",
+      "label": "Muscat, Oman",
+      "latitude": 23.5841,
+      "longitude": 58.4078,
+      "sourceNames": [
+        "Muscat, Oman"
+      ],
+      "sourceDates": [
+        "2026-03-09"
+      ]
+    },
+    "silivri_turkiye_41_0739_28_2464": {
+      "id": "silivri_turkiye_41_0739_28_2464",
+      "label": "Silivri, Türkiye",
+      "latitude": 41.0739,
+      "longitude": 28.2464,
+      "sourceNames": [
+        "Silivri, Turkey"
+      ],
+      "sourceDates": [
+        "2026-03-09"
+      ]
+    },
+    "cairo_egypt_30_0626_31_2497": {
+      "id": "cairo_egypt_30_0626_31_2497",
+      "label": "Cairo, Egypt",
+      "latitude": 30.0626,
+      "longitude": 31.2497,
+      "sourceNames": [
+        "Cairo, Egypt"
+      ],
+      "sourceDates": [
+        "2026-03-09"
+      ]
+    },
+    "sarajevo_bosnia_and_herzegovina_43_8486_18_3564": {
+      "id": "sarajevo_bosnia_and_herzegovina_43_8486_18_3564",
+      "label": "Sarajevo, Bosnia and Herzegovina",
+      "latitude": 43.8486,
+      "longitude": 18.3564,
+      "sourceNames": [
+        "Sarajevo, Bosnia"
+      ],
+      "sourceDates": [
+        "2026-03-09"
+      ]
+    },
+    "selma_alabama_32_4074_-87_0211": {
+      "id": "selma_alabama_32_4074_-87_0211",
+      "label": "Selma, Alabama",
+      "latitude": 32.4074,
+      "longitude": -87.0211,
+      "sourceNames": [
+        "Selma, Ala."
+      ],
+      "sourceDates": [
+        "2026-03-09"
+      ]
+    },
+    "natchez_mississippi_31_5604_-91_4032": {
+      "id": "natchez_mississippi_31_5604_-91_4032",
+      "label": "Natchez, Mississippi",
+      "latitude": 31.5604,
+      "longitude": -91.4032,
+      "sourceNames": [
+        "Mississippi’s Second Congressional District"
+      ],
+      "sourceDates": [
+        "2026-03-09"
+      ]
+    },
+    "eastern_ukraine_48_5_37_5": {
+      "id": "eastern_ukraine_48_5_37_5",
+      "label": "Eastern Ukraine",
+      "latitude": 48.5,
+      "longitude": 37.5,
+      "sourceNames": [
+        "eastern Ukraine"
+      ],
+      "sourceDates": [
+        "2026-03-09"
+      ]
+    },
+    "mississauga_canada_43_5789_-79_6583": {
+      "id": "mississauga_canada_43_5789_-79_6583",
+      "label": "Mississauga, Canada",
+      "latitude": 43.5789,
+      "longitude": -79.6583,
+      "sourceNames": [
+        "Mississauga, Ontario"
+      ],
+      "sourceDates": [
+        "2026-03-09"
+      ]
+    },
+    "lebanon_united_states_36_2081_-86_2911": {
+      "id": "lebanon_united_states_36_2081_-86_2911",
+      "label": "Lebanon, United States",
+      "latitude": 36.2081,
+      "longitude": -86.2911,
+      "sourceNames": [
+        "Nabi Sheet, Lebanon"
+      ],
+      "sourceDates": [
+        "2026-03-07",
+        "2026-03-08"
+      ]
+    },
+    "khirbet_abu_falah_west_bank_32_0156_35_3014": {
+      "id": "khirbet_abu_falah_west_bank_32_0156_35_3014",
+      "label": "Khirbet Abu Falah, West Bank",
+      "latitude": 32.0156,
+      "longitude": 35.3014,
+      "sourceNames": [
+        "Khirbet Abu Falah, the West Bank"
+      ],
+      "sourceDates": [
+        "2026-03-08"
+      ]
+    },
+    "monaco_43_7333_7_4": {
+      "id": "monaco_43_7333_7_4",
+      "label": "Monaco",
+      "latitude": 43.7333,
+      "longitude": 7.4,
+      "sourceNames": [
+        "Monaco"
+      ],
+      "sourceDates": [
+        "2026-03-08"
+      ]
+    },
+    "st_petersburg_florida_27_7709_-82_6793": {
+      "id": "st_petersburg_florida_27_7709_-82_6793",
+      "label": "St. Petersburg, Florida",
+      "latitude": 27.7709,
+      "longitude": -82.6793,
+      "sourceNames": [
+        "St. Petersburg, Russia"
+      ],
+      "sourceDates": [
+        "2026-03-08"
+      ]
+    },
+    "union_city_michigan_42_0667_-85_1361": {
+      "id": "union_city_michigan_42_0667_-85_1361",
+      "label": "Union City, Michigan",
+      "latitude": 42.0667,
+      "longitude": -85.1361,
+      "sourceNames": [
+        "Union City, Mich."
+      ],
+      "sourceDates": [
+        "2026-03-07"
+      ]
+    },
+    "tulsa_oklahoma_36_154_-95_9928": {
+      "id": "tulsa_oklahoma_36_154_-95_9928",
+      "label": "Tulsa, Oklahoma",
+      "latitude": 36.154,
+      "longitude": -95.9928,
+      "sourceNames": [
+        "Tulsa, Okla."
+      ],
+      "sourceDates": [
+        "2026-03-07"
+      ]
+    },
+    "delaware_united_states_40_2987_-83_068": {
+      "id": "delaware_united_states_40_2987_-83_068",
+      "label": "Delaware, United States",
+      "latitude": 40.2987,
+      "longitude": -83.068,
+      "sourceNames": [
+        "Dover Air Force Base, Delaware"
+      ],
+      "sourceDates": [
+        "2026-03-07"
+      ]
+    },
+    "la_paz_bolivia_-16_5_-68_15": {
+      "id": "la_paz_bolivia_-16_5_-68_15",
+      "label": "La Paz, Bolivia",
+      "latitude": -16.5,
+      "longitude": -68.15,
+      "sourceNames": [
+        "La Paz, Bolivia"
+      ],
+      "sourceDates": [
+        "2026-03-07"
+      ]
+    },
+    "cabin_john_maryland_38_9754_-77_158": {
+      "id": "cabin_john_maryland_38_9754_-77_158",
+      "label": "Cabin John, Maryland",
+      "latitude": 38.9754,
+      "longitude": -77.158,
+      "sourceNames": [
+        "Cabin John, Md."
+      ],
+      "sourceDates": [
+        "2026-03-06"
+      ]
+    },
+    "rome_georgia_34_257_-85_1647": {
+      "id": "rome_georgia_34_257_-85_1647",
+      "label": "Rome, Georgia",
+      "latitude": 34.257,
+      "longitude": -85.1647,
+      "sourceNames": [
+        "Rome, Ga."
+      ],
+      "sourceDates": [
+        "2026-03-06"
+      ]
+    },
+    "otisville_new_york_41_4734_-74_5385": {
+      "id": "otisville_new_york_41_4734_-74_5385",
+      "label": "Otisville, New York",
+      "latitude": 41.4734,
+      "longitude": -74.5385,
+      "sourceNames": [
+        "Otisville, N.Y."
+      ],
+      "sourceDates": [
+        "2026-03-06"
+      ]
+    },
+    "southeastern_minnesota_43_91_-92_52": {
+      "id": "southeastern_minnesota_43_91_-92_52",
+      "label": "Southeastern Minnesota",
+      "latitude": 43.91,
+      "longitude": -92.52,
+      "sourceNames": [
+        "southeastern Minnesota"
+      ],
+      "sourceDates": [
+        "2026-03-06"
+      ]
+    },
+    "srinagar_india_34_0857_74_8055": {
+      "id": "srinagar_india_34_0857_74_8055",
+      "label": "Srinagar, India",
+      "latitude": 34.0857,
+      "longitude": 74.8055,
+      "sourceNames": [
+        "Srinagar"
+      ],
+      "sourceDates": [
+        "2026-03-06"
+      ]
+    },
+    "calgary_canada_51_0501_-114_0853": {
+      "id": "calgary_canada_51_0501_-114_0853",
+      "label": "Calgary, Canada",
+      "latitude": 51.0501,
+      "longitude": -114.0853,
+      "sourceNames": [
+        "Calgary, Alberta"
+      ],
+      "sourceDates": [
+        "2026-03-06"
+      ]
+    },
+    "busan_south_korea_35_1017_129_03": {
+      "id": "busan_south_korea_35_1017_129_03",
+      "label": "Busan, South Korea",
+      "latitude": 35.1017,
+      "longitude": 129.03,
+      "sourceNames": [
+        "Busan, South Korea"
+      ],
+      "sourceDates": [
+        "2026-03-06"
+      ]
+    },
+    "china_mexico_25_7_-99_2345": {
+      "id": "china_mexico_25_7_-99_2345",
+      "label": "China, Mexico",
+      "latitude": 25.7,
+      "longitude": -99.2345,
+      "sourceNames": [
+        "Maotai, China"
+      ],
+      "sourceDates": [
+        "2026-03-06"
+      ]
+    },
+    "wayne_county_utah_38_36_-110_9": {
+      "id": "wayne_county_utah_38_36_-110_9",
+      "label": "Wayne County, Utah",
+      "latitude": 38.36,
+      "longitude": -110.9,
+      "sourceNames": [
+        "Wayne County, Utah"
+      ],
+      "sourceDates": [
+        "2026-03-05"
+      ]
+    },
+    "winder_georgia_33_9926_-83_7202": {
+      "id": "winder_georgia_33_9926_-83_7202",
+      "label": "Winder, Georgia",
+      "latitude": 33.9926,
+      "longitude": -83.7202,
+      "sourceNames": [
+        "Winder, Ga."
+      ],
+      "sourceDates": [
+        "2026-03-05"
+      ]
+    },
+    "amsterdam_netherlands_52_374_4_8897": {
+      "id": "amsterdam_netherlands_52_374_4_8897",
+      "label": "Amsterdam, Netherlands",
+      "latitude": 52.374,
+      "longitude": 4.8897,
+      "sourceNames": [
+        "Amsterdam"
+      ],
+      "sourceDates": [
+        "2026-03-05"
+      ]
+    },
+    "maastricht_netherlands_50_8483_5_6889": {
+      "id": "maastricht_netherlands_50_8483_5_6889",
+      "label": "Maastricht, Netherlands",
+      "latitude": 50.8483,
+      "longitude": 5.6889,
+      "sourceNames": [
+        "Maastricht, the Netherlands"
+      ],
+      "sourceDates": [
+        "2026-03-05"
+      ]
+    },
+    "ramiyah_lebanon_33_1108_35_3106": {
+      "id": "ramiyah_lebanon_33_1108_35_3106",
+      "label": "Ramiyah, Lebanon",
+      "latitude": 33.1108,
+      "longitude": 35.3106,
+      "sourceNames": [
+        "Israel’s border with Lebanon"
+      ],
+      "sourceDates": [
+        "2026-03-05"
+      ]
+    }
+  },
+  "dates": {
+    "2026-03-25": {
+      "label": "Mar 25",
+      "locationIds": [
+        "beirut_lebanon_33_8933_35_5016",
+        "berlin_germany_52_5244_13_4105",
+        "brussels_belgium_50_8505_4_3488",
+        "canterbury_england_51_279_1_0799",
+        "dakar_senegal_14_6937_-17_4441",
+        "dubai_united_arab_emirates_25_0772_55_3093",
+        "jinack_island_gambia_13_1833_-16_7667",
+        "juneau_united_states_58_3019_-134_4197",
+        "kyiv_ukraine_50_4547_30_5238",
+        "london_england_51_5085_-0_1257",
+        "los_angeles_california_34_0522_-118_2437",
+        "nashville_united_states_36_1659_-86_7844",
+        "oakland_california_37_8044_-122_2708",
+        "rome_italy_41_8919_12_5113",
+        "san_francisco_california_37_7749_-122_4194",
+        "san_jose_california_37_3394_-121_895",
+        "sydney_australia_-33_8678_151_2073",
+        "upper_marlboro_maryland_38_816_-76_7497",
+        "washington_dc_38_9072_-77_0369",
+        "zaporizhzhia_ukraine_47_8388_35_1396"
+      ],
+      "rawLocationCount": 23
+    },
+    "2026-03-24": {
+      "label": "Mar 24",
+      "locationIds": [
+        "atlanta_georgia_33_749_-84_388",
+        "beirut_lebanon_33_8933_35_5016",
+        "brussels_belgium_50_8505_4_3488",
+        "buenos_aires_argentina_-34_6131_-58_3772",
+        "copenhagen_denmark_55_6759_12_5655",
+        "cynthiana_kentucky_38_3903_-84_2941",
+        "dubai_united_arab_emirates_25_0772_55_3093",
+        "guantanamo_bay_cuba_19_906_-75_128",
+        "hawkesbury_canada_45_6001_-74_6159",
+        "hong_kong_22_267_114_188",
+        "houston_texas_29_7633_-95_3633",
+        "islamabad_pakistan_33_7215_73_0433",
+        "istanbul_turkiye_41_0138_28_9497",
+        "kabul_afghanistan_34_5281_69_1723",
+        "karachi_pakistan_24_8608_67_0104",
+        "kyiv_ukraine_50_4547_30_5238",
+        "london_england_51_5085_-0_1257",
+        "los_angeles_california_34_0522_-118_2437",
+        "memphis_united_states_35_1495_-90_049",
+        "miami_florida_25_7743_-80_1937",
+        "minneapolis_minnesota_44_98_-93_2638",
+        "new_delhi_india_28_6358_77_2245",
+        "new_york_city_40_7128_-74_006",
+        "newark_united_states_40_7357_-74_1724",
+        "paris_france_48_8534_2_3488",
+        "philadelphia_united_states_39_9523_-75_1638",
+        "raleigh_north_carolina_35_7721_-78_6386",
+        "rehovot_israel_31_8948_34_8113",
+        "rockingham_county_north_carolina_36_3956_-79_7754",
+        "rome_italy_41_8919_12_5113",
+        "sacramento_california_38_5816_-121_4944",
+        "san_francisco_california_37_7749_-122_4194",
+        "san_martin_argentina_-33_081_-68_4681",
+        "seoul_south_korea_37_566_126_9784",
+        "sydney_australia_-33_8678_151_2073",
+        "tel_aviv_israel_32_0809_34_7806",
+        "washington_dc_38_9072_-77_0369",
+        "woodbine_georgia_30_964_-81_7242"
+      ],
+      "rawLocationCount": 39
+    },
+    "2026-03-23": {
+      "label": "Mar 23",
+      "locationIds": [
+        "aalborg_denmark_57_048_9_9187",
+        "alameda_california_37_771_-122_2609",
+        "bogota_colombia_4_6097_-74_0817",
+        "cambridge_bay_nunavut_canada_69_1171_-105_0534",
+        "central_cameroon_5_9_12_7",
+        "central_virginia_37_5407_-78_5",
+        "chicago_illinois_41_85_-87_65",
+        "gaza_palestine_31_5016_34_4667",
+        "herat_afghanistan_34_3529_62_204",
+        "hong_kong_22_267_114_188",
+        "houston_texas_29_7633_-95_3633",
+        "iowa_41_878_-93_0977",
+        "jerusalem_israel_31_769_35_2163",
+        "kyiv_ukraine_50_4547_30_5238",
+        "london_england_51_5085_-0_1257",
+        "memphis_united_states_35_1495_-90_049",
+        "minneapolis_st_paul_44_9537_-93_09",
+        "new_orleans_united_states_29_9547_-90_0751",
+        "new_york_city_40_7128_-74_006",
+        "northern_cameroon_8_6_13_6",
+        "ottawa_canada_45_4112_-75_6981",
+        "paris_france_48_8534_2_3488",
+        "philadelphia_united_states_39_9523_-75_1638",
+        "rome_italy_41_8919_12_5113",
+        "santa_monica_california_34_0194_-118_4912",
+        "seoul_south_korea_37_566_126_9784",
+        "sheffield_england_53_383_-1_4659",
+        "taipei_taiwan_25_0478_121_5319",
+        "tel_aviv_israel_32_0809_34_7806",
+        "washington_dc_38_9072_-77_0369",
+        "yazdan_iran_33_8675_51_8247"
+      ],
+      "rawLocationCount": 31
+    },
+    "2026-03-22": {
+      "label": "Mar 22",
+      "locationIds": [
+        "arad_israel_31_2588_35_2128",
+        "beirut_lebanon_33_8933_35_5016",
+        "brussels_belgium_50_8505_4_3488",
+        "dimona_israel_31_0708_35_0327",
+        "jerusalem_israel_31_769_35_2163",
+        "midland_texas_31_9974_-102_0779",
+        "nashville_united_states_36_1659_-86_7844",
+        "new_delhi_india_28_6358_77_2245",
+        "odessa_texas_31_8457_-102_3676",
+        "paris_france_48_8534_2_3488",
+        "tel_aviv_israel_32_0809_34_7806",
+        "verona_italy_45_4299_10_9844",
+        "wadsworth_united_states_41_0256_-81_7298",
+        "washington_dc_38_9072_-77_0369",
+        "west_palm_beach_florida_26_7153_-80_0534",
+        "whatcom_county_washington_48_8465_-121_719"
+      ],
+      "rawLocationCount": 16
+    },
+    "2026-03-21": {
+      "label": "Mar 21",
+      "locationIds": [
+        "beirut_lebanon_33_8933_35_5016",
+        "colombo_sri_lanka_6_9355_79_8487",
+        "diyarbakir_turkey_37_9144_40_2306",
+        "hong_kong_22_267_114_188",
+        "jerusalem_israel_31_769_35_2163",
+        "kyiv_ukraine_50_4547_30_5238",
+        "london_england_51_5085_-0_1257",
+        "mexico_city_mexico_19_4285_-99_1277",
+        "new_york_city_40_7128_-74_006",
+        "rome_italy_41_8919_12_5113",
+        "san_francisco_california_37_7749_-122_4194",
+        "seoul_south_korea_37_566_126_9784",
+        "st_paul_canada_53_9835_-111_2851",
+        "washington_dc_38_9072_-77_0369",
+        "wenatchee_washington_47_4235_-120_3103"
+      ],
+      "rawLocationCount": 15
+    },
+    "2026-03-20": {
+      "label": "Mar 20",
+      "locationIds": [
+        "beirut_lebanon_33_8933_35_5016",
+        "berlin_germany_52_5244_13_4105",
+        "brasilia_brazil_-15_7797_-47_9297",
+        "bucharest_romania_44_4323_26_1063",
+        "canterbury_england_51_279_1_0799",
+        "chonburi_thailand_13_3611_100_9847",
+        "cluj_napoca_romania_46_7712_23_6236",
+        "colombo_sri_lanka_6_9355_79_8487",
+        "fresno_california_36_7477_-119_7724",
+        "geneva_switzerland_46_2044_6_1432",
+        "greeley_colorado_40_4233_-104_7091",
+        "hanoi_vietnam_21_0245_105_8412",
+        "hong_kong_22_267_114_188",
+        "houston_texas_29_7633_-95_3633",
+        "istanbul_turkiye_41_0138_28_9497",
+        "jerusalem_israel_31_769_35_2163",
+        "london_england_51_5085_-0_1257",
+        "madrid_spain_40_4165_-3_7026",
+        "mexico_philippines_15_0646_120_7198",
+        "oahu_hawaii_21_4389_-158_0001",
+        "rosario_philippines_13_8635_122_2731",
+        "samut_sakhon_thailand_13_5475_100_2736",
+        "san_francisco_california_37_7749_-122_4194",
+        "sao_paulo_brazil_-23_5475_-46_6361",
+        "seoul_south_korea_37_566_126_9784",
+        "sydney_australia_-33_8678_151_2073",
+        "tokyo_japan_35_6895_139_6917",
+        "washington_dc_38_9072_-77_0369"
+      ],
+      "rawLocationCount": 29
+    },
+    "2026-03-19": {
+      "label": "Mar 19",
+      "locationIds": [
+        "atlanta_georgia_33_749_-84_388",
+        "bakersfield_california_35_3733_-119_0187",
+        "berlin_germany_52_5244_13_4105",
+        "brussels_belgium_50_8505_4_3488",
+        "budapest_hungary_47_4984_19_0404",
+        "buenos_aires_argentina_-34_6131_-58_3772",
+        "dubai_united_arab_emirates_25_0772_55_3093",
+        "jerusalem_israel_31_769_35_2163",
+        "kyiv_ukraine_50_4547_30_5238",
+        "london_england_51_5085_-0_1257",
+        "los_angeles_california_34_0522_-118_2437",
+        "lviv_ukraine_49_8383_24_0232",
+        "montreal_quebec_canada_45_5017_-73_5673",
+        "nairobi_kenya_-1_2833_36_8167",
+        "nashville_united_states_36_1659_-86_7844",
+        "new_delhi_india_28_6358_77_2245",
+        "new_york_city_40_7128_-74_006",
+        "riyadh_saudi_arabia_24_6877_46_7219",
+        "sacramento_california_38_5816_-121_4944",
+        "san_francisco_california_37_7749_-122_4194",
+        "seattle_washington_47_6062_-122_3321",
+        "stavenhagen_germany_53_6976_12_5658",
+        "taipei_taiwan_25_0478_121_5319",
+        "tbilisi_georgia_41_6941_44_8337",
+        "tokyo_japan_35_6895_139_6917",
+        "velykyi_doroshiv_ukraine_49_9509_24_0587",
+        "vilnius_lithuania_54_6892_25_2798",
+        "washington_dc_38_9072_-77_0369"
+      ],
+      "rawLocationCount": 30
+    },
+    "2026-03-18": {
+      "label": "Mar 18",
+      "locationIds": [
+        "austin_texas_30_2672_-97_7431",
+        "beirut_lebanon_33_8933_35_5016",
+        "berlin_germany_52_5244_13_4105",
+        "brussels_belgium_50_8505_4_3488",
+        "chicago_illinois_41_85_-87_65",
+        "faroe_islands_62_-6_8",
+        "florida_27_6648_-81_5158",
+        "herat_afghanistan_34_3529_62_204",
+        "islamabad_pakistan_33_7215_73_0433",
+        "istanbul_turkiye_41_0138_28_9497",
+        "jerusalem_israel_31_769_35_2163",
+        "kabul_afghanistan_34_5281_69_1723",
+        "khirbet_humsa_al_fawqa_west_bank_32_2648_35_4369",
+        "kyiv_ukraine_50_4547_30_5238",
+        "london_england_51_5085_-0_1257",
+        "los_angeles_california_34_0522_-118_2437",
+        "lyubertsy_russia_55_6772_37_8932",
+        "middleburgh_new_york_42_5987_-74_3329",
+        "montserrat_16_7425_-62_1874",
+        "pasadena_texas_29_6911_-95_2091",
+        "rome_italy_41_8919_12_5113",
+        "sacramento_california_38_5816_-121_4944",
+        "san_francisco_california_37_7749_-122_4194",
+        "tel_aviv_israel_32_0809_34_7806",
+        "tokyo_japan_35_6895_139_6917",
+        "washington_dc_38_9072_-77_0369"
+      ],
+      "rawLocationCount": 26
+    },
+    "2026-03-17": {
+      "label": "Mar 17",
+      "locationIds": [
+        "beirut_lebanon_33_8933_35_5016",
+        "berlin_germany_52_5244_13_4105",
+        "brussels_belgium_50_8505_4_3488",
+        "colombia_colombia_3_3761_-74_8015",
+        "culiacan_mexico_24_7903_-107_3878",
+        "dakar_senegal_14_6937_-17_4441",
+        "fairford_england_51_7082_-1_7813",
+        "genesee_county_new_york_43_-78_19",
+        "geneva_switzerland_46_2044_6_1432",
+        "herat_afghanistan_34_3529_62_204",
+        "hialeah_florida_25_8576_-80_2781",
+        "hong_kong_22_267_114_188",
+        "houston_texas_29_7633_-95_3633",
+        "jerusalem_israel_31_769_35_2163",
+        "kabul_afghanistan_34_5281_69_1723",
+        "london_england_51_5085_-0_1257",
+        "maiduguri_nigeria_11_8469_13_1571",
+        "miami_florida_25_7743_-80_1937",
+        "mobile_alabama_30_6944_-88_043",
+        "montreal_quebec_canada_45_5017_-73_5673",
+        "new_york_city_40_7128_-74_006",
+        "phoenix_united_states_33_4484_-112_074",
+        "riyadh_saudi_arabia_24_6877_46_7219",
+        "rome_italy_41_8919_12_5113",
+        "san_francisco_california_37_7749_-122_4194",
+        "taipei_taiwan_25_0478_121_5319",
+        "washington_dc_38_9072_-77_0369"
+      ],
+      "rawLocationCount": 27
+    },
+    "2026-03-16": {
+      "label": "Mar 16",
+      "locationIds": [
+        "beirut_lebanon_33_8933_35_5016",
+        "berlin_germany_52_5244_13_4105",
+        "birmingham_alabama_33_5207_-86_8025",
+        "chicago_illinois_41_85_-87_65",
+        "dhaka_bangladesh_23_7104_90_4074",
+        "florida_27_6648_-81_5158",
+        "jerusalem_israel_31_769_35_2163",
+        "kyiv_ukraine_50_4547_30_5238",
+        "london_england_51_5085_-0_1257",
+        "los_angeles_california_34_0522_-118_2437",
+        "lusaka_zambia_-15_4067_28_2871",
+        "mazatlan_mexico_23_2329_-106_4062",
+        "mexico_city_mexico_19_4285_-99_1277",
+        "miami_florida_25_7743_-80_1937",
+        "moscow_russia_55_7522_37_6156",
+        "new_delhi_india_28_6358_77_2245",
+        "rehovot_israel_31_8948_34_8113",
+        "san_francisco_california_37_7749_-122_4194",
+        "san_jose_california_37_3394_-121_895",
+        "senegal_14_-14",
+        "vancouver_canada_49_2497_-123_1193",
+        "washington_dc_38_9072_-77_0369",
+        "west_hollywood_california_34_09_-118_3617"
+      ],
+      "rawLocationCount": 23
+    },
+    "2026-03-15": {
+      "label": "Mar 15",
+      "locationIds": [
+        "beverly_hills_california_34_0736_-118_4004",
+        "buffalo_new_york_42_8865_-78_8784",
+        "grindavik_iceland_63_8424_-22_4338",
+        "husavik_iceland_66_0449_-17_3389",
+        "jerusalem_israel_31_769_35_2163",
+        "johannesburg_south_africa_-26_2023_28_0436",
+        "kabul_afghanistan_34_5281_69_1723",
+        "kiryat_shmona_israel_33_2073_35_5728",
+        "las_vegas_united_states_36_175_-115_1372",
+        "london_england_51_5085_-0_1257",
+        "los_angeles_california_34_0522_-118_2437",
+        "marseille_france_43_297_5_3811",
+        "mount_vernon_new_york_40_9126_-73_8371",
+        "mountain_view_california_37_386_-122_0838",
+        "nederland_colorado_39_9614_-105_5108",
+        "new_york_city_40_7128_-74_006",
+        "oslo_norway_59_9127_10_7461",
+        "paris_france_48_8534_2_3488",
+        "rome_italy_41_8919_12_5113",
+        "san_francisco_california_37_7749_-122_4194",
+        "sydney_australia_-33_8678_151_2073",
+        "tammun_west_bank_32_2833_35_3833",
+        "torkham_34_1217_71_1031",
+        "washington_dc_38_9072_-77_0369"
+      ],
+      "rawLocationCount": 24
+    },
+    "2026-03-14": {
+      "label": "Mar 14",
+      "locationIds": [
+        "barcelona_spain_41_3888_2_159",
+        "beirut_lebanon_33_8933_35_5016",
+        "florence_italy_43_7792_11_2463",
+        "hong_kong_22_267_114_188",
+        "islamabad_pakistan_33_7215_73_0433",
+        "jerusalem_israel_31_769_35_2163",
+        "london_england_51_5085_-0_1257",
+        "los_angeles_california_34_0522_-118_2437",
+        "mexico_city_mexico_19_4285_-99_1277",
+        "miami_florida_25_7743_-80_1937",
+        "mombasa_kenya_-4_0547_39_6636",
+        "new_york_city_40_7128_-74_006",
+        "phoenix_united_states_33_4484_-112_074",
+        "riyadh_saudi_arabia_24_6877_46_7219",
+        "washington_dc_38_9072_-77_0369"
+      ],
+      "rawLocationCount": 15
+    },
+    "2026-03-13": {
+      "label": "Mar 13",
+      "locationIds": [
+        "adana_turkiye_36_9862_35_3253",
+        "akrotiri_cyprus_34_6258_32_9524",
+        "bangkok_thailand_13_754_100_5014",
+        "beirut_lebanon_33_8933_35_5016",
+        "belfast_united_kingdom_54_5968_-5_9254",
+        "berlin_germany_52_5244_13_4105",
+        "boston_united_states_42_3584_-71_0598",
+        "brasilia_brazil_-15_7797_-47_9297",
+        "buenos_aires_argentina_-34_6131_-58_3772",
+        "dallas_texas_32_7831_-96_8067",
+        "dearborn_heights_michigan_42_337_-83_2733",
+        "dilley_texas_28_6675_-99_1706",
+        "florida_27_6648_-81_5158",
+        "havana_cuba_23_133_-82_383",
+        "ho_chi_minh_city_vietnam_10_823_106_6296",
+        "istanbul_turkiye_41_0138_28_9497",
+        "kiev_ukraine_50_4501_30_5234",
+        "london_england_51_5085_-0_1257",
+        "los_angeles_california_34_0522_-118_2437",
+        "lower_mainland_british_columbia_49_2463_-122_9805",
+        "mexico_city_mexico_19_4285_-99_1277",
+        "new_delhi_india_28_6358_77_2245",
+        "new_york_city_40_7128_-74_006",
+        "pacific_palisades_california_34_0827_-118_5357",
+        "rome_italy_41_8919_12_5113",
+        "sacramento_california_38_5816_-121_4944",
+        "san_jose_california_37_3394_-121_895",
+        "seoul_south_korea_37_566_126_9784",
+        "tokyo_japan_35_6895_139_6917",
+        "washington_dc_38_9072_-77_0369",
+        "west_bloomfield_michigan_42_5684_-83_3833",
+        "yellowknife_canada_62_4541_-114_3725"
+      ],
+      "rawLocationCount": 32
+    },
+    "2026-03-12": {
+      "label": "Mar 12",
+      "locationIds": [
+        "beirut_lebanon_33_8933_35_5016",
+        "chicago_illinois_41_85_-87_65",
+        "colombo_sri_lanka_6_9355_79_8487",
+        "death_valley_california_36_5054_-117_0794",
+        "galle_sri_lanka_6_0461_80_2103",
+        "goma_dr_congo_-1_6741_29_2284",
+        "hebron_kentucky_39_0659_-84_7011",
+        "jerusalem_israel_31_769_35_2163",
+        "kyiv_ukraine_50_4547_30_5238",
+        "london_england_51_5085_-0_1257",
+        "los_angeles_california_34_0522_-118_2437",
+        "miami_florida_25_7743_-80_1937",
+        "new_delhi_india_28_6358_77_2245",
+        "new_york_city_40_7128_-74_006",
+        "palo_alto_california_37_4419_-122_143",
+        "philadelphia_united_states_39_9523_-75_1638",
+        "rome_italy_41_8919_12_5113",
+        "san_francisco_california_37_7749_-122_4194",
+        "santiago_chile_-33_4569_-70_6483",
+        "seoul_south_korea_37_566_126_9784",
+        "southaven_mississippi_34_989_-90_0126",
+        "tel_aviv_israel_32_0809_34_7806",
+        "washington_dc_38_9072_-77_0369"
+      ],
+      "rawLocationCount": 25
+    },
+    "2026-03-11": {
+      "label": "Mar 11",
+      "locationIds": [
+        "ashland_kentucky_38_4784_-82_6379",
+        "beirut_lebanon_33_8933_35_5016",
+        "berlin_germany_52_5244_13_4105",
+        "caracas_venezuela_10_488_-66_8792",
+        "charleston_south_carolina_32_7766_-79_9309",
+        "chatham_new_york_42_3642_-73_5948",
+        "culiacan_mexico_24_7903_-107_3878",
+        "doral_florida_25_8195_-80_3553",
+        "dublin_ireland_53_3331_-6_2489",
+        "heber_springs_arkansas_35_4915_-92_0313",
+        "hong_kong_22_267_114_188",
+        "jerusalem_israel_31_769_35_2163",
+        "kankakee_county_illinois_41_1377_-87_8615",
+        "london_england_51_5085_-0_1257",
+        "los_angeles_california_34_0522_-118_2437",
+        "los_lunas_new_mexico_34_8062_-106_7334",
+        "miami_florida_25_7743_-80_1937",
+        "milton_keynes_england_52_0417_-0_7558",
+        "new_york_city_40_7128_-74_006",
+        "new_york_city_new_york_40_7143_-74_006",
+        "paris_france_48_8534_2_3488",
+        "sendai_miyagi_japan_38_2682_140_8694",
+        "st_paul_canada_53_9835_-111_2851",
+        "taipei_taiwan_25_0478_121_5319",
+        "toronto_canada_43_7001_-79_4163",
+        "washington_dc_38_9072_-77_0369",
+        "western_indiana_39_7684_-87_3"
+      ],
+      "rawLocationCount": 28
+    },
+    "2026-03-10": {
+      "label": "Mar 10",
+      "locationIds": [
+        "anchorage_united_states_61_2181_-149_9003",
+        "beirut_lebanon_33_8933_35_5016",
+        "berlin_germany_52_5244_13_4105",
+        "birmingham_alabama_33_5207_-86_8025",
+        "budapest_hungary_47_4984_19_0404",
+        "florida_27_6648_-81_5158",
+        "fort_chipewyan_alberta_58_767_-111_1176",
+        "fort_mckay_alberta_57_1846_-111_6405",
+        "fort_mcmurray_canada_56_7268_-111_381",
+        "hong_kong_22_267_114_188",
+        "islamabad_pakistan_33_7215_73_0433",
+        "kathmandu_nepal_27_7017_85_3206",
+        "las_vegas_united_states_36_175_-115_1372",
+        "london_england_51_5085_-0_1257",
+        "manila_philippines_14_6042_120_9822",
+        "miami_florida_25_7743_-80_1937",
+        "new_york_city_40_7128_-74_006",
+        "paris_france_48_8534_2_3488",
+        "philadelphia_united_states_39_9523_-75_1638",
+        "rawalpindi_pakistan_33_5973_73_0479",
+        "riyadh_saudi_arabia_24_6877_46_7219",
+        "san_francisco_california_37_7749_-122_4194",
+        "santa_monica_california_34_0194_-118_4912",
+        "seoul_south_korea_37_566_126_9784",
+        "sydney_australia_-33_8678_151_2073",
+        "toronto_canada_43_7001_-79_4163",
+        "washington_dc_38_9072_-77_0369"
+      ],
+      "rawLocationCount": 27
+    },
+    "2026-03-09": {
+      "label": "Mar 9",
+      "locationIds": [
+        "albany_new_york_42_6526_-73_7562",
+        "bangkok_thailand_13_754_100_5014",
+        "brussels_belgium_50_8505_4_3488",
+        "cairo_egypt_30_0626_31_2497",
+        "dilley_texas_28_6675_-99_1706",
+        "doral_florida_25_8195_-80_3553",
+        "dubai_united_arab_emirates_25_0772_55_3093",
+        "eastern_ukraine_48_5_37_5",
+        "gold_coast_australia_-28_0003_153_4309",
+        "ho_chi_minh_city_vietnam_10_823_106_6296",
+        "hong_kong_22_267_114_188",
+        "istanbul_turkiye_41_0138_28_9497",
+        "jerusalem_israel_31_769_35_2163",
+        "london_england_51_5085_-0_1257",
+        "los_angeles_california_34_0522_-118_2437",
+        "mississauga_canada_43_5789_-79_6583",
+        "muscat_oman_23_5841_58_4078",
+        "nashville_united_states_36_1659_-86_7844",
+        "natchez_mississippi_31_5604_-91_4032",
+        "new_york_city_40_7128_-74_006",
+        "paris_france_48_8534_2_3488",
+        "philadelphia_united_states_39_9523_-75_1638",
+        "san_francisco_california_37_7749_-122_4194",
+        "sarajevo_bosnia_and_herzegovina_43_8486_18_3564",
+        "selma_alabama_32_4074_-87_0211",
+        "seoul_south_korea_37_566_126_9784",
+        "silivri_turkiye_41_0739_28_2464",
+        "sydney_australia_-33_8678_151_2073",
+        "taipei_taiwan_25_0478_121_5319",
+        "tokyo_japan_35_6895_139_6917",
+        "washington_dc_38_9072_-77_0369"
+      ],
+      "rawLocationCount": 31
+    },
+    "2026-03-08": {
+      "label": "Mar 8",
+      "locationIds": [
+        "barcelona_spain_41_3888_2_159",
+        "bogota_colombia_4_6097_-74_0817",
+        "brussels_belgium_50_8505_4_3488",
+        "istanbul_turkiye_41_0138_28_9497",
+        "jerusalem_israel_31_769_35_2163",
+        "kathmandu_nepal_27_7017_85_3206",
+        "khirbet_abu_falah_west_bank_32_0156_35_3014",
+        "lebanon_united_states_36_2081_-86_2911",
+        "london_england_51_5085_-0_1257",
+        "monaco_43_7333_7_4",
+        "new_orleans_united_states_29_9547_-90_0751",
+        "oslo_norway_59_9127_10_7461",
+        "paris_france_48_8534_2_3488",
+        "riyadh_saudi_arabia_24_6877_46_7219",
+        "san_francisco_california_37_7749_-122_4194",
+        "st_petersburg_florida_27_7709_-82_6793",
+        "tel_aviv_israel_32_0809_34_7806",
+        "washington_dc_38_9072_-77_0369"
+      ],
+      "rawLocationCount": 18
+    },
+    "2026-03-07": {
+      "label": "Mar 7",
+      "locationIds": [
+        "beirut_lebanon_33_8933_35_5016",
+        "berlin_germany_52_5244_13_4105",
+        "bogota_colombia_4_6097_-74_0817",
+        "brussels_belgium_50_8505_4_3488",
+        "chicago_illinois_41_85_-87_65",
+        "delaware_united_states_40_2987_-83_068",
+        "hong_kong_22_267_114_188",
+        "islamabad_pakistan_33_7215_73_0433",
+        "kyiv_ukraine_50_4547_30_5238",
+        "la_paz_bolivia_-16_5_-68_15",
+        "lebanon_united_states_36_2081_-86_2911",
+        "london_england_51_5085_-0_1257",
+        "los_angeles_california_34_0522_-118_2437",
+        "mexico_city_mexico_19_4285_-99_1277",
+        "miami_florida_25_7743_-80_1937",
+        "nashville_united_states_36_1659_-86_7844",
+        "new_york_city_40_7128_-74_006",
+        "paris_france_48_8534_2_3488",
+        "tulsa_oklahoma_36_154_-95_9928",
+        "union_city_michigan_42_0667_-85_1361",
+        "verona_italy_45_4299_10_9844",
+        "washington_dc_38_9072_-77_0369"
+      ],
+      "rawLocationCount": 22
+    },
+    "2026-03-06": {
+      "label": "Mar 6",
+      "locationIds": [
+        "beirut_lebanon_33_8933_35_5016",
+        "berlin_germany_52_5244_13_4105",
+        "busan_south_korea_35_1017_129_03",
+        "cabin_john_maryland_38_9754_-77_158",
+        "calgary_canada_51_0501_-114_0853",
+        "caracas_venezuela_10_488_-66_8792",
+        "chicago_illinois_41_85_-87_65",
+        "china_mexico_25_7_-99_2345",
+        "houston_texas_29_7633_-95_3633",
+        "islamabad_pakistan_33_7215_73_0433",
+        "london_england_51_5085_-0_1257",
+        "los_angeles_california_34_0522_-118_2437",
+        "marseille_france_43_297_5_3811",
+        "mexico_city_mexico_19_4285_-99_1277",
+        "new_delhi_india_28_6358_77_2245",
+        "new_york_city_40_7128_-74_006",
+        "otisville_new_york_41_4734_-74_5385",
+        "paris_france_48_8534_2_3488",
+        "rome_georgia_34_257_-85_1647",
+        "southeastern_minnesota_43_91_-92_52",
+        "srinagar_india_34_0857_74_8055",
+        "tokyo_japan_35_6895_139_6917",
+        "washington_dc_38_9072_-77_0369"
+      ],
+      "rawLocationCount": 23
+    },
+    "2026-03-05": {
+      "label": "Mar 5",
+      "locationIds": [
+        "amsterdam_netherlands_52_374_4_8897",
+        "atlanta_georgia_33_749_-84_388",
+        "beirut_lebanon_33_8933_35_5016",
+        "dubai_united_arab_emirates_25_0772_55_3093",
+        "galle_sri_lanka_6_0461_80_2103",
+        "maastricht_netherlands_50_8483_5_6889",
+        "mexico_city_mexico_19_4285_-99_1277",
+        "miami_florida_25_7743_-80_1937",
+        "new_delhi_india_28_6358_77_2245",
+        "new_york_city_40_7128_-74_006",
+        "paris_france_48_8534_2_3488",
+        "ramiyah_lebanon_33_1108_35_3106",
+        "san_francisco_california_37_7749_-122_4194",
+        "washington_dc_38_9072_-77_0369",
+        "wayne_county_utah_38_36_-110_9",
+        "winder_georgia_33_9926_-83_7202"
+      ],
+      "rawLocationCount": 16
+    }
+  },
+  "review": [
+    {
+      "rawLocation": "Amsterdam",
+      "normalizedQuery": "Amsterdam",
+      "dates": [
+        "2026-03-05"
+      ],
+      "status": "review",
+      "reason": "Best offline match is usable but still needs a quick human review.",
+      "attemptedQueries": [
+        "Amsterdam"
+      ],
+      "matches": [
+        {
+          "displayName": "Amsterdam, Netherlands",
+          "latitude": 52.374,
+          "longitude": 4.8897,
+          "score": 94.35095694235284
+        },
+        {
+          "displayName": "Amsterdam, New York",
+          "latitude": 42.9387,
+          "longitude": -74.1882,
+          "score": 86.27744799037768
+        }
+      ]
+    },
+    {
+      "rawLocation": "Atlanta",
+      "normalizedQuery": "Atlanta",
+      "dates": [
+        "2026-03-05",
+        "2026-03-19",
+        "2026-03-24"
+      ],
+      "status": "review",
+      "reason": "Best offline match is usable but still needs a quick human review.",
+      "attemptedQueries": [
+        "Atlanta"
+      ],
+      "matches": [
+        {
+          "displayName": "Atlanta, Georgia",
+          "latitude": 33.749,
+          "longitude": -84.388,
+          "score": 93.33202356133755
+        },
+        {
+          "displayName": "Atlanta, Texas",
+          "latitude": 33.1137,
+          "longitude": -94.1643,
+          "score": 83.74326546712133
+        },
+        {
+          "displayName": "Atlanta, Illinois",
+          "latitude": 40.2595,
+          "longitude": -89.2334,
+          "score": 81.0861032782226
+        }
+      ]
+    },
+    {
+      "rawLocation": "Belfast",
+      "normalizedQuery": "Belfast",
+      "dates": [
+        "2026-03-13"
+      ],
+      "status": "review",
+      "reason": "Best offline match is usable but still needs a quick human review.",
+      "attemptedQueries": [
+        "Belfast"
+      ],
+      "matches": [
+        {
+          "displayName": "Belfast, United Kingdom",
+          "latitude": 54.5968,
+          "longitude": -5.9254,
+          "score": 92.19485447154854
+        },
+        {
+          "displayName": "Belfast, South Africa",
+          "latitude": -25.6899,
+          "longitude": 30.035,
+          "score": 85.38083469672466
+        },
+        {
+          "displayName": "Belfast, United States",
+          "latitude": 44.4259,
+          "longitude": -69.0064,
+          "score": 84.12485730561846
+        }
+      ]
+    },
+    {
+      "rawLocation": "Boston",
+      "normalizedQuery": "Boston",
+      "dates": [
+        "2026-03-13"
+      ],
+      "status": "review",
+      "reason": "Best offline match is usable but still needs a quick human review.",
+      "attemptedQueries": [
+        "Boston"
+      ],
+      "matches": [
+        {
+          "displayName": "Boston, United States",
+          "latitude": 42.3584,
+          "longitude": -71.0598,
+          "score": 94.12107839326663
+        },
+        {
+          "displayName": "Boston, England",
+          "latitude": 52.9763,
+          "longitude": -0.0266,
+          "score": 88.08190488797175
+        },
+        {
+          "displayName": "Boston, New York",
+          "latitude": 42.629,
+          "longitude": -78.7375,
+          "score": 84.52897940183934
+        }
+      ]
+    },
+    {
+      "rawLocation": "Buenos Aires",
+      "normalizedQuery": "Buenos Aires",
+      "dates": [
+        "2026-03-13",
+        "2026-03-19",
+        "2026-03-24"
+      ],
+      "status": "review",
+      "reason": "Best offline match is usable but still needs a quick human review.",
+      "attemptedQueries": [
+        "Buenos Aires"
+      ],
+      "matches": [
+        {
+          "displayName": "Buenos Aires, Argentina",
+          "latitude": -34.6131,
+          "longitude": -58.3772,
+          "score": 95
+        },
+        {
+          "displayName": "Buenos Aires, Costa Rica",
+          "latitude": 9.1719,
+          "longitude": -83.3342,
+          "score": 85.33740011965742
+        },
+        {
+          "displayName": "Buenos Aires, Mexico",
+          "latitude": 18.0244,
+          "longitude": -102.2858,
+          "score": 84.97136574486585
+        }
+      ]
+    },
+    {
+      "rawLocation": "Buffalo",
+      "normalizedQuery": "Buffalo",
+      "dates": [
+        "2026-03-15"
+      ],
+      "status": "review",
+      "reason": "Best offline match is usable but still needs a quick human review.",
+      "attemptedQueries": [
+        "Buffalo"
+      ],
+      "matches": [
+        {
+          "displayName": "Buffalo, New York",
+          "latitude": 42.8865,
+          "longitude": -78.8784,
+          "score": 92.05870443757514
+        },
+        {
+          "displayName": "Buffalo, Minnesota",
+          "latitude": 45.1719,
+          "longitude": -93.8747,
+          "score": 86.02426118464108
+        },
+        {
+          "displayName": "Buffalo, United States",
+          "latitude": 44.3483,
+          "longitude": -106.6989,
+          "score": 83.32931150101578
+        }
+      ]
+    },
+    {
+      "rawLocation": "central Cameroon",
+      "normalizedQuery": "central Cameroon",
+      "dates": [
+        "2026-03-23"
+      ],
+      "status": "review",
+      "reason": "Resolved to a regional centroid rather than an exact place.",
+      "attemptedQueries": [
+        "central Cameroon"
+      ],
+      "matches": [
+        {
+          "displayName": "Central Cameroon",
+          "latitude": 5.9,
+          "longitude": 12.7,
+          "score": 55
+        }
+      ]
+    },
+    {
+      "rawLocation": "central Virginia",
+      "normalizedQuery": "central Virginia",
+      "dates": [
+        "2026-03-23"
+      ],
+      "status": "review",
+      "reason": "Resolved to a regional centroid rather than an exact place.",
+      "attemptedQueries": [
+        "central Virginia"
+      ],
+      "matches": [
+        {
+          "displayName": "Central Virginia",
+          "latitude": 37.5407,
+          "longitude": -78.5,
+          "score": 55
+        }
+      ]
+    },
+    {
+      "rawLocation": "Dallas",
+      "normalizedQuery": "Dallas",
+      "dates": [
+        "2026-03-13"
+      ],
+      "status": "review",
+      "reason": "Best offline match is usable but still needs a quick human review.",
+      "attemptedQueries": [
+        "Dallas"
+      ],
+      "matches": [
+        {
+          "displayName": "Dallas, Texas",
+          "latitude": 32.7831,
+          "longitude": -96.8067,
+          "score": 95
+        },
+        {
+          "displayName": "Dallas, United States",
+          "latitude": 44.9193,
+          "longitude": -123.317,
+          "score": 85.9203325284583
+        },
+        {
+          "displayName": "Dallas, Georgia",
+          "latitude": 33.9237,
+          "longitude": -84.8408,
+          "score": 85.5480614515423
+        }
+      ]
+    },
+    {
+      "rawLocation": "Doral, Miami",
+      "normalizedQuery": "Doral, Miami",
+      "dates": [
+        "2026-03-10"
+      ],
+      "status": "review",
+      "reason": "Best offline match is usable but still needs a quick human review.",
+      "attemptedQueries": [
+        "Doral, Miami",
+        "Doral",
+        "Miami"
+      ],
+      "matches": [
+        {
+          "displayName": "Miami, Florida",
+          "latitude": 25.7743,
+          "longitude": -80.1937,
+          "score": 93.22221264314474
+        },
+        {
+          "displayName": "Miami, Oklahoma",
+          "latitude": 36.8745,
+          "longitude": -94.8775,
+          "score": 85.66960970211886
+        },
+        {
+          "displayName": "Miami, Australia",
+          "latitude": -28.0717,
+          "longitude": 153.4416,
+          "score": 84.27547475579311
+        }
+      ]
+    },
+    {
+      "rawLocation": "Dover Air Force Base, Delaware",
+      "normalizedQuery": "Dover Air Force Base, Delaware",
+      "dates": [
+        "2026-03-07"
+      ],
+      "status": "review",
+      "reason": "Best offline match is usable but still needs a quick human review.",
+      "attemptedQueries": [
+        "Dover Air Force Base, Delaware",
+        "Dover Air Force Base",
+        "Delaware"
+      ],
+      "matches": [
+        {
+          "displayName": "Delaware, United States",
+          "latitude": 40.2987,
+          "longitude": -83.068,
+          "score": 87.89868939500978
+        },
+        {
+          "displayName": "Delaware, Canada",
+          "latitude": 42.9168,
+          "longitude": -81.4165,
+          "score": 82.00872541118531
+        }
+      ]
+    },
+    {
+      "rawLocation": "Dublin",
+      "normalizedQuery": "Dublin",
+      "dates": [
+        "2026-03-11"
+      ],
+      "status": "review",
+      "reason": "Best offline match is usable but still needs a quick human review.",
+      "attemptedQueries": [
+        "Dublin"
+      ],
+      "matches": [
+        {
+          "displayName": "Dublin, Ireland",
+          "latitude": 53.3331,
+          "longitude": -6.2489,
+          "score": 95
+        },
+        {
+          "displayName": "Dublin, California",
+          "latitude": 37.7022,
+          "longitude": -121.9358,
+          "score": 88.80670685239798
+        },
+        {
+          "displayName": "Dublin, United States",
+          "latitude": 40.0992,
+          "longitude": -83.1141,
+          "score": 88.27083456090901
+        }
+      ]
+    },
+    {
+      "rawLocation": "eastern Ukraine",
+      "normalizedQuery": "eastern Ukraine",
+      "dates": [
+        "2026-03-09"
+      ],
+      "status": "review",
+      "reason": "Resolved to a regional centroid rather than an exact place.",
+      "attemptedQueries": [
+        "eastern Ukraine"
+      ],
+      "matches": [
+        {
+          "displayName": "Eastern Ukraine",
+          "latitude": 48.5,
+          "longitude": 37.5,
+          "score": 55
+        }
+      ]
+    },
+    {
+      "rawLocation": "Florida",
+      "normalizedQuery": "Florida",
+      "dates": [
+        "2026-03-10",
+        "2026-03-13",
+        "2026-03-16",
+        "2026-03-18"
+      ],
+      "status": "review",
+      "reason": "Resolved to a regional centroid rather than an exact place.",
+      "attemptedQueries": [
+        "Florida"
+      ],
+      "matches": [
+        {
+          "displayName": "Florida",
+          "latitude": 27.6648,
+          "longitude": -81.5158,
+          "score": 55
+        }
+      ]
+    },
+    {
+      "rawLocation": "Hall of Justice, San Francisco",
+      "normalizedQuery": "Hall of Justice, San Francisco",
+      "dates": [
+        "2026-03-21"
+      ],
+      "status": "review",
+      "reason": "Best offline match is usable but still needs a quick human review.",
+      "attemptedQueries": [
+        "Hall of Justice, San Francisco",
+        "Hall of Justice",
+        "San Francisco"
+      ],
+      "matches": [
+        {
+          "displayName": "San Francisco, California",
+          "latitude": 37.7749,
+          "longitude": -122.4194,
+          "score": 94.68462109051274
+        },
+        {
+          "displayName": "San Francisco, Argentina",
+          "latitude": -31.428,
+          "longitude": -62.0827,
+          "score": 88.85657751202409
+        },
+        {
+          "displayName": "San Francisco, Costa Rica",
+          "latitude": 9.993,
+          "longitude": -84.1293,
+          "score": 88.73799113520099
+        }
+      ]
+    },
+    {
+      "rawLocation": "Heathrow Airport, London",
+      "normalizedQuery": "Heathrow Airport, London",
+      "dates": [
+        "2026-03-11"
+      ],
+      "status": "review",
+      "reason": "Best offline match is usable but still needs a quick human review.",
+      "attemptedQueries": [
+        "Heathrow Airport, London",
+        "Heathrow Airport",
+        "London"
+      ],
+      "matches": [
+        {
+          "displayName": "London, England",
+          "latitude": 51.5085,
+          "longitude": -0.1257,
+          "score": 95
+        },
+        {
+          "displayName": "London, Canada",
+          "latitude": 42.9834,
+          "longitude": -81.233,
+          "score": 92.70018254413252
+        },
+        {
+          "displayName": "London, United States",
+          "latitude": 39.8865,
+          "longitude": -83.4483,
+          "score": 85.01320574500019
+        }
+      ]
+    },
+    {
+      "rawLocation": "Hong Kong",
+      "normalizedQuery": "Hong Kong",
+      "dates": [
+        "2026-03-07",
+        "2026-03-09",
+        "2026-03-10",
+        "2026-03-11",
+        "2026-03-14",
+        "2026-03-17",
+        "2026-03-20",
+        "2026-03-21",
+        "2026-03-23",
+        "2026-03-24"
+      ],
+      "status": "review",
+      "reason": "Resolved to a country centroid rather than an exact place.",
+      "attemptedQueries": [
+        "Hong Kong"
+      ],
+      "matches": [
+        {
+          "displayName": "Hong Kong",
+          "latitude": 22.267,
+          "longitude": 114.188,
+          "score": 50
+        }
+      ]
+    },
+    {
+      "rawLocation": "Iowa",
+      "normalizedQuery": "Iowa",
+      "dates": [
+        "2026-03-23"
+      ],
+      "status": "review",
+      "reason": "Resolved to a regional centroid rather than an exact place.",
+      "attemptedQueries": [
+        "Iowa"
+      ],
+      "matches": [
+        {
+          "displayName": "Iowa",
+          "latitude": 41.878,
+          "longitude": -93.0977,
+          "score": 55
+        }
+      ]
+    },
+    {
+      "rawLocation": "Juneau, Alaska",
+      "normalizedQuery": "Juneau, Alaska",
+      "dates": [
+        "2026-03-25"
+      ],
+      "status": "review",
+      "reason": "Best offline match is usable but still needs a quick human review.",
+      "attemptedQueries": [
+        "Juneau, Alaska",
+        "Juneau",
+        "Alaska"
+      ],
+      "matches": [
+        {
+          "displayName": "Juneau, United States",
+          "latitude": 58.3019,
+          "longitude": -134.4197,
+          "score": 87.57652060355161
+        },
+        {
+          "displayName": "Juneau, United States",
+          "latitude": 43.4055,
+          "longitude": -88.7051,
+          "score": 82.15118176705755
+        }
+      ]
+    },
+    {
+      "rawLocation": "Las Vegas",
+      "normalizedQuery": "Las Vegas",
+      "dates": [
+        "2026-03-10",
+        "2026-03-15"
+      ],
+      "status": "review",
+      "reason": "Best offline match is usable but still needs a quick human review.",
+      "attemptedQueries": [
+        "Las Vegas"
+      ],
+      "matches": [
+        {
+          "displayName": "Las Vegas, United States",
+          "latitude": 36.175,
+          "longitude": -115.1372,
+          "score": 93.97504583050909
+        },
+        {
+          "displayName": "Las Vegas, New Mexico",
+          "latitude": 35.5939,
+          "longitude": -105.2239,
+          "score": 85.63341631694145
+        },
+        {
+          "displayName": "Las Vegas, Honduras",
+          "latitude": 15.0167,
+          "longitude": -87.45,
+          "score": 80.58469823275378
+        }
+      ]
+    },
+    {
+      "rawLocation": "London",
+      "normalizedQuery": "London",
+      "dates": [
+        "2026-03-06",
+        "2026-03-07",
+        "2026-03-08",
+        "2026-03-09",
+        "2026-03-10",
+        "2026-03-11",
+        "2026-03-12",
+        "2026-03-13",
+        "2026-03-14",
+        "2026-03-15",
+        "2026-03-16",
+        "2026-03-17",
+        "2026-03-18",
+        "2026-03-19",
+        "2026-03-20",
+        "2026-03-21",
+        "2026-03-23",
+        "2026-03-24",
+        "2026-03-25"
+      ],
+      "status": "review",
+      "reason": "Best offline match is usable but still needs a quick human review.",
+      "attemptedQueries": [
+        "London"
+      ],
+      "matches": [
+        {
+          "displayName": "London, England",
+          "latitude": 51.5085,
+          "longitude": -0.1257,
+          "score": 95
+        },
+        {
+          "displayName": "London, Canada",
+          "latitude": 42.9834,
+          "longitude": -81.233,
+          "score": 92.70018254413252
+        },
+        {
+          "displayName": "London, United States",
+          "latitude": 39.8865,
+          "longitude": -83.4483,
+          "score": 85.01320574500019
+        }
+      ]
+    },
+    {
+      "rawLocation": "Madrid",
+      "normalizedQuery": "Madrid",
+      "dates": [
+        "2026-03-20"
+      ],
+      "status": "review",
+      "reason": "Best offline match is usable but still needs a quick human review.",
+      "attemptedQueries": [
+        "Madrid"
+      ],
+      "matches": [
+        {
+          "displayName": "Madrid, Spain",
+          "latitude": 40.4165,
+          "longitude": -3.7026,
+          "score": 95
+        },
+        {
+          "displayName": "Madrid, Colombia",
+          "latitude": 4.7325,
+          "longitude": -74.2642,
+          "score": 88.5137892865924
+        },
+        {
+          "displayName": "Madrid, Mexico",
+          "latitude": 19.0846,
+          "longitude": -103.8712,
+          "score": 82.89376892213218
+        }
+      ]
+    },
+    {
+      "rawLocation": "Maotai, China",
+      "normalizedQuery": "Maotai, China",
+      "dates": [
+        "2026-03-06"
+      ],
+      "status": "review",
+      "reason": "Best offline match is usable but still needs a quick human review.",
+      "attemptedQueries": [
+        "Maotai, China",
+        "Maotai",
+        "China"
+      ],
+      "matches": [
+        {
+          "displayName": "China, Mexico",
+          "latitude": 25.7,
+          "longitude": -99.2345,
+          "score": 84.77072994414775
+        },
+        {
+          "displayName": "Chiná, Mexico",
+          "latitude": 19.7699,
+          "longitude": -90.4959,
+          "score": 83.57792775946598
+        },
+        {
+          "displayName": "China, United States",
+          "latitude": 44.4787,
+          "longitude": -69.5173,
+          "score": 83.15213937512512
+        }
+      ]
+    },
+    {
+      "rawLocation": "Mazatlán, Mexico",
+      "normalizedQuery": "Mazatlán, Mexico",
+      "dates": [
+        "2026-03-16"
+      ],
+      "status": "review",
+      "reason": "Best offline match is usable but still needs a quick human review.",
+      "attemptedQueries": [
+        "Mazatlán, Mexico",
+        "Mazatlán",
+        "Mexico"
+      ],
+      "matches": [
+        {
+          "displayName": "Mazatlán, Mexico",
+          "latitude": 23.2329,
+          "longitude": -106.4062,
+          "score": 127.9079507811903
+        },
+        {
+          "displayName": "Mazatlán, Mexico",
+          "latitude": 17.4362,
+          "longitude": -99.4648,
+          "score": 118.62833330157089
+        }
+      ]
+    },
+    {
+      "rawLocation": "Memphis",
+      "normalizedQuery": "Memphis",
+      "dates": [
+        "2026-03-23",
+        "2026-03-24"
+      ],
+      "status": "review",
+      "reason": "Best offline match is usable but still needs a quick human review.",
+      "attemptedQueries": [
+        "Memphis"
+      ],
+      "matches": [
+        {
+          "displayName": "Memphis, United States",
+          "latitude": 35.1495,
+          "longitude": -90.049,
+          "score": 94.08376103529852
+        },
+        {
+          "displayName": "Memphis, Florida",
+          "latitude": 27.5359,
+          "longitude": -82.5612,
+          "score": 84.4740716454165
+        },
+        {
+          "displayName": "Memphis, Texas",
+          "latitude": 34.7248,
+          "longitude": -100.534,
+          "score": 81.65105392285764
+        }
+      ]
+    },
+    {
+      "rawLocation": "Miami",
+      "normalizedQuery": "Miami",
+      "dates": [
+        "2026-03-05",
+        "2026-03-07",
+        "2026-03-11",
+        "2026-03-12",
+        "2026-03-14",
+        "2026-03-16",
+        "2026-03-24"
+      ],
+      "status": "review",
+      "reason": "Best offline match is usable but still needs a quick human review.",
+      "attemptedQueries": [
+        "Miami"
+      ],
+      "matches": [
+        {
+          "displayName": "Miami, Florida",
+          "latitude": 25.7743,
+          "longitude": -80.1937,
+          "score": 93.22221264314474
+        },
+        {
+          "displayName": "Miami, Oklahoma",
+          "latitude": 36.8745,
+          "longitude": -94.8775,
+          "score": 85.66960970211886
+        },
+        {
+          "displayName": "Miami, Australia",
+          "latitude": -28.0717,
+          "longitude": 153.4416,
+          "score": 84.27547475579311
+        }
+      ]
+    },
+    {
+      "rawLocation": "Monaco",
+      "normalizedQuery": "Monaco",
+      "dates": [
+        "2026-03-08"
+      ],
+      "status": "review",
+      "reason": "Resolved to a country centroid rather than an exact place.",
+      "attemptedQueries": [
+        "Monaco"
+      ],
+      "matches": [
+        {
+          "displayName": "Monaco",
+          "latitude": 43.7333,
+          "longitude": 7.4,
+          "score": 50
+        }
+      ]
+    },
+    {
+      "rawLocation": "Moscow",
+      "normalizedQuery": "Moscow",
+      "dates": [
+        "2026-03-16"
+      ],
+      "status": "review",
+      "reason": "Best offline match is usable but still needs a quick human review.",
+      "attemptedQueries": [
+        "Moscow"
+      ],
+      "matches": [
+        {
+          "displayName": "Moscow, Russia",
+          "latitude": 55.7522,
+          "longitude": 37.6156,
+          "score": 95
+        },
+        {
+          "displayName": "Moscow, United States",
+          "latitude": 46.7324,
+          "longitude": -117.0002,
+          "score": 86.99499198249597
+        },
+        {
+          "displayName": "Moscow, United States",
+          "latitude": 41.3368,
+          "longitude": -75.5185,
+          "score": 81.46238796833892
+        }
+      ]
+    },
+    {
+      "rawLocation": "Mountain View, Calif.",
+      "normalizedQuery": "Mountain View, California",
+      "dates": [
+        "2026-03-15"
+      ],
+      "status": "review",
+      "reason": "Best offline match is usable but still needs a quick human review.",
+      "attemptedQueries": [
+        "Mountain View, California",
+        "Mountain View",
+        "California"
+      ],
+      "matches": [
+        {
+          "displayName": "Mountain View, California",
+          "latitude": 37.386,
+          "longitude": -122.0838,
+          "score": 159.52725232720675
+        },
+        {
+          "displayName": "Mountain View, California",
+          "latitude": 38.0088,
+          "longitude": -122.1175,
+          "score": 151.8764886910867
+        },
+        {
+          "displayName": "Mountain View, United States",
+          "latitude": 19.5558,
+          "longitude": -155.1081,
+          "score": 117.96919830540637
+        }
+      ]
+    },
+    {
+      "rawLocation": "Nabi Sheet, Lebanon",
+      "normalizedQuery": "Nabi Sheet, Lebanon",
+      "dates": [
+        "2026-03-07",
+        "2026-03-08"
+      ],
+      "status": "review",
+      "reason": "Best offline match is usable but still needs a quick human review.",
+      "attemptedQueries": [
+        "Nabi Sheet, Lebanon",
+        "Nabi Sheet",
+        "Lebanon"
+      ],
+      "matches": [
+        {
+          "displayName": "Lebanon, United States",
+          "latitude": 36.2081,
+          "longitude": -86.2911,
+          "score": 87.40455988923318
+        },
+        {
+          "displayName": "Lebanon, United States",
+          "latitude": 40.3409,
+          "longitude": -76.4113,
+          "score": 87.03567931095779
+        },
+        {
+          "displayName": "Lebanon, United States",
+          "latitude": 39.4353,
+          "longitude": -84.203,
+          "score": 86.57186450004664
+        }
+      ]
+    },
+    {
+      "rawLocation": "Nashville",
+      "normalizedQuery": "Nashville",
+      "dates": [
+        "2026-03-07",
+        "2026-03-09",
+        "2026-03-19",
+        "2026-03-22",
+        "2026-03-25"
+      ],
+      "status": "review",
+      "reason": "Best offline match is usable but still needs a quick human review.",
+      "attemptedQueries": [
+        "Nashville"
+      ],
+      "matches": [
+        {
+          "displayName": "Nashville, United States",
+          "latitude": 36.1659,
+          "longitude": -86.7844,
+          "score": 93.62487138010358
+        },
+        {
+          "displayName": "Nashville, North Carolina",
+          "latitude": 35.9746,
+          "longitude": -77.9655,
+          "score": 83.68636088267772
+        },
+        {
+          "displayName": "Nashville, Georgia",
+          "latitude": 31.2074,
+          "longitude": -83.2502,
+          "score": 83.43094617122011
+        }
+      ]
+    },
+    {
+      "rawLocation": "Newark",
+      "normalizedQuery": "Newark",
+      "dates": [
+        "2026-03-24"
+      ],
+      "status": "review",
+      "reason": "Best offline match is usable but still needs a quick human review.",
+      "attemptedQueries": [
+        "Newark"
+      ],
+      "matches": [
+        {
+          "displayName": "Newark, United States",
+          "latitude": 40.7357,
+          "longitude": -74.1724,
+          "score": 92.25082198616887
+        },
+        {
+          "displayName": "Newark, United States",
+          "latitude": 40.0581,
+          "longitude": -82.4013,
+          "score": 88.40561800011314
+        },
+        {
+          "displayName": "Newark, California",
+          "latitude": 37.5297,
+          "longitude": -122.0402,
+          "score": 88.28226389494816
+        }
+      ]
+    },
+    {
+      "rawLocation": "northern Cameroon",
+      "normalizedQuery": "northern Cameroon",
+      "dates": [
+        "2026-03-23"
+      ],
+      "status": "review",
+      "reason": "Resolved to a regional centroid rather than an exact place.",
+      "attemptedQueries": [
+        "northern Cameroon"
+      ],
+      "matches": [
+        {
+          "displayName": "Northern Cameroon",
+          "latitude": 8.6,
+          "longitude": 13.6,
+          "score": 55
+        }
+      ]
+    },
+    {
+      "rawLocation": "Ottawa",
+      "normalizedQuery": "Ottawa",
+      "dates": [
+        "2026-03-23"
+      ],
+      "status": "review",
+      "reason": "Best offline match is usable but still needs a quick human review.",
+      "attemptedQueries": [
+        "Ottawa"
+      ],
+      "matches": [
+        {
+          "displayName": "Ottawa, Canada",
+          "latitude": 45.4112,
+          "longitude": -75.6981,
+          "score": 94.54812776790345
+        },
+        {
+          "displayName": "Ottawa, Illinois",
+          "latitude": 41.3456,
+          "longitude": -88.8426,
+          "score": 86.31735183030592
+        },
+        {
+          "displayName": "Ottawa, United States",
+          "latitude": 38.6156,
+          "longitude": -95.2678,
+          "score": 85.46500598342375
+        }
+      ]
+    },
+    {
+      "rawLocation": "Paris",
+      "normalizedQuery": "Paris",
+      "dates": [
+        "2026-03-05",
+        "2026-03-06",
+        "2026-03-07",
+        "2026-03-08",
+        "2026-03-09",
+        "2026-03-10",
+        "2026-03-11",
+        "2026-03-15",
+        "2026-03-22",
+        "2026-03-23",
+        "2026-03-24"
+      ],
+      "status": "review",
+      "reason": "Best offline match is usable but still needs a quick human review.",
+      "attemptedQueries": [
+        "Paris"
+      ],
+      "matches": [
+        {
+          "displayName": "Paris, France",
+          "latitude": 48.8534,
+          "longitude": 2.3488,
+          "score": 95
+        },
+        {
+          "displayName": "Paris, Texas",
+          "latitude": 33.6609,
+          "longitude": -95.5555,
+          "score": 86.97076938441029
+        },
+        {
+          "displayName": "Paris, Canada",
+          "latitude": 43.2,
+          "longitude": -80.3833,
+          "score": 85.24182052639944
+        }
+      ]
+    },
+    {
+      "rawLocation": "Pasadena",
+      "normalizedQuery": "Pasadena",
+      "dates": [
+        "2026-03-18"
+      ],
+      "status": "review",
+      "reason": "Best offline match is usable but still needs a quick human review.",
+      "attemptedQueries": [
+        "Pasadena"
+      ],
+      "matches": [
+        {
+          "displayName": "Pasadena, Texas",
+          "latitude": 29.6911,
+          "longitude": -95.2091,
+          "score": 90.93456988490436
+        },
+        {
+          "displayName": "Pasadena, California",
+          "latitude": 34.1478,
+          "longitude": -118.1445,
+          "score": 90.76527664046579
+        },
+        {
+          "displayName": "Pasadena, Maryland",
+          "latitude": 39.1073,
+          "longitude": -76.5711,
+          "score": 86.92695877107693
+        }
+      ]
+    },
+    {
+      "rawLocation": "Rome",
+      "normalizedQuery": "Rome",
+      "dates": [
+        "2026-03-12",
+        "2026-03-13",
+        "2026-03-15",
+        "2026-03-17",
+        "2026-03-18",
+        "2026-03-21",
+        "2026-03-23",
+        "2026-03-24",
+        "2026-03-25"
+      ],
+      "status": "review",
+      "reason": "Best offline match is usable but still needs a quick human review.",
+      "attemptedQueries": [
+        "Rome"
+      ],
+      "matches": [
+        {
+          "displayName": "Rome, Italy",
+          "latitude": 41.8919,
+          "longitude": 12.5113,
+          "score": 95
+        },
+        {
+          "displayName": "Rome, Georgia",
+          "latitude": 34.257,
+          "longitude": -85.1647,
+          "score": 87.800968335021
+        },
+        {
+          "displayName": "Rome, New York",
+          "latitude": 43.2129,
+          "longitude": -75.4557,
+          "score": 87.56435546019662
+        }
+      ]
+    },
+    {
+      "rawLocation": "Rosario, the Philippines",
+      "normalizedQuery": "Rosario, Philippines",
+      "dates": [
+        "2026-03-20"
+      ],
+      "status": "review",
+      "reason": "Best offline match is usable but still needs a quick human review.",
+      "attemptedQueries": [
+        "Rosario, Philippines",
+        "Rosario",
+        "Philippines"
+      ],
+      "matches": [
+        {
+          "displayName": "Rosario, Philippines",
+          "latitude": 13.8635,
+          "longitude": 122.2731,
+          "score": 118.72693560660005
+        },
+        {
+          "displayName": "Rosario, Philippines",
+          "latitude": 11.5832,
+          "longitude": 122.3019,
+          "score": 116.82650374318993
+        },
+        {
+          "displayName": "Rosario, Philippines",
+          "latitude": 16.2304,
+          "longitude": 120.4863,
+          "score": 100
+        }
+      ]
+    },
+    {
+      "rawLocation": "Sacramento",
+      "normalizedQuery": "Sacramento",
+      "dates": [
+        "2026-03-13",
+        "2026-03-18",
+        "2026-03-19",
+        "2026-03-24"
+      ],
+      "status": "review",
+      "reason": "Best offline match is usable but still needs a quick human review.",
+      "attemptedQueries": [
+        "Sacramento"
+      ],
+      "matches": [
+        {
+          "displayName": "Sacramento, California",
+          "latitude": 38.5816,
+          "longitude": -121.4944,
+          "score": 93.45413781745174
+        },
+        {
+          "displayName": "Sacramento, Brazil",
+          "latitude": -19.8653,
+          "longitude": -47.44,
+          "score": 86.15007204802129
+        },
+        {
+          "displayName": "Sacramento, Mexico",
+          "latitude": 27.0026,
+          "longitude": -101.7246,
+          "score": 81.80675012176133
+        }
+      ]
+    },
+    {
+      "rawLocation": "San Francisco",
+      "normalizedQuery": "San Francisco",
+      "dates": [
+        "2026-03-05",
+        "2026-03-08",
+        "2026-03-09",
+        "2026-03-10",
+        "2026-03-12",
+        "2026-03-15",
+        "2026-03-16",
+        "2026-03-17",
+        "2026-03-18",
+        "2026-03-19",
+        "2026-03-20",
+        "2026-03-24",
+        "2026-03-25"
+      ],
+      "status": "review",
+      "reason": "Best offline match is usable but still needs a quick human review.",
+      "attemptedQueries": [
+        "San Francisco"
+      ],
+      "matches": [
+        {
+          "displayName": "San Francisco, California",
+          "latitude": 37.7749,
+          "longitude": -122.4194,
+          "score": 94.68462109051274
+        },
+        {
+          "displayName": "San Francisco, Argentina",
+          "latitude": -31.428,
+          "longitude": -62.0827,
+          "score": 88.85657751202409
+        },
+        {
+          "displayName": "San Francisco, Costa Rica",
+          "latitude": 9.993,
+          "longitude": -84.1293,
+          "score": 88.73799113520099
+        }
+      ]
+    },
+    {
+      "rawLocation": "San Martín, northern Ecuador",
+      "normalizedQuery": "San Martín, northern Ecuador",
+      "dates": [
+        "2026-03-24"
+      ],
+      "status": "review",
+      "reason": "Best offline match is usable but still needs a quick human review.",
+      "attemptedQueries": [
+        "San Martín, northern Ecuador",
+        "San Martín",
+        "northern Ecuador"
+      ],
+      "matches": [
+        {
+          "displayName": "San Martín, Argentina",
+          "latitude": -33.081,
+          "longitude": -68.4681,
+          "score": 89.58358538799406
+        },
+        {
+          "displayName": "San Martín, El Salvador",
+          "latitude": 13.7833,
+          "longitude": -88.9167,
+          "score": 87.97538578503848
+        },
+        {
+          "displayName": "San Martín, Colombia",
+          "latitude": 3.6964,
+          "longitude": -73.6996,
+          "score": 86.05747155829798
+        }
+      ]
+    },
+    {
+      "rawLocation": "Senegal",
+      "normalizedQuery": "Senegal",
+      "dates": [
+        "2026-03-16"
+      ],
+      "status": "review",
+      "reason": "Resolved to a country centroid rather than an exact place.",
+      "attemptedQueries": [
+        "Senegal"
+      ],
+      "matches": [
+        {
+          "displayName": "Senegal",
+          "latitude": 14,
+          "longitude": -14,
+          "score": 50
+        }
+      ]
+    },
+    {
+      "rawLocation": "Sydney",
+      "normalizedQuery": "Sydney",
+      "dates": [
+        "2026-03-15",
+        "2026-03-24"
+      ],
+      "status": "review",
+      "reason": "Best offline match is usable but still needs a quick human review.",
+      "attemptedQueries": [
+        "Sydney"
+      ],
+      "matches": [
+        {
+          "displayName": "Sydney, Australia",
+          "latitude": -33.8678,
+          "longitude": 151.2073,
+          "score": 95
+        },
+        {
+          "displayName": "Sydney, Canada",
+          "latitude": 46.1351,
+          "longitude": -60.1831,
+          "score": 90.12589418019235
+        }
+      ]
+    },
+    {
+      "rawLocation": "U.S. District Court, San Francisco",
+      "normalizedQuery": "U.S. District Court, San Francisco",
+      "dates": [
+        "2026-03-20"
+      ],
+      "status": "review",
+      "reason": "Best offline match is usable but still needs a quick human review.",
+      "attemptedQueries": [
+        "U.S. District Court, San Francisco",
+        "U.S. District Court",
+        "San Francisco"
+      ],
+      "matches": [
+        {
+          "displayName": "San Francisco, California",
+          "latitude": 37.7749,
+          "longitude": -122.4194,
+          "score": 94.68462109051274
+        },
+        {
+          "displayName": "San Francisco, Argentina",
+          "latitude": -31.428,
+          "longitude": -62.0827,
+          "score": 88.85657751202409
+        },
+        {
+          "displayName": "San Francisco, Costa Rica",
+          "latitude": 9.993,
+          "longitude": -84.1293,
+          "score": 88.73799113520099
+        }
+      ]
+    },
+    {
+      "rawLocation": "Wadsworth, Ohio",
+      "normalizedQuery": "Wadsworth, Ohio",
+      "dates": [
+        "2026-03-22"
+      ],
+      "status": "review",
+      "reason": "Best offline match is usable but still needs a quick human review.",
+      "attemptedQueries": [
+        "Wadsworth, Ohio",
+        "Wadsworth",
+        "Ohio"
+      ],
+      "matches": [
+        {
+          "displayName": "Wadsworth, United States",
+          "latitude": 41.0256,
+          "longitude": -81.7298,
+          "score": 86.69835012122228
+        },
+        {
+          "displayName": "Wadsworth, Illinois",
+          "latitude": 42.4286,
+          "longitude": -87.924,
+          "score": 82.8643580110024
+        }
+      ]
+    },
+    {
+      "rawLocation": "western Indiana",
+      "normalizedQuery": "western Indiana",
+      "dates": [
+        "2026-03-11"
+      ],
+      "status": "review",
+      "reason": "Resolved to a regional centroid rather than an exact place.",
+      "attemptedQueries": [
+        "western Indiana"
+      ],
+      "matches": [
+        {
+          "displayName": "Western Indiana",
+          "latitude": 39.7684,
+          "longitude": -87.3,
+          "score": 55
+        }
+      ]
+    },
+    {
+      "rawLocation": "Westminster Magistrates’ Court, London",
+      "normalizedQuery": "Westminster Magistrates' Court, London",
+      "dates": [
+        "2026-03-19"
+      ],
+      "status": "review",
+      "reason": "Best offline match is usable but still needs a quick human review.",
+      "attemptedQueries": [
+        "Westminster Magistrates' Court, London",
+        "Westminster Magistrates' Court",
+        "London"
+      ],
+      "matches": [
+        {
+          "displayName": "London, England",
+          "latitude": 51.5085,
+          "longitude": -0.1257,
+          "score": 95
+        },
+        {
+          "displayName": "London, Canada",
+          "latitude": 42.9834,
+          "longitude": -81.233,
+          "score": 92.70018254413252
+        },
+        {
+          "displayName": "London, United States",
+          "latitude": 39.8865,
+          "longitude": -83.4483,
+          "score": 85.01320574500019
+        }
+      ]
+    },
+    {
+      "rawLocation": "Yucatán Peninsula, Mexico",
+      "normalizedQuery": "Yucatán Peninsula, Mexico",
+      "dates": [
+        "2026-03-20"
+      ],
+      "status": "review",
+      "reason": "Best offline match is usable but still needs a quick human review.",
+      "attemptedQueries": [
+        "Yucatán Peninsula, Mexico",
+        "Yucatán Peninsula",
+        "Mexico"
+      ],
+      "matches": [
+        {
+          "displayName": "Mexico, Philippines",
+          "latitude": 15.0646,
+          "longitude": 120.7198,
+          "score": 88.20215871841674
+        },
+        {
+          "displayName": "Mexico, United States",
+          "latitude": 39.1698,
+          "longitude": -91.8829,
+          "score": 85.33367897675464
+        },
+        {
+          "displayName": "Mexico, United States",
+          "latitude": 44.5609,
+          "longitude": -70.5453,
+          "score": 81.20773240298274
+        }
+      ]
+    }
+  ]
+}

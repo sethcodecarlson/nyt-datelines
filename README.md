@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NYT Datelines
+
+A fresh [Next.js](https://nextjs.org) app running on Node.js, set up to be easy to develop locally, push to GitHub, and deploy on Vercel.
 
 ## Getting Started
 
-First, run the development server:
+Install dependencies and start the development server:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The main page lives in `src/app/page.tsx`.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Scripts
 
-## Learn More
+```bash
+npm run dev
+npm run build
+npm run start
+npm run lint
+npm run generate:data
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Push to GitHub
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Create an empty GitHub repository, then connect this local repo:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+git remote add origin <your-github-repo-url>
+git push -u origin main
+```
 
-## Deploy on Vercel
+## Deploy to Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Push your code to GitHub.
+2. In Vercel, choose **Add New Project**.
+3. Import the GitHub repository.
+4. Keep the default Next.js settings and deploy.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Every push to `main` can then trigger a fresh Vercel deployment automatically.
+
+## Tech Stack
+
+- Next.js 16
+- React 19
+- TypeScript
+- Tailwind CSS 4
+- ESLint
+
+## Notes
+
+- The project already includes a local Git repository.
+- Vercel supports this stack out of the box, so no custom hosting config is required for the starter app.
+- `npm run generate:data` reads `FINAL-dateline-set.csv`, generates app data in `src/data/dateline-data.json`, and writes the review list to `data/dateline-review.json`.
+- If you want, the next step can be setting up your real homepage, routes, API endpoints, or database integration.

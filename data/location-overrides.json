@@ -1,0 +1,227 @@
+{
+  "Afghanistan-Iran border": {
+    "label": "Yazdan, Iran",
+    "latitude": 33.8675,
+    "longitude": 51.8247
+  },
+  "Akrotiri, Cyprus": {
+    "label": "Akrotiri, Cyprus",
+    "latitude": 34.6258,
+    "longitude": 32.9524
+  },
+  "Ashland, Ky.": {
+    "label": "Ashland, Kentucky",
+    "latitude": 38.4784,
+    "longitude": -82.6379
+  },
+  "Cambridge Bay, Nunavut, Canada": {
+    "label": "Cambridge Bay, Nunavut, Canada",
+    "latitude": 69.1171,
+    "longitude": -105.0534
+  },
+  "Chonburi, Thailand": {
+    "label": "Chonburi, Thailand",
+    "latitude": 13.3611,
+    "longitude": 100.9847
+  },
+  "Cluj, Romania": {
+    "label": "Cluj-Napoca, Romania",
+    "latitude": 46.7712,
+    "longitude": 23.6236
+  },
+  "Death Valley, Calif.": {
+    "label": "Death Valley, California",
+    "latitude": 36.5054,
+    "longitude": -117.0794
+  },
+  "Diyarbakir, Turkey": {
+    "label": "Diyarbakir, Turkey",
+    "latitude": 37.9144,
+    "longitude": 40.2306
+  },
+  "Fort Chipewyan, Alberta": {
+    "label": "Fort Chipewyan, Alberta",
+    "latitude": 58.767,
+    "longitude": -111.1176
+  },
+  "Fort McKay, Alberta": {
+    "label": "Fort McKay, Alberta",
+    "latitude": 57.1846,
+    "longitude": -111.6405
+  },
+  "Genesee County, N.Y.": {
+    "label": "Genesee County, New York",
+    "latitude": 43,
+    "longitude": -78.19
+  },
+  "Geneva": {
+    "label": "Geneva, Switzerland",
+    "latitude": 46.2044,
+    "longitude": 6.1432
+  },
+  "Grindavik, Iceland": {
+    "label": "Grindavik, Iceland",
+    "latitude": 63.8424,
+    "longitude": -22.4338
+  },
+  "Guantánamo Bay, Cuba": {
+    "label": "Guantanamo Bay, Cuba",
+    "latitude": 19.906,
+    "longitude": -75.128
+  },
+  "Herat, Afghanistan": {
+    "label": "Herat, Afghanistan",
+    "latitude": 34.3529,
+    "longitude": 62.204
+  },
+  "Husavik, Iceland": {
+    "label": "Husavik, Iceland",
+    "latitude": 66.0449,
+    "longitude": -17.3389
+  },
+  "Israel’s border with Lebanon": {
+    "label": "Ramiyah, Lebanon",
+    "latitude": 33.1108,
+    "longitude": 35.3106
+  },
+  "Jinack, Gambia": {
+    "label": "Jinack Island, Gambia",
+    "latitude": 13.1833,
+    "longitude": -16.7667
+  },
+  "Kankakee County, Ill.": {
+    "label": "Kankakee County, Illinois",
+    "latitude": 41.1377,
+    "longitude": -87.8615
+  },
+  "Khirbet Abu Falah, the West Bank": {
+    "label": "Khirbet Abu Falah, West Bank",
+    "latitude": 32.0156,
+    "longitude": 35.3014
+  },
+  "Khirbet Humsa, the West Bank": {
+    "label": "Khirbet Humsa al-Fawqa, West Bank",
+    "latitude": 32.2648,
+    "longitude": 35.4369
+  },
+  "Kiryat Shmona, Israel": {
+    "label": "Kiryat Shmona, Israel",
+    "latitude": 33.2073,
+    "longitude": 35.5728
+  },
+  "Lower Mainland, British Columbia": {
+    "label": "Lower Mainland, British Columbia",
+    "latitude": 49.2463,
+    "longitude": -122.9805
+  },
+  "Minneapolis-St. Paul": {
+    "label": "Minneapolis-St. Paul",
+    "latitude": 44.9537,
+    "longitude": -93.09
+  },
+  "Mississippi’s Second Congressional District": {
+    "label": "Natchez, Mississippi",
+    "latitude": 31.5604,
+    "longitude": -91.4032
+  },
+  "Montreal": {
+    "label": "Montreal, Quebec, Canada",
+    "latitude": 45.5017,
+    "longitude": -73.5673
+  },
+  "New York": {
+    "label": "New York City",
+    "latitude": 40.7128,
+    "longitude": -74.006
+  },
+  "Oahu": {
+    "label": "Oahu, Hawaii",
+    "latitude": 21.4389,
+    "longitude": -158.0001
+  },
+  "Pacific Palisades, Calif.": {
+    "label": "Pacific Palisades, California",
+    "latitude": 34.0827,
+    "longitude": -118.5357
+  },
+  "Rehovot, Israel": {
+    "label": "Rehovot, Israel",
+    "latitude": 31.8948,
+    "longitude": 34.8113
+  },
+  "Rockingham County, N.C.": {
+    "label": "Rockingham County, North Carolina",
+    "latitude": 36.3956,
+    "longitude": -79.7754
+  },
+  "Sakunami, Japan": {
+    "label": "Sendai, Miyagi, Japan",
+    "latitude": 38.2682,
+    "longitude": 140.8694
+  },
+  "secret site in Ukraine": {
+    "label": "Kiev, Ukraine",
+    "latitude": 50.4501,
+    "longitude": 30.5234
+  },
+  "southeastern Minnesota": {
+    "label": "Southeastern Minnesota",
+    "latitude": 43.91,
+    "longitude": -92.52
+  },
+  "Stavenhagen, Germany": {
+    "label": "Stavenhagen, Germany",
+    "latitude": 53.6976,
+    "longitude": 12.5658
+  },
+  "Tammun, the West Bank": {
+    "label": "Tammun, West Bank",
+    "latitude": 32.2833,
+    "longitude": 35.3833
+  },
+  "the Faroe Islands": {
+    "label": "Faroe Islands",
+    "latitude": 62,
+    "longitude": -6.8
+  },
+  "the island of Montserrat": {
+    "label": "Montserrat",
+    "latitude": 16.7425,
+    "longitude": -62.1874
+  },
+  "Torkham, the border of Pakistan and Afghanistan": {
+    "label": "Torkham",
+    "latitude": 34.1217,
+    "longitude": 71.1031
+  },
+  "Velykyi Doroshiv, Ukraine": {
+    "label": "Velykyi Doroshiv, Ukraine",
+    "latitude": 49.9509,
+    "longitude": 24.0587
+  },
+  "Washington, DC": {
+    "label": "Washington, DC",
+    "latitude": 38.9072,
+    "longitude": -77.0369
+  },
+  "West Bloomfield, Mich.": {
+    "label": "West Bloomfield, Michigan",
+    "latitude": 42.5684,
+    "longitude": -83.3833
+  },
+  "Whatcom County, Wash.": {
+    "label": "Whatcom County, Washington",
+    "latitude": 48.8465,
+    "longitude": -121.719
+  },
+  "Wayne County, Utah": {
+    "label": "Wayne County, Utah",
+    "latitude": 38.36,
+    "longitude": -110.9
+  },
+  "Zaporizhzhia, Ukraine": {
+    "label": "Zaporizhzhia, Ukraine",
+    "latitude": 47.8388,
+    "longitude": 35.1396
+  }
+}
