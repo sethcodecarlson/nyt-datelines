@@ -155,6 +155,7 @@ export function DatelineExplorer() {
   );
   const [animationStartedAt, setAnimationStartedAt] = useState<number | null>(null);
   const [animationElapsedMs, setAnimationElapsedMs] = useState(0);
+  const [animationSpeedMultiplier, setAnimationSpeedMultiplier] = useState(1);
 
   const animationActive = Boolean(animationPlan && animationStartedAt !== null);
 
@@ -166,7 +167,8 @@ export function DatelineExplorer() {
     let frameId = 0;
 
     const tick = () => {
-      const elapsedMs = performance.now() - animationStartedAt;
+      const elapsedMs =
+        (performance.now() - animationStartedAt) * animationSpeedMultiplier;
       const totalDuration =
         animationPlan?.[animationPlan.length - 1]?.endOffset ?? 0;
 
@@ -184,7 +186,7 @@ export function DatelineExplorer() {
     frameId = window.requestAnimationFrame(tick);
 
     return () => window.cancelAnimationFrame(frameId);
-  }, [animationActive, animationPlan, animationStartedAt]);
+  }, [animationActive, animationPlan, animationSpeedMultiplier, animationStartedAt]);
 
   const animatedDateKeys = useMemo(() => {
     if (!animationPlan) {
@@ -306,9 +308,10 @@ export function DatelineExplorer() {
     setAnimationPlan(null);
     setAnimationStartedAt(null);
     setAnimationElapsedMs(0);
+    setAnimationSpeedMultiplier(1);
   }
 
-  function toggleAnimation() {
+  function toggleAnimation(speedMultiplier = 1) {
     if (animationActive) {
       stopAnimation();
       return;
@@ -316,6 +319,7 @@ export function DatelineExplorer() {
 
     setSelectedDates([]);
     setAnimationElapsedMs(0);
+    setAnimationSpeedMultiplier(speedMultiplier);
     setAnimationPlan(buildAnimationPlan());
     setAnimationStartedAt(performance.now());
   }
@@ -392,13 +396,20 @@ export function DatelineExplorer() {
                   March 2026
                 </h2>
               </div>
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-2">
                 <button
                   type="button"
-                  onClick={toggleAnimation}
+                  onClick={() => toggleAnimation(1)}
                   className="rounded-full border border-stone-700 bg-stone-900 px-4 py-2 text-sm font-medium text-stone-200 transition hover:bg-stone-800"
                 >
                   {animationActive ? "Stop animation" : "Play animation"}
+                </button>
+                <button
+                  type="button"
+                  onClick={() => toggleAnimation(2)}
+                  className="rounded-full border border-stone-700 bg-stone-900 px-4 py-2 text-sm font-medium text-stone-200 transition hover:bg-stone-800"
+                >
+                  {animationActive ? "Stop animation" : "X2 speed"}
                 </button>
                 <button
                   type="button"
@@ -406,7 +417,7 @@ export function DatelineExplorer() {
                   className="rounded-full border border-stone-700 bg-stone-900 px-4 py-2 text-sm font-medium text-stone-200 transition hover:bg-stone-800 disabled:cursor-not-allowed disabled:opacity-40"
                   disabled={selectedDates.length === 0}
                 >
-                  Clear selection
+                  Reset
                 </button>
               </div>
             </div>
