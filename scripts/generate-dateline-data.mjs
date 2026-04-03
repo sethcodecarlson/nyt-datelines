@@ -4,11 +4,14 @@ import allTheCities from "all-the-cities";
 import worldCountries from "world-countries";
 
 const projectRoot = process.cwd();
-const inputPath = path.join(projectRoot, "FINAL-dateline-set.csv");
+const inputPath = path.join(projectRoot, "V2-dateline-set.csv");
 const outputPath = path.join(projectRoot, "src/data/dateline-data.json");
 const reviewPath = path.join(projectRoot, "data/dateline-review.json");
 const overridesPath = path.join(projectRoot, "data/location-overrides.json");
 const cachePath = path.join(projectRoot, "data/geocode-cache.json");
+const startDateKey = "2026-03-01";
+const endDateKey = "2026-03-28";
+const excludedDateKeys = new Set(["2026-03-02"]);
 
 const stateAbbreviations = new Map([
   ["Ala.", "Alabama"],
@@ -29,8 +32,11 @@ const stateAbbreviations = new Map([
   ["N.M.", "New Mexico"],
   ["N.Y.", "New York"],
   ["Okla.", "Oklahoma"],
+  ["Pa.", "Pennsylvania"],
   ["S.C.", "South Carolina"],
+  ["Va.", "Virginia"],
   ["Wash.", "Washington"],
+  ["Ore.", "Oregon"],
 ]);
 
 const adminAliases = new Map([
@@ -52,10 +58,12 @@ const adminAliases = new Map([
   ["michigan", { countryCode: "US", adminCode: "MI", label: "Michigan" }],
   ["minnesota", { countryCode: "US", adminCode: "MN", label: "Minnesota" }],
   ["mississippi", { countryCode: "US", adminCode: "MS", label: "Mississippi" }],
+  ["maine", { countryCode: "US", adminCode: "ME", label: "Maine" }],
   ["new mexico", { countryCode: "US", adminCode: "NM", label: "New Mexico" }],
   ["new york", { countryCode: "US", adminCode: "NY", label: "New York" }],
   ["north carolina", { countryCode: "US", adminCode: "NC", label: "North Carolina" }],
   ["oklahoma", { countryCode: "US", adminCode: "OK", label: "Oklahoma" }],
+  ["oregon", { countryCode: "US", adminCode: "OR", label: "Oregon" }],
   ["south carolina", { countryCode: "US", adminCode: "SC", label: "South Carolina" }],
   ["texas", { countryCode: "US", adminCode: "TX", label: "Texas" }],
   ["utah", { countryCode: "US", adminCode: "UT", label: "Utah" }],
@@ -66,12 +74,15 @@ const adminAliases = new Map([
   ["nunavut", { countryCode: "CA", adminCode: "NU", label: "Nunavut" }],
   ["northwest territories", { countryCode: "CA", adminCode: "NT", label: "Northwest Territories" }],
   ["ontario", { countryCode: "CA", adminCode: "ON", label: "Ontario" }],
+  ["quebec", { countryCode: "CA", adminCode: "QC", label: "Quebec" }],
   ["england", { countryCode: "GB", adminCode: "ENG", label: "England" }],
 ]);
 
 const regionCentroids = {
+  delaware: { label: "Delaware", latitude: 38.9108, longitude: -75.5277 },
   florida: { label: "Florida", latitude: 27.6648, longitude: -81.5158 },
   iowa: { label: "Iowa", latitude: 41.878, longitude: -93.0977 },
+  minnesota: { label: "Minnesota", latitude: 46.7296, longitude: -94.6859 },
   "central virginia": {
     label: "Central Virginia",
     latitude: 37.5407,
@@ -91,6 +102,16 @@ const regionCentroids = {
     label: "Northern Cameroon",
     latitude: 8.6,
     longitude: 13.6,
+  },
+  "northeastern wisconsin": {
+    label: "Northeastern Wisconsin",
+    latitude: 44.8,
+    longitude: -88.1,
+  },
+  "colorado rockies": {
+    label: "Colorado Rockies",
+    latitude: 39.1178,
+    longitude: -106.4454,
   },
   "eastern ukraine": {
     label: "Eastern Ukraine",
@@ -174,8 +195,10 @@ function normalizeLocationName(location) {
 }
 
 function normalizeDate(dateString) {
-  const [month, day, year] = dateString.split("/").map(Number);
-  return `${year}-${String(month).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
+  const [monthPart, dayPart, yearPart] = dateString.split("/").map(Number);
+  const normalizedYear = yearPart < 100 ? 2000 + yearPart : yearPart;
+
+  return `${normalizedYear}-${String(monthPart).padStart(2, "0")}-${String(dayPart).padStart(2, "0")}`;
 }
 
 function labelForDate(dateKey) {
@@ -475,12 +498,37 @@ async function main() {
   const csv = await fs.readFile(inputPath, "utf8");
   const overrides = await readJson(overridesPath, {});
   const lines = csv.trim().split(/\r?\n/);
-  const rows = lines.slice(1).map(parseCsvLine).map(([rawLocation, rawDate]) => ({
-    rawLocation,
-    rawDate,
-    dateKey: normalizeDate(rawDate),
-    normalizedLocation: normalizeLocationName(rawLocation),
-  }));
+  const headers = parseCsvLine(lines[0]);
+  const rows = lines
+    .slice(1)
+    .map(parseCsvLine)
+    .map((values) =>
+      Object.fromEntries(
+        headers.map((header, index) => [header, values[index] ?? ""]),
+      ),
+    )
+    .map((row) => {
+      const rawLocation = row.Location?.trim() || "";
+      const rawDate = (row.Pubdate || row.Date || "").trim();
+      const dateKey = normalizeDate(rawDate);
+
+      return {
+        rawLocation,
+        rawDate,
+        headline: (row.Headline || "").trim(),
+        url: (row.URL || "").trim(),
+        dateKey,
+        normalizedLocation: normalizeLocationName(rawLocation),
+      };
+    })
+    .filter(
+      (row) =>
+        row.rawLocation &&
+        row.rawDate &&
+        row.dateKey >= startDateKey &&
+        row.dateKey <= endDateKey &&
+        !excludedDateKeys.has(row.dateKey),
+    );
 
   const uniqueLocations = [...new Set(rows.map((row) => row.rawLocation))];
   const countryLookup = buildCountryLookup();
@@ -584,6 +632,8 @@ async function main() {
       dates[row.dateKey] = {
         label: labelForDate(row.dateKey),
         locationIds: [],
+        locationArticleCounts: {},
+        locationArticles: {},
         rawLocationCount: 0,
       };
     }
@@ -597,6 +647,19 @@ async function main() {
 
     if (!dates[row.dateKey].locationIds.includes(resolution.locationId)) {
       dates[row.dateKey].locationIds.push(resolution.locationId);
+    }
+
+    dates[row.dateKey].locationArticleCounts[resolution.locationId] =
+      (dates[row.dateKey].locationArticleCounts[resolution.locationId] || 0) + 1;
+    if (!dates[row.dateKey].locationArticles[resolution.locationId]) {
+      dates[row.dateKey].locationArticles[resolution.locationId] = [];
+    }
+
+    if (row.headline && row.url) {
+      dates[row.dateKey].locationArticles[resolution.locationId].push({
+        headline: row.headline,
+        url: row.url,
+      });
     }
 
     const locationRecord = locationRecords[resolution.locationId];

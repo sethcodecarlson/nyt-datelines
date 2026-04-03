@@ -12,6 +12,13 @@ type MarkerSummary = {
   label: string;
   latitude: number;
   longitude: number;
+  articleCount: number;
+  articles: Array<{
+    headline: string;
+    url: string;
+    dateKey: string;
+  }>;
+  hasTooManyHeadlines: boolean;
   sourceDates: string[];
   opacity?: number;
 };
@@ -20,7 +27,9 @@ type TooltipState = {
   label: string;
   x: number;
   y: number;
-  sourceDates: string[];
+  articleCount: number;
+  articles: MarkerSummary["articles"];
+  hasTooManyHeadlines: boolean;
 };
 
 type WorldFeature = GeoJSON.Feature<GeoJSON.Geometry>;
@@ -48,20 +57,12 @@ const primaryWorldFeatures = worldFeatures.filter(
   (worldFeature) => worldFeature.properties?.name !== "Antarctica",
 );
 
-function formatDates(dateKeys: string[]) {
-  return dateKeys
-    .map((dateKey) =>
-      new Date(`${dateKey}T12:00:00`).toLocaleDateString("en-US", {
-        month: "short",
-        day: "numeric",
-      }),
-    )
-    .join(", ");
-}
-
 export function WorldMap({ markers }: { markers: MarkerSummary[] }) {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const svgRef = useRef<SVGSVGElement | null>(null);
+  const hideTooltipTimeoutRef = useRef<ReturnType<typeof window.setTimeout> | null>(
+    null,
+  );
   const selectionRef = useRef<ReturnType<typeof select<SVGSVGElement, unknown>> | null>(
     null,
   );
@@ -79,6 +80,15 @@ export function WorldMap({ markers }: { markers: MarkerSummary[] }) {
   const markerOuterRadius = Math.max(3, 10 / transform.k);
   const markerInnerRadius = Math.max(2, 5.5 / transform.k);
   const markerStrokeWidth = Math.max(0.75, 2 / transform.k);
+
+  useEffect(
+    () => () => {
+      if (hideTooltipTimeoutRef.current) {
+        window.clearTimeout(hideTooltipTimeoutRef.current);
+      }
+    },
+    [],
+  );
 
   useEffect(() => {
     if (!containerRef.current) {
@@ -180,14 +190,39 @@ export function WorldMap({ markers }: { markers: MarkerSummary[] }) {
       return;
     }
 
+    if (hideTooltipTimeoutRef.current) {
+      window.clearTimeout(hideTooltipTimeoutRef.current);
+      hideTooltipTimeoutRef.current = null;
+    }
+
     const bounds = containerRef.current.getBoundingClientRect();
 
     setTooltip({
       label: marker.label,
       x: event.clientX - bounds.left,
       y: event.clientY - bounds.top,
-      sourceDates: marker.sourceDates,
+      articleCount: marker.articleCount,
+      articles: marker.articles,
+      hasTooManyHeadlines: marker.hasTooManyHeadlines,
     });
+  }
+
+  function scheduleHideTooltip() {
+    if (hideTooltipTimeoutRef.current) {
+      window.clearTimeout(hideTooltipTimeoutRef.current);
+    }
+
+    hideTooltipTimeoutRef.current = window.setTimeout(() => {
+      setTooltip(null);
+      hideTooltipTimeoutRef.current = null;
+    }, 120);
+  }
+
+  function cancelHideTooltip() {
+    if (hideTooltipTimeoutRef.current) {
+      window.clearTimeout(hideTooltipTimeoutRef.current);
+      hideTooltipTimeoutRef.current = null;
+    }
   }
 
   function handleZoom(direction: "in" | "out") {
@@ -273,7 +308,7 @@ export function WorldMap({ markers }: { markers: MarkerSummary[] }) {
                   opacity={marker.opacity ?? 1}
                   onMouseEnter={(event) => showTooltip(event, marker)}
                   onMouseMove={(event) => showTooltip(event, marker)}
-                  onMouseLeave={() => setTooltip(null)}
+                  onMouseLeave={scheduleHideTooltip}
                 />
               </g>
             ))}
@@ -282,16 +317,35 @@ export function WorldMap({ markers }: { markers: MarkerSummary[] }) {
       </div>
       {tooltip ? (
         <div
-          className="pointer-events-none absolute z-10 max-w-xs rounded-2xl bg-stone-950 px-4 py-3 text-sm text-stone-50 shadow-2xl"
+          className="absolute z-10 max-h-[24rem] w-[22rem] overflow-y-auto rounded-2xl border border-stone-800 bg-stone-950/95 px-4 py-3 text-sm text-stone-50 shadow-2xl"
           style={{
             left: tooltip.x + 12,
             top: tooltip.y + 12,
           }}
+          onMouseEnter={cancelHideTooltip}
+          onMouseLeave={scheduleHideTooltip}
         >
           <p className="font-semibold">{tooltip.label}</p>
           <p className="mt-1 text-stone-300">
-            Visible for: {formatDates(tooltip.sourceDates)}
+            {tooltip.articleCount} article{tooltip.articleCount === 1 ? "" : "s"}
           </p>
+          {tooltip.hasTooManyHeadlines ? (
+            <p className="mt-3 text-stone-300">Too many headlines to display.</p>
+          ) : (
+            <div className="mt-3 space-y-2">
+              {tooltip.articles.map((article) => (
+                <a
+                  key={`${article.dateKey}-${article.url}`}
+                  href={article.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="block text-sm leading-5 text-stone-100 underline decoration-stone-600 underline-offset-2 transition hover:text-[#d0a06d] hover:decoration-[#d0a06d]"
+                >
+                  {article.headline}
+                </a>
+              ))}
+            </div>
+          )}
         </div>
       ) : null}
     </div>

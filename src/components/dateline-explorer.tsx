@@ -9,6 +9,13 @@ type MarkerSummary = {
   label: string;
   latitude: number;
   longitude: number;
+  articleCount: number;
+  articles: Array<{
+    headline: string;
+    url: string;
+    dateKey: string;
+  }>;
+  hasTooManyHeadlines: boolean;
   sourceDates: string[];
   opacity?: number;
 };
@@ -206,8 +213,9 @@ export function DatelineExplorer() {
 
   const selectedMarkers = useMemo<MarkerSummary[]>(() => {
     const markerMap = new Map<string, MarkerSummary>();
+    const orderedSelectedDates = [...selectedDates].sort();
 
-    for (const dateKey of selectedDates) {
+    for (const dateKey of orderedSelectedDates) {
       const dateRecord = datelineData.dates[dateKey];
 
       if (!dateRecord) {
@@ -216,20 +224,36 @@ export function DatelineExplorer() {
 
       for (const locationId of dateRecord.locationIds) {
         const location = datelineData.locations[locationId];
+        const articleCount = dateRecord.locationArticleCounts[locationId] ?? 0;
 
         if (!location) {
           continue;
         }
 
         const existing = markerMap.get(locationId);
+        const articles = (dateRecord.locationArticles[locationId] || []).map(
+          (article) => ({
+            ...article,
+            dateKey,
+          }),
+        );
 
         if (existing) {
-          existing.sourceDates.push(dateKey);
+          if (!existing.sourceDates.includes(dateKey)) {
+            existing.sourceDates.push(dateKey);
+            existing.articleCount += articleCount;
+            existing.articles.push(...articles);
+            existing.hasTooManyHeadlines =
+              existing.hasTooManyHeadlines || existing.articles.length > 12;
+          }
           continue;
         }
 
         markerMap.set(locationId, {
           ...location,
+          articleCount,
+          articles,
+          hasTooManyHeadlines: articles.length > 12,
           sourceDates: [dateKey],
         });
       }
@@ -237,6 +261,12 @@ export function DatelineExplorer() {
 
     if (animationPlan) {
       for (const dateStep of animationPlan) {
+        const dateRecord = datelineData.dates[dateStep.dateKey];
+
+        if (!dateRecord) {
+          continue;
+        }
+
         for (const step of dateStep.steps) {
           const opacity = getStepOpacity(step, animationElapsedMs);
 
@@ -251,17 +281,31 @@ export function DatelineExplorer() {
           }
 
           const existing = markerMap.get(step.locationId);
+          const articleCount = dateRecord.locationArticleCounts[step.locationId] ?? 0;
+          const articles = (dateRecord.locationArticles[step.locationId] || []).map(
+            (article) => ({
+              ...article,
+              dateKey: dateStep.dateKey,
+            }),
+          );
 
           if (existing) {
             existing.opacity = Math.max(existing.opacity ?? 0, opacity);
             if (!existing.sourceDates.includes(dateStep.dateKey)) {
               existing.sourceDates.push(dateStep.dateKey);
+              existing.articleCount += articleCount;
+              existing.articles.push(...articles);
+              existing.hasTooManyHeadlines =
+                existing.hasTooManyHeadlines || existing.articles.length > 12;
             }
             continue;
           }
 
           markerMap.set(step.locationId, {
             ...location,
+            articleCount,
+            articles,
+            hasTooManyHeadlines: articles.length > 12,
             sourceDates: [dateStep.dateKey],
             opacity,
           });
@@ -269,9 +313,14 @@ export function DatelineExplorer() {
       }
     }
 
-    return [...markerMap.values()].sort((left, right) =>
-      left.label.localeCompare(right.label),
-    );
+    return [...markerMap.values()]
+      .map((marker) => ({
+        ...marker,
+        articles: marker.hasTooManyHeadlines
+          ? marker.articles
+          : marker.articles.slice(0, 12),
+      }))
+      .sort((left, right) => left.label.localeCompare(right.label));
   }, [animationElapsedMs, animationPlan, selectedDates]);
 
   const selectedDatePanels = useMemo(() => {
@@ -287,7 +336,18 @@ export function DatelineExplorer() {
           dateKey,
           label: `${formatShortDate(dateKey)} datelines (${dateRecord.locationIds.length})`,
           locations: dateRecord.locationIds
-            .map((locationId) => datelineData.locations[locationId]?.label)
+            .map((locationId) => {
+              const location = datelineData.locations[locationId];
+              const articleCount = dateRecord.locationArticleCounts[locationId] ?? 0;
+
+              if (!location) {
+                return null;
+              }
+
+              return articleCount > 1
+                ? `${location.label} (${articleCount} articles)`
+                : location.label;
+            })
             .filter((label): label is string => Boolean(label)),
         };
       })

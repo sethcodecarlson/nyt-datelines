@@ -14,6 +14,11 @@
     "latitude": 38.4784,
     "longitude": -82.6379
   },
+  "Bagan, Myanmar": {
+    "label": "Bagan, Myanmar",
+    "latitude": 21.1725,
+    "longitude": 94.86
+  },
   "Cambridge Bay, Nunavut, Canada": {
     "label": "Cambridge Bay, Nunavut, Canada",
     "latitude": 69.1171,
@@ -64,6 +69,11 @@
     "latitude": 63.8424,
     "longitude": -22.4338
   },
+  "Iraq-Iran border": {
+    "label": "Mehran, Iran",
+    "latitude": 33.1222,
+    "longitude": 46.1646
+  },
   "Guantánamo Bay, Cuba": {
     "label": "Guantanamo Bay, Cuba",
     "latitude": 19.906,
@@ -88,6 +98,11 @@
     "label": "Jinack Island, Gambia",
     "latitude": 13.1833,
     "longitude": -16.7667
+  },
+  "LaGuardia Airport, New York": {
+    "label": "LaGuardia Airport, New York",
+    "latitude": 40.7769,
+    "longitude": -73.874
   },
   "Kankakee County, Ill.": {
     "label": "Kankakee County, Illinois",
@@ -114,10 +129,20 @@
     "latitude": 49.2463,
     "longitude": -122.9805
   },
+  "British Columbia (Lower Mainland)": {
+    "label": "Lower Mainland, British Columbia",
+    "latitude": 49.2463,
+    "longitude": -122.9805
+  },
   "Minneapolis-St. Paul": {
     "label": "Minneapolis-St. Paul",
     "latitude": 44.9537,
     "longitude": -93.09
+  },
+  "Mississippi": {
+    "label": "Mississippi",
+    "latitude": 32.3547,
+    "longitude": -89.3985
   },
   "Mississippi’s Second Congressional District": {
     "label": "Natchez, Mississippi",
@@ -129,10 +154,20 @@
     "latitude": 45.5017,
     "longitude": -73.5673
   },
+  "L’Isle-aux-Coudres, Quebec": {
+    "label": "L'Isle-aux-Coudres, Quebec",
+    "latitude": 47.4,
+    "longitude": -70.3833
+  },
   "New York": {
     "label": "New York City",
     "latitude": 40.7128,
     "longitude": -74.006
+  },
+  "Ochopee, Fla.": {
+    "label": "Ochopee, Florida",
+    "latitude": 25.9015,
+    "longitude": -81.3034
   },
   "Oahu": {
     "label": "Oahu, Hawaii",
@@ -143,6 +178,16 @@
     "label": "Pacific Palisades, California",
     "latitude": 34.0827,
     "longitude": -118.5357
+  },
+  "San Pedro, Los Angeles": {
+    "label": "San Pedro, Los Angeles",
+    "latitude": 33.7361,
+    "longitude": -118.2923
+  },
+  "Patamban, Mexico": {
+    "label": "Patamban, Michoacan, Mexico",
+    "latitude": 19.8033,
+    "longitude": -102.2912
   },
   "Rehovot, Israel": {
     "label": "Rehovot, Israel",
@@ -160,6 +205,11 @@
     "longitude": 140.8694
   },
   "secret site in Ukraine": {
+    "label": "Kiev, Ukraine",
+    "latitude": 50.4501,
+    "longitude": 30.5234
+  },
+  "Ukraine (secret site)": {
     "label": "Kiev, Ukraine",
     "latitude": 50.4501,
     "longitude": 30.5234
@@ -194,12 +244,22 @@
     "latitude": 34.1217,
     "longitude": 71.1031
   },
+  "Torshavn, the Faroe Islands": {
+    "label": "Torshavn, Faroe Islands",
+    "latitude": 62.0079,
+    "longitude": -6.791
+  },
   "Velykyi Doroshiv, Ukraine": {
     "label": "Velykyi Doroshiv, Ukraine",
     "latitude": 49.9509,
     "longitude": 24.0587
   },
   "Washington, DC": {
+    "label": "Washington, DC",
+    "latitude": 38.9072,
+    "longitude": -77.0369
+  },
+  "Washington, D.C.": {
     "label": "Washington, DC",
     "latitude": 38.9072,
     "longitude": -77.0369

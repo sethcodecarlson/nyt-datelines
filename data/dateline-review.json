@@ -29,9 +29,12 @@
     "rawLocation": "Atlanta",
     "normalizedQuery": "Atlanta",
     "dates": [
+      "2026-03-03",
       "2026-03-05",
       "2026-03-19",
-      "2026-03-24"
+      "2026-03-24",
+      "2026-03-25",
+      "2026-03-27"
     ],
     "status": "review",
     "reason": "Best offline match is usable but still needs a quick human review.",
@@ -84,7 +87,7 @@
         "score": 85.38083469672466
       },
       {
-        "displayName": "Belfast, United States",
+        "displayName": "Belfast, Maine",
         "latitude": 44.4259,
         "longitude": -69.0064,
         "score": 84.12485730561846
@@ -190,15 +193,15 @@
     ]
   },
   {
-    "rawLocation": "central Cameroon",
-    "normalizedQuery": "central Cameroon",
+    "rawLocation": "Central Cameroon",
+    "normalizedQuery": "Central Cameroon",
     "dates": [
       "2026-03-23"
     ],
     "status": "review",
     "reason": "Resolved to a regional centroid rather than an exact place.",
     "attemptedQueries": [
-      "central Cameroon"
+      "Central Cameroon"
     ],
     "matches": [
       {
@@ -210,15 +213,15 @@
     ]
   },
   {
-    "rawLocation": "central Virginia",
-    "normalizedQuery": "central Virginia",
+    "rawLocation": "Central Virginia",
+    "normalizedQuery": "Central Virginia",
     "dates": [
       "2026-03-23"
     ],
     "status": "review",
     "reason": "Resolved to a regional centroid rather than an exact place.",
     "attemptedQueries": [
-      "central Virginia"
+      "Central Virginia"
     ],
     "matches": [
       {
@@ -230,10 +233,33 @@
     ]
   },
   {
+    "rawLocation": "Colorado Rockies",
+    "normalizedQuery": "Colorado Rockies",
+    "dates": [
+      "2026-03-24"
+    ],
+    "status": "review",
+    "reason": "Resolved to a regional centroid rather than an exact place.",
+    "attemptedQueries": [
+      "Colorado Rockies"
+    ],
+    "matches": [
+      {
+        "displayName": "Colorado Rockies",
+        "latitude": 39.1178,
+        "longitude": -106.4454,
+        "score": 55
+      }
+    ]
+  },
+  {
     "rawLocation": "Dallas",
     "normalizedQuery": "Dallas",
     "dates": [
-      "2026-03-13"
+      "2026-03-03",
+      "2026-03-04",
+      "2026-03-13",
+      "2026-03-27"
     ],
     "status": "review",
     "reason": "Best offline match is usable but still needs a quick human review.",
@@ -248,7 +274,7 @@
         "score": 95
       },
       {
-        "displayName": "Dallas, United States",
+        "displayName": "Dallas, Oregon",
         "latitude": 44.9193,
         "longitude": -123.317,
         "score": 85.9203325284583
@@ -258,6 +284,26 @@
         "latitude": 33.9237,
         "longitude": -84.8408,
         "score": 85.5480614515423
+      }
+    ]
+  },
+  {
+    "rawLocation": "Delaware",
+    "normalizedQuery": "Delaware",
+    "dates": [
+      "2026-03-07"
+    ],
+    "status": "review",
+    "reason": "Resolved to a regional centroid rather than an exact place.",
+    "attemptedQueries": [
+      "Delaware"
+    ],
+    "matches": [
+      {
+        "displayName": "Delaware",
+        "latitude": 38.9108,
+        "longitude": -75.5277,
+        "score": 55
       }
     ]
   },
@@ -292,34 +338,6 @@
         "latitude": -28.0717,
         "longitude": 153.4416,
         "score": 84.27547475579311
-      }
-    ]
-  },
-  {
-    "rawLocation": "Dover Air Force Base, Delaware",
-    "normalizedQuery": "Dover Air Force Base, Delaware",
-    "dates": [
-      "2026-03-07"
-    ],
-    "status": "review",
-    "reason": "Best offline match is usable but still needs a quick human review.",
-    "attemptedQueries": [
-      "Dover Air Force Base, Delaware",
-      "Dover Air Force Base",
-      "Delaware"
-    ],
-    "matches": [
-      {
-        "displayName": "Delaware, United States",
-        "latitude": 40.2987,
-        "longitude": -83.068,
-        "score": 87.89868939500978
-      },
-      {
-        "displayName": "Delaware, Canada",
-        "latitude": 42.9168,
-        "longitude": -81.4165,
-        "score": 82.00872541118531
       }
     ]
   },
@@ -359,7 +377,8 @@
     "rawLocation": "eastern Ukraine",
     "normalizedQuery": "eastern Ukraine",
     "dates": [
-      "2026-03-09"
+      "2026-03-09",
+      "2026-03-26"
     ],
     "status": "review",
     "reason": "Resolved to a regional centroid rather than an exact place.",
@@ -379,6 +398,7 @@
     "rawLocation": "Florida",
     "normalizedQuery": "Florida",
     "dates": [
+      "2026-03-04",
       "2026-03-10",
       "2026-03-13",
       "2026-03-16",
@@ -395,40 +415,6 @@
         "latitude": 27.6648,
         "longitude": -81.5158,
         "score": 55
-      }
-    ]
-  },
-  {
-    "rawLocation": "Hall of Justice, San Francisco",
-    "normalizedQuery": "Hall of Justice, San Francisco",
-    "dates": [
-      "2026-03-21"
-    ],
-    "status": "review",
-    "reason": "Best offline match is usable but still needs a quick human review.",
-    "attemptedQueries": [
-      "Hall of Justice, San Francisco",
-      "Hall of Justice",
-      "San Francisco"
-    ],
-    "matches": [
-      {
-        "displayName": "San Francisco, California",
-        "latitude": 37.7749,
-        "longitude": -122.4194,
-        "score": 94.68462109051274
-      },
-      {
-        "displayName": "San Francisco, Argentina",
-        "latitude": -31.428,
-        "longitude": -62.0827,
-        "score": 88.85657751202409
-      },
-      {
-        "displayName": "San Francisco, Costa Rica",
-        "latitude": 9.993,
-        "longitude": -84.1293,
-        "score": 88.73799113520099
       }
     ]
   },
@@ -470,6 +456,7 @@
     "rawLocation": "Hong Kong",
     "normalizedQuery": "Hong Kong",
     "dates": [
+      "2026-03-03",
       "2026-03-07",
       "2026-03-09",
       "2026-03-10",
@@ -516,6 +503,26 @@
     ]
   },
   {
+    "rawLocation": "Iran",
+    "normalizedQuery": "Iran",
+    "dates": [
+      "2026-03-03"
+    ],
+    "status": "review",
+    "reason": "Resolved to a country centroid rather than an exact place.",
+    "attemptedQueries": [
+      "Iran"
+    ],
+    "matches": [
+      {
+        "displayName": "Iran",
+        "latitude": 32,
+        "longitude": 53,
+        "score": 50
+      }
+    ]
+  },
+  {
     "rawLocation": "Juneau, Alaska",
     "normalizedQuery": "Juneau, Alaska",
     "dates": [
@@ -544,11 +551,38 @@
     ]
   },
   {
+    "rawLocation": "Kansas City",
+    "normalizedQuery": "Kansas City",
+    "dates": [
+      "2026-03-27"
+    ],
+    "status": "review",
+    "reason": "Best offline match is usable but still needs a quick human review.",
+    "attemptedQueries": [
+      "Kansas City"
+    ],
+    "matches": [
+      {
+        "displayName": "Kansas City, United States",
+        "latitude": 39.0997,
+        "longitude": -94.5786,
+        "score": 93.38519996367978
+      },
+      {
+        "displayName": "Kansas City, United States",
+        "latitude": 39.1142,
+        "longitude": -94.6275,
+        "score": 90.89929510247714
+      }
+    ]
+  },
+  {
     "rawLocation": "Las Vegas",
     "normalizedQuery": "Las Vegas",
     "dates": [
       "2026-03-10",
-      "2026-03-15"
+      "2026-03-15",
+      "2026-03-28"
     ],
     "status": "review",
     "reason": "Best offline match is usable but still needs a quick human review.",
@@ -580,6 +614,9 @@
     "rawLocation": "London",
     "normalizedQuery": "London",
     "dates": [
+      "2026-03-03",
+      "2026-03-04",
+      "2026-03-05",
       "2026-03-06",
       "2026-03-07",
       "2026-03-08",
@@ -598,7 +635,9 @@
       "2026-03-21",
       "2026-03-23",
       "2026-03-24",
-      "2026-03-25"
+      "2026-03-25",
+      "2026-03-26",
+      "2026-03-27"
     ],
     "status": "review",
     "reason": "Best offline match is usable but still needs a quick human review.",
@@ -630,7 +669,11 @@
     "rawLocation": "Madrid",
     "normalizedQuery": "Madrid",
     "dates": [
-      "2026-03-20"
+      "2026-03-03",
+      "2026-03-04",
+      "2026-03-20",
+      "2026-03-26",
+      "2026-03-27"
     ],
     "status": "review",
     "reason": "Best offline match is usable but still needs a quick human review.",
@@ -685,7 +728,7 @@
         "score": 83.57792775946598
       },
       {
-        "displayName": "China, United States",
+        "displayName": "China, Maine",
         "latitude": 44.4787,
         "longitude": -69.5173,
         "score": 83.15213937512512
@@ -757,13 +800,15 @@
     "rawLocation": "Miami",
     "normalizedQuery": "Miami",
     "dates": [
+      "2026-03-03",
       "2026-03-05",
       "2026-03-07",
       "2026-03-11",
       "2026-03-12",
       "2026-03-14",
       "2026-03-16",
-      "2026-03-24"
+      "2026-03-24",
+      "2026-03-28"
     ],
     "status": "review",
     "reason": "Best offline match is usable but still needs a quick human review.",
@@ -788,6 +833,26 @@
         "latitude": -28.0717,
         "longitude": 153.4416,
         "score": 84.27547475579311
+      }
+    ]
+  },
+  {
+    "rawLocation": "Minnesota",
+    "normalizedQuery": "Minnesota",
+    "dates": [
+      "2026-03-06"
+    ],
+    "status": "review",
+    "reason": "Resolved to a regional centroid rather than an exact place.",
+    "attemptedQueries": [
+      "Minnesota"
+    ],
+    "matches": [
+      {
+        "displayName": "Minnesota",
+        "latitude": 46.7296,
+        "longitude": -94.6859,
+        "score": 55
       }
     ]
   },
@@ -840,6 +905,40 @@
         "latitude": 41.3368,
         "longitude": -75.5185,
         "score": 81.46238796833892
+      }
+    ]
+  },
+  {
+    "rawLocation": "Mount Vernon, Ore.",
+    "normalizedQuery": "Mount Vernon, Oregon",
+    "dates": [
+      "2026-03-15"
+    ],
+    "status": "review",
+    "reason": "Best offline match is usable but still needs a quick human review.",
+    "attemptedQueries": [
+      "Mount Vernon, Oregon",
+      "Mount Vernon",
+      "Oregon"
+    ],
+    "matches": [
+      {
+        "displayName": "Mount Vernon, New York",
+        "latitude": 40.9126,
+        "longitude": -73.8371,
+        "score": 124.18253835394295
+      },
+      {
+        "displayName": "Mount Vernon, Washington",
+        "latitude": 48.4212,
+        "longitude": -122.3341,
+        "score": 122.6608406584685
+      },
+      {
+        "displayName": "Mount Vernon, United States",
+        "latitude": 40.3934,
+        "longitude": -82.4857,
+        "score": 121.11916638618162
       }
     ]
   },
@@ -981,21 +1080,21 @@
     ]
   },
   {
-    "rawLocation": "northern Cameroon",
-    "normalizedQuery": "northern Cameroon",
+    "rawLocation": "northeastern Wisconsin",
+    "normalizedQuery": "northeastern Wisconsin",
     "dates": [
-      "2026-03-23"
+      "2026-03-27"
     ],
     "status": "review",
     "reason": "Resolved to a regional centroid rather than an exact place.",
     "attemptedQueries": [
-      "northern Cameroon"
+      "northeastern Wisconsin"
     ],
     "matches": [
       {
-        "displayName": "Northern Cameroon",
-        "latitude": 8.6,
-        "longitude": 13.6,
+        "displayName": "Northeastern Wisconsin",
+        "latitude": 44.8,
+        "longitude": -88.1,
         "score": 55
       }
     ]
@@ -1004,7 +1103,8 @@
     "rawLocation": "Ottawa",
     "normalizedQuery": "Ottawa",
     "dates": [
-      "2026-03-23"
+      "2026-03-23",
+      "2026-03-26"
     ],
     "status": "review",
     "reason": "Best offline match is usable but still needs a quick human review.",
@@ -1036,6 +1136,7 @@
     "rawLocation": "Paris",
     "normalizedQuery": "Paris",
     "dates": [
+      "2026-03-04",
       "2026-03-05",
       "2026-03-06",
       "2026-03-07",
@@ -1046,7 +1147,10 @@
       "2026-03-15",
       "2026-03-22",
       "2026-03-23",
-      "2026-03-24"
+      "2026-03-24",
+      "2026-03-26",
+      "2026-03-27",
+      "2026-03-28"
     ],
     "status": "review",
     "reason": "Best offline match is usable but still needs a quick human review.",
@@ -1110,6 +1214,7 @@
     "rawLocation": "Rome",
     "normalizedQuery": "Rome",
     "dates": [
+      "2026-03-05",
       "2026-03-12",
       "2026-03-13",
       "2026-03-15",
@@ -1118,7 +1223,8 @@
       "2026-03-21",
       "2026-03-23",
       "2026-03-24",
-      "2026-03-25"
+      "2026-03-25",
+      "2026-03-27"
     ],
     "status": "review",
     "reason": "Best offline match is usable but still needs a quick human review.",
@@ -1187,7 +1293,8 @@
       "2026-03-13",
       "2026-03-18",
       "2026-03-19",
-      "2026-03-24"
+      "2026-03-24",
+      "2026-03-26"
     ],
     "status": "review",
     "reason": "Best offline match is usable but still needs a quick human review.",
@@ -1219,6 +1326,8 @@
     "rawLocation": "San Francisco",
     "normalizedQuery": "San Francisco",
     "dates": [
+      "2026-03-03",
+      "2026-03-04",
       "2026-03-05",
       "2026-03-08",
       "2026-03-09",
@@ -1230,8 +1339,10 @@
       "2026-03-18",
       "2026-03-19",
       "2026-03-20",
+      "2026-03-21",
       "2026-03-24",
-      "2026-03-25"
+      "2026-03-25",
+      "2026-03-26"
     ],
     "status": "review",
     "reason": "Best offline match is usable but still needs a quick human review.",
@@ -1314,10 +1425,43 @@
     ]
   },
   {
+    "rawLocation": "Springfield, Ohio",
+    "normalizedQuery": "Springfield, Ohio",
+    "dates": [
+      "2026-03-03"
+    ],
+    "status": "review",
+    "reason": "Best offline match is usable but still needs a quick human review.",
+    "attemptedQueries": [
+      "Springfield, Ohio",
+      "Springfield",
+      "Ohio"
+    ],
+    "matches": [
+      {
+        "displayName": "Springfield, United States",
+        "latitude": 37.2153,
+        "longitude": -93.2982,
+        "score": 91.11112342940383
+      },
+      {
+        "displayName": "Springfield, United States",
+        "latitude": 42.1015,
+        "longitude": -72.5898,
+        "score": 90.94242061820309
+      },
+      {
+        "displayName": "Springfield, Illinois",
+        "latitude": 39.8017,
+        "longitude": -89.6437,
+        "score": 90.33285946885371
+      }
+    ]
+  },
+  {
     "rawLocation": "Sydney",
     "normalizedQuery": "Sydney",
     "dates": [
-      "2026-03-15",
       "2026-03-24"
     ],
     "status": "review",
@@ -1341,36 +1485,34 @@
     ]
   },
   {
-    "rawLocation": "U.S. District Court, San Francisco",
-    "normalizedQuery": "U.S. District Court, San Francisco",
+    "rawLocation": "Vienna",
+    "normalizedQuery": "Vienna",
     "dates": [
-      "2026-03-20"
+      "2026-03-05"
     ],
     "status": "review",
     "reason": "Best offline match is usable but still needs a quick human review.",
     "attemptedQueries": [
-      "U.S. District Court, San Francisco",
-      "U.S. District Court",
-      "San Francisco"
+      "Vienna"
     ],
     "matches": [
       {
-        "displayName": "San Francisco, California",
-        "latitude": 37.7749,
-        "longitude": -122.4194,
-        "score": 94.68462109051274
+        "displayName": "Vienna, Austria",
+        "latitude": 48.2085,
+        "longitude": 16.3721,
+        "score": 95
       },
       {
-        "displayName": "San Francisco, Argentina",
-        "latitude": -31.428,
-        "longitude": -62.0827,
-        "score": 88.85657751202409
+        "displayName": "Vienna, Virginia",
+        "latitude": 38.9012,
+        "longitude": -77.2653,
+        "score": 86.09044451430422
       },
       {
-        "displayName": "San Francisco, Costa Rica",
-        "latitude": 9.993,
-        "longitude": -84.1293,
-        "score": 88.73799113520099
+        "displayName": "Vienna, United States",
+        "latitude": 39.327,
+        "longitude": -81.5485,
+        "score": 85.12119653034546
       }
     ]
   },
@@ -1483,7 +1625,7 @@
         "score": 85.33367897675464
       },
       {
-        "displayName": "Mexico, United States",
+        "displayName": "Mexico, Maine",
         "latitude": 44.5609,
         "longitude": -70.5453,
         "score": 81.20773240298274

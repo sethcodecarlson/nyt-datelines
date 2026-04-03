@@ -1,3 +1,8 @@
+export type DatelineArticle = {
+  headline: string;
+  url: string;
+};
+
 export type DatelineLocation = {
   id: string;
   label: string;
@@ -10,6 +15,8 @@ export type DatelineLocation = {
 export type DatelineDate = {
   label: string;
   locationIds: string[];
+  locationArticleCounts: Record<string, number>;
+  locationArticles: Record<string, DatelineArticle[]>;
   rawLocationCount: number;
 };
 
