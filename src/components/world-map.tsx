@@ -60,9 +60,7 @@ const primaryWorldFeatures = worldFeatures.filter(
 export function WorldMap({ markers }: { markers: MarkerSummary[] }) {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const svgRef = useRef<SVGSVGElement | null>(null);
-  const hideTooltipTimeoutRef = useRef<ReturnType<typeof window.setTimeout> | null>(
-    null,
-  );
+  const hideTooltipTimeoutRef = useRef<number | null>(null);
   const selectionRef = useRef<ReturnType<typeof select<SVGSVGElement, unknown>> | null>(
     null,
   );
