@@ -4,8 +4,10 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { geoMercator, geoPath } from "d3-geo";
 import { select } from "d3-selection";
 import { zoom, zoomIdentity, type D3ZoomEvent } from "d3-zoom";
-import { feature } from "topojson-client";
-import countries110m from "world-atlas/countries-110m.json";
+import { feature, mesh } from "topojson-client";
+import countries50m from "world-atlas/countries-50m.json";
+import land50m from "world-atlas/land-50m.json";
+import usStates10m from "us-atlas/states-10m.json";
 
 type MarkerSummary = {
   id: string;
@@ -46,7 +48,25 @@ type WorldAtlasTopology = {
   };
 };
 
-const worldAtlasTopology = countries110m as unknown as WorldAtlasTopology;
+type LandAtlasTopology = {
+  type: "Topology";
+  objects: {
+    land: unknown;
+  };
+};
+
+type UsAtlasTopology = {
+  type: "Topology";
+  objects: {
+    nation: unknown;
+    states: unknown;
+  };
+};
+
+const worldAtlasTopology = countries50m as unknown as WorldAtlasTopology;
+const worldLandTopology = land50m as unknown as LandAtlasTopology;
+const usAtlasTopology = usStates10m as unknown as UsAtlasTopology;
+
 const worldFeatures = (
   feature(
     worldAtlasTopology as never,
@@ -55,6 +75,82 @@ const worldFeatures = (
 ).features as WorldFeature[];
 const primaryWorldFeatures = worldFeatures.filter(
   (worldFeature) => worldFeature.properties?.name !== "Antarctica",
+);
+const worldLandFeature = feature(
+  worldLandTopology as never,
+  worldLandTopology.objects.land as never,
+) as unknown as GeoJSON.Feature<GeoJSON.Geometry>;
+const countryBordersMesh = mesh(
+  worldAtlasTopology as never,
+  worldAtlasTopology.objects.countries as never,
+  (left, right) => left !== right,
+) as unknown as GeoJSON.MultiLineString;
+const usStatesMesh = mesh(
+  usAtlasTopology as never,
+  usAtlasTopology.objects.states as never,
+  (left, right) => left !== right,
+) as unknown as GeoJSON.MultiLineString;
+const usStateFeatures = (
+  feature(
+    usAtlasTopology as never,
+    usAtlasTopology.objects.states as never,
+  ) as unknown as GeoJSON.FeatureCollection<GeoJSON.Geometry>
+).features as WorldFeature[];
+const DEFAULT_VIEW_SCALE = 1.18;
+const highlightedCountryNames = new Set([
+  "South Korea",
+  "Colombia",
+  "Australia",
+  "Iraq",
+  "China",
+  "Lebanon",
+  "Germany",
+  "Brazil",
+  "Netherlands",
+  "Egypt",
+  "Canada",
+  "Kenya",
+  "Poland",
+  "Saudi Arabia",
+  "Hong Kong",
+  "Turkey",
+  "Israel",
+  "South Africa",
+  "Afghanistan",
+  "Spain",
+  "Mexico",
+  "France",
+  "Italy",
+  "India",
+  "Japan",
+  "Ukraine",
+  "Vietnam",
+  "Senegal",
+  "United Kingdom",
+]);
+const HIGHLIGHT_FILL = "#7a4242";
+const highlightedWorldFeatures = primaryWorldFeatures.filter((worldFeature) =>
+  highlightedCountryNames.has(String(worldFeature.properties?.name || "")),
+);
+const highlightedUsStateIds = new Set([
+  "36",
+  "06",
+  "17",
+  "04",
+  "08",
+  "12",
+  "13",
+  "26",
+  "25",
+  "37",
+  "42",
+  "44",
+  "47",
+  "48",
+  "53",
+]);
+const highlightedUsStateFeatures = usStateFeatures.filter((stateFeature) =>
+  highlightedUsStateIds.has(String(stateFeature.id || "")),
 );
 
 export function WorldMap({ markers }: { markers: MarkerSummary[] }) {
@@ -78,6 +174,20 @@ export function WorldMap({ markers }: { markers: MarkerSummary[] }) {
   const markerOuterRadius = Math.max(3, 10 / transform.k);
   const markerInnerRadius = Math.max(2, 5.5 / transform.k);
   const markerStrokeWidth = Math.max(0.75, 2 / transform.k);
+  const coastlineStrokeWidth = Math.max(0.5, 1.2 / transform.k);
+  const countryBorderStrokeWidth = Math.max(0.35, 0.9 / transform.k);
+  const stateBorderStrokeWidth = Math.max(0.2, 0.7 / transform.k);
+  const stateBorderOpacity = Math.max(0, Math.min(0.95, (transform.k - 1.15) / 1.75));
+  const defaultZoomTransform = useMemo(
+    () =>
+      zoomIdentity
+        .translate(
+          (size.width * (1 - DEFAULT_VIEW_SCALE)) / 2,
+          (size.height * (1 - DEFAULT_VIEW_SCALE)) / 2,
+        )
+        .scale(DEFAULT_VIEW_SCALE),
+    [size.height, size.width],
+  );
 
   useEffect(
     () => () => {
@@ -98,7 +208,7 @@ export function WorldMap({ markers }: { markers: MarkerSummary[] }) {
 
       setSize({
         width: nextWidth,
-        height: Math.max(420, Math.round(nextWidth * 0.55)),
+        height: Math.max(400, Math.round(nextWidth * 0.48)),
       });
     });
 
@@ -132,14 +242,14 @@ export function WorldMap({ markers }: { markers: MarkerSummary[] }) {
     selectionRef.current = selection;
     zoomBehaviorRef.current = zoomBehavior;
     selection.call(zoomBehavior);
-    selection.call(zoomBehavior.transform, zoomIdentity);
+    selection.call(zoomBehavior.transform, defaultZoomTransform);
 
     return () => {
       selection.on(".zoom", null);
       selectionRef.current = null;
       zoomBehaviorRef.current = null;
     };
-  }, [size.height, size.width]);
+  }, [defaultZoomTransform, size.height, size.width]);
 
   const projection = useMemo(
     () =>
@@ -239,7 +349,7 @@ export function WorldMap({ markers }: { markers: MarkerSummary[] }) {
       return;
     }
 
-    selectionRef.current.call(zoomBehaviorRef.current.transform, zoomIdentity);
+    selectionRef.current.call(zoomBehaviorRef.current.transform, defaultZoomTransform);
   }
 
   return (
@@ -281,15 +391,48 @@ export function WorldMap({ markers }: { markers: MarkerSummary[] }) {
           <g
             transform={`translate(${transform.x}, ${transform.y}) scale(${transform.k})`}
           >
-            {worldFeatures.map((worldFeature, index) => (
+            <path
+              d={pathGenerator(worldLandFeature) ?? undefined}
+              fill="#1b1c20"
+              stroke="#6b7280"
+              strokeWidth={coastlineStrokeWidth}
+              vectorEffect="non-scaling-stroke"
+            />
+            {highlightedWorldFeatures.map((worldFeature) => (
               <path
-                key={index}
+                key={`highlight-${String(worldFeature.properties?.name || worldFeature.id)}`}
                 d={pathGenerator(worldFeature) ?? undefined}
-                fill="#1c1d20"
-                stroke="#50545c"
-                strokeWidth={0.7}
+                fill={HIGHLIGHT_FILL}
+                opacity={0.68}
+                stroke="none"
               />
             ))}
+            {highlightedUsStateFeatures.map((stateFeature) => (
+              <path
+                key={`state-highlight-${String(stateFeature.id)}`}
+                d={pathGenerator(stateFeature) ?? undefined}
+                fill={HIGHLIGHT_FILL}
+                opacity={0.68}
+                stroke="none"
+              />
+            ))}
+            <path
+              d={pathGenerator(countryBordersMesh) ?? undefined}
+              fill="none"
+              stroke="#7c8593"
+              strokeWidth={countryBorderStrokeWidth}
+              strokeLinejoin="round"
+              vectorEffect="non-scaling-stroke"
+            />
+            <path
+              d={pathGenerator(usStatesMesh) ?? undefined}
+              fill="none"
+              stroke="#4d5560"
+              strokeWidth={stateBorderStrokeWidth}
+              strokeLinejoin="round"
+              opacity={stateBorderOpacity}
+              vectorEffect="non-scaling-stroke"
+            />
 
             {positionedMarkers.map((marker) => (
               <g key={marker.id} transform={`translate(${marker.x}, ${marker.y})`}>
@@ -328,7 +471,9 @@ export function WorldMap({ markers }: { markers: MarkerSummary[] }) {
             {tooltip.articleCount} article{tooltip.articleCount === 1 ? "" : "s"}
           </p>
           {tooltip.hasTooManyHeadlines ? (
-            <p className="mt-3 text-stone-300">Too many headlines to display.</p>
+            <p className="mt-3 text-stone-300">
+              Too many headlines to display. (See list below.)
+            </p>
           ) : (
             <div className="mt-3 space-y-2">
               {tooltip.articles.map((article) => (

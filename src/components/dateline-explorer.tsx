@@ -35,9 +35,16 @@ type AnimatedDateStep = {
   steps: AnimatedLocationStep[];
 };
 
-const marchDays = Array.from({ length: 31 }, (_, index) => index + 1);
-const firstDayOffset = 0;
-const animationDateKeys = Object.keys(datelineData.dates).sort();
+const visibleWeekDays = [
+  [8, 9, 10, 11, 12, 13, 14],
+  [15, 16, 17, 18, 19, 20, 21],
+  [22, 23, 24, 25, 26, 27, 28],
+];
+const visibleDateKeys = visibleWeekDays.flat().map(formatDateKey);
+const animationDateKeys = Object.keys(datelineData.dates)
+  .filter((dateKey) => visibleDateKeys.includes(dateKey))
+  .sort();
+const calendarGridTemplate = "3rem repeat(7, minmax(5.25rem, 1fr))";
 const ON_WINDOW_MS = 3600;
 const FULLY_ON_HOLD_MS = 2000;
 const OFF_WINDOW_MS = 3600;
@@ -56,11 +63,6 @@ function formatShortDate(dateKey: string) {
     month: "long",
     day: "numeric",
   });
-}
-
-function splitIntoColumns<T>(items: T[]) {
-  const midpoint = Math.ceil(items.length / 2);
-  return [items.slice(0, midpoint), items.slice(midpoint)];
 }
 
 function shuffle<T>(items: T[]) {
@@ -155,8 +157,13 @@ function getStepOpacity(step: AnimatedLocationStep, elapsedMs: number) {
   return 0;
 }
 
+function getWeekDateKeys(days: number[]) {
+  return days.map(formatDateKey);
+}
+
 export function DatelineExplorer() {
   const [selectedDates, setSelectedDates] = useState<string[]>([]);
+  const [activePanelDate, setActivePanelDate] = useState<string | null>(null);
   const [animationPlan, setAnimationPlan] = useState<AnimatedDateStep[] | null>(
     null,
   );
@@ -339,29 +346,100 @@ export function DatelineExplorer() {
             .map((locationId) => {
               const location = datelineData.locations[locationId];
               const articleCount = dateRecord.locationArticleCounts[locationId] ?? 0;
+              const articles = dateRecord.locationArticles[locationId] || [];
 
               if (!location) {
                 return null;
               }
 
-              return articleCount > 1
-                ? `${location.label} (${articleCount} articles)`
-                : location.label;
+              return {
+                id: locationId,
+                label:
+                  articleCount > 1
+                    ? `${location.label} (${articleCount} articles)`
+                    : location.label,
+                articles,
+              };
             })
-            .filter((label): label is string => Boolean(label)),
+            .filter(
+              (
+                location,
+              ): location is {
+                id: string;
+                label: string;
+                articles: Array<{ headline: string; url: string }>;
+              } => Boolean(location),
+            ),
         };
       })
-      .filter((panel): panel is { dateKey: string; label: string; locations: string[] } =>
-        Boolean(panel),
+      .filter(
+        (
+          panel,
+        ): panel is {
+          dateKey: string;
+          label: string;
+          locations: Array<{
+            id: string;
+            label: string;
+            articles: Array<{ headline: string; url: string }>;
+          }>;
+        } => Boolean(panel),
       );
   }, [selectedDates]);
 
+  const resolvedActivePanelDate =
+    activePanelDate && selectedDates.includes(activePanelDate)
+      ? activePanelDate
+      : (selectedDates[selectedDates.length - 1] ?? null);
+
+  const activeDatePanel =
+    selectedDatePanels.find((panel) => panel.dateKey === resolvedActivePanelDate) ??
+    null;
+
   function toggleDate(dateKey: string) {
-    setSelectedDates((current) =>
-      current.includes(dateKey)
-        ? current.filter((value) => value !== dateKey)
-        : [...current, dateKey],
+    setSelectedDates((current) => {
+      if (current.includes(dateKey)) {
+        const next = current.filter((value) => value !== dateKey);
+
+        if (activePanelDate === dateKey) {
+          setActivePanelDate(next[next.length - 1] ?? null);
+        }
+
+        return next;
+      }
+
+      setActivePanelDate(dateKey);
+      return [...current, dateKey];
+    });
+  }
+
+  function toggleWeek(days: number[]) {
+    const weekDateKeys = getWeekDateKeys(days).filter((dateKey) =>
+      Boolean(datelineData.dates[dateKey]),
     );
+
+    if (weekDateKeys.length === 0) {
+      return;
+    }
+
+    setSelectedDates((current) => {
+      const allSelected = weekDateKeys.every((dateKey) => current.includes(dateKey));
+
+      if (allSelected) {
+        const next = current.filter((dateKey) => !weekDateKeys.includes(dateKey));
+
+        if (activePanelDate && weekDateKeys.includes(activePanelDate)) {
+          setActivePanelDate(next[next.length - 1] ?? null);
+        }
+
+        return next;
+      }
+
+      const next = current.filter((dateKey) => !weekDateKeys.includes(dateKey));
+      const nextSelectedDates = [...next, ...weekDateKeys];
+      setActivePanelDate(weekDateKeys[weekDateKeys.length - 1] ?? null);
+      return nextSelectedDates;
+    });
   }
 
   function stopAnimation() {
@@ -378,6 +456,7 @@ export function DatelineExplorer() {
     }
 
     setSelectedDates([]);
+    setActivePanelDate(null);
     setAnimationElapsedMs(0);
     setAnimationSpeedMultiplier(speedMultiplier);
     setAnimationPlan(buildAnimationPlan());
@@ -394,6 +473,10 @@ export function DatelineExplorer() {
             </h1>
           </div>
           <WorldMap markers={selectedMarkers} />
+          <p className="mt-3 text-right text-xs leading-5 text-stone-500">
+            * Countries and U.S. states where The Times maintains an ongoing
+            physical presence are highlighted.
+          </p>
         </div>
 
         <div className="grid gap-x-8 gap-y-3 lg:grid-cols-[1.05fr_0.95fr] lg:items-start">
@@ -416,30 +499,69 @@ export function DatelineExplorer() {
                 </p>
               </div>
             </div>
-            {selectedDatePanels.length > 0 ? (
-              <div className="flex flex-col gap-3">
-                {selectedDatePanels.map((panel) => (
-                  <div
-                    key={panel.dateKey}
-                    className="rounded-[1.5rem] border border-stone-800 bg-stone-900/50 p-4"
-                  >
-                    <p className="text-lg font-semibold text-stone-50">
-                      {panel.label}
-                    </p>
-                    <div className="mt-3 grid gap-x-8 gap-y-1 text-sm leading-6 text-stone-300 md:grid-cols-2">
-                      {splitIntoColumns(panel.locations).map((column, columnIndex) => (
-                        <div
-                          key={`${panel.dateKey}-column-${columnIndex}`}
-                          className="space-y-1"
+            {selectedDatePanels.length > 0 && activeDatePanel ? (
+              <div className="flex min-h-[21rem] overflow-hidden rounded-[1.5rem] border border-stone-800 bg-stone-900/50">
+                <div className="flex w-[3.5rem] flex-col gap-2 border-r border-stone-800 bg-stone-950/70 p-2">
+                  {selectedDatePanels.map((panel) => {
+                    const dayLabel = new Date(`${panel.dateKey}T12:00:00`).getDate();
+                    const isActive = panel.dateKey === activeDatePanel.dateKey;
+
+                    return (
+                      <button
+                        key={panel.dateKey}
+                        type="button"
+                        onClick={() => setActivePanelDate(panel.dateKey)}
+                        className={[
+                          "flex min-h-[4.75rem] flex-col items-center justify-center rounded-xl border px-1 py-2 text-center transition",
+                          isActive
+                            ? "border-[#d0a06d] bg-[#d0a06d] text-stone-950 shadow-lg"
+                            : "border-stone-800 bg-stone-950/60 text-stone-300 hover:bg-stone-900",
+                        ].join(" ")}
+                        aria-label={`Show ${formatShortDate(panel.dateKey)} datelines`}
+                      >
+                        <span
+                          className={[
+                            "text-[9px] font-semibold uppercase tracking-[0.18em]",
+                            isActive ? "text-stone-800" : "text-stone-500",
+                          ].join(" ")}
                         >
-                          {column.map((location) => (
-                            <p key={`${panel.dateKey}-${location}`}>{location}</p>
+                          Mar
+                        </span>
+                        <span className="mt-1 text-xl font-semibold leading-none">
+                          {dayLabel}
+                        </span>
+                      </button>
+                    );
+                  })}
+                </div>
+
+                <div className="flex-1 p-4">
+                  <p className="text-lg font-semibold text-stone-50">
+                    {activeDatePanel.label}
+                  </p>
+                  <div className="mt-4 space-y-4">
+                    {activeDatePanel.locations.map((location) => (
+                      <div key={`${activeDatePanel.dateKey}-${location.id}`}>
+                        <p className="text-sm font-medium leading-6 text-stone-200">
+                          {location.label}
+                        </p>
+                        <div className="mt-1.5 space-y-1.5">
+                          {location.articles.map((article) => (
+                            <a
+                              key={`${location.id}-${article.url}`}
+                              href={article.url}
+                              target="_blank"
+                              rel="noreferrer"
+                              className="block text-sm leading-5 text-stone-400 underline decoration-stone-700 underline-offset-2 transition hover:text-stone-200 hover:decoration-stone-400"
+                            >
+                              {article.headline}
+                            </a>
                           ))}
                         </div>
-                      ))}
-                    </div>
+                      </div>
+                    ))}
                   </div>
-                ))}
+                </div>
               </div>
             ) : (
               <div className="rounded-[1.5rem] border border-dashed border-stone-800 bg-stone-900/30 p-4 text-sm leading-6 text-stone-500">
@@ -459,17 +581,10 @@ export function DatelineExplorer() {
               <div className="flex items-center gap-2">
                 <button
                   type="button"
-                  onClick={() => toggleAnimation(1)}
-                  className="rounded-full border border-stone-700 bg-stone-900 px-4 py-2 text-sm font-medium text-stone-200 transition hover:bg-stone-800"
-                >
-                  {animationActive ? "Stop animation" : "Play animation"}
-                </button>
-                <button
-                  type="button"
                   onClick={() => toggleAnimation(2)}
                   className="rounded-full border border-stone-700 bg-stone-900 px-4 py-2 text-sm font-medium text-stone-200 transition hover:bg-stone-800"
                 >
-                  {animationActive ? "Stop animation" : "X2 speed"}
+                  {animationActive ? "Stop animation" : "Play animation"}
                 </button>
                 <button
                   type="button"
@@ -482,75 +597,130 @@ export function DatelineExplorer() {
               </div>
             </div>
 
-            <div className="mt-6 grid grid-cols-7 gap-2 text-center text-xs font-semibold uppercase tracking-[0.18em] text-stone-500">
-              {["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"].map((day) => (
-                <div key={day} className="py-2">
-                  {day}
-                </div>
-              ))}
-            </div>
-
-            <div className="grid grid-cols-7 gap-2">
-              {Array.from({ length: firstDayOffset }).map((_, index) => (
+            <div className="mt-6 overflow-x-auto">
+              <div className="min-w-[43rem] space-y-2">
                 <div
-                  key={`blank-${index}`}
-                  className="aspect-square rounded-2xl bg-transparent"
-                />
-              ))}
+                  className="grid gap-2 text-center text-xs font-semibold uppercase tracking-[0.18em] text-stone-500"
+                  style={{ gridTemplateColumns: calendarGridTemplate }}
+                >
+                  <div />
+                  {["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"].map((day) => (
+                    <div key={day} className="py-2">
+                      {day}
+                    </div>
+                  ))}
+                </div>
 
-              {marchDays.map((day) => {
-                const dateKey = formatDateKey(day);
-                const dayRecord = datelineData.dates[dateKey];
-                const isActive = Boolean(dayRecord);
-                const isSelected = selectedDates.includes(dateKey);
-                const isAnimationChecked = animatedDateKeys.has(dateKey);
-                const showCheckmark = isSelected || isAnimationChecked;
+                <div className="space-y-2">
+              {visibleWeekDays.map((weekDays, weekIndex) => {
+                const weekDateKeys = getWeekDateKeys(weekDays);
+                const activeWeekDateKeys = weekDateKeys.filter((dateKey) =>
+                  Boolean(datelineData.dates[dateKey]),
+                );
+                const isWeekSelected =
+                  activeWeekDateKeys.length > 0 &&
+                  activeWeekDateKeys.every((dateKey) => selectedDates.includes(dateKey));
 
                 return (
-                  <button
-                    key={dateKey}
-                    type="button"
-                    onClick={() => isActive && toggleDate(dateKey)}
-                    className={[
-                      "group aspect-square rounded-2xl border p-2 text-left transition",
-                      isActive
-                        ? "border-stone-800 bg-stone-900/80 hover:-translate-y-0.5 hover:bg-stone-900"
-                        : "cursor-default border-transparent bg-stone-950/60 text-stone-600",
-                      showCheckmark
-                        ? "border-[#d0a06d] bg-[#d0a06d] text-stone-950 shadow-lg"
-                        : "",
-                    ].join(" ")}
-                    disabled={!isActive}
+                  <div
+                    key={`week-${weekIndex}`}
+                    className="grid gap-2"
+                    style={{ gridTemplateColumns: calendarGridTemplate }}
                   >
-                    <div className="relative flex h-full flex-col justify-between">
-                      <div className="flex items-start justify-between gap-2">
-                        <span className="text-sm font-semibold">{day}</span>
-                      </div>
-                      {showCheckmark ? (
-                        <span className="pointer-events-none absolute inset-0 flex items-center justify-center text-4xl font-bold text-[#2f9e44]">
-                          ✓
-                        </span>
-                      ) : null}
+                    <button
+                      type="button"
+                      onClick={() => toggleWeek(weekDays)}
+                      className={[
+                        "group flex min-h-[5.25rem] w-12 flex-col items-center justify-center justify-self-center rounded-2xl py-2 transition",
+                        activeWeekDateKeys.length > 0
+                          ? "hover:bg-stone-900/50"
+                          : "cursor-default text-stone-600",
+                      ].join(" ")}
+                      disabled={activeWeekDateKeys.length === 0}
+                      aria-label={`Toggle week ${weekIndex + 1}`}
+                    >
                       <span
                         className={[
-                          "text-[11px] leading-4",
-                          showCheckmark
-                            ? "text-stone-800"
-                            : isActive
-                              ? "text-stone-400"
-                              : "text-stone-600",
+                          "relative flex h-8 w-8 items-center justify-center rounded-full border transition",
+                          isWeekSelected
+                            ? "border-[#d0a06d] bg-stone-950 shadow-[0_0_0_1px_rgba(208,160,109,0.18)_inset]"
+                            : activeWeekDateKeys.length > 0
+                              ? "border-stone-600 bg-stone-950/80 group-hover:border-stone-400"
+                              : "border-stone-800 bg-stone-950/40",
                         ].join(" ")}
                       >
-                        {isActive
-                          ? `${dayRecord.locationIds.length} dateline${
-                              dayRecord.locationIds.length === 1 ? "" : "s"
-                            }`
-                          : "No data"}
+                        <span
+                          className={[
+                            "h-3.5 w-3.5 rounded-full transition",
+                            isWeekSelected
+                              ? "bg-[#d0a06d] shadow-[0_0_12px_rgba(208,160,109,0.35)]"
+                              : "bg-transparent",
+                          ].join(" ")}
+                        />
                       </span>
-                    </div>
-                  </button>
+                      <span className="mt-1.5 text-[9px] font-medium uppercase tracking-[0.14em] text-stone-500">
+                        Select week
+                      </span>
+                    </button>
+
+                    {weekDays.map((day) => {
+                      const dateKey = formatDateKey(day);
+                      const dayRecord = datelineData.dates[dateKey];
+                      const isActive = Boolean(dayRecord);
+                      const isSelected = selectedDates.includes(dateKey);
+                      const isAnimationChecked = animatedDateKeys.has(dateKey);
+                      const showCheckmark = isSelected || isAnimationChecked;
+
+                      return (
+                        <button
+                          key={dateKey}
+                          type="button"
+                          onClick={() => isActive && toggleDate(dateKey)}
+                          className={[
+                            "group aspect-square rounded-2xl border p-2 text-left transition",
+                            isActive
+                              ? "border-stone-800 bg-stone-900/80 hover:-translate-y-0.5 hover:bg-stone-900"
+                              : "cursor-default border-transparent bg-stone-950/60 text-stone-600",
+                            showCheckmark
+                              ? "border-[#d0a06d] bg-[#d0a06d] text-stone-950 shadow-lg"
+                              : "",
+                          ].join(" ")}
+                          disabled={!isActive}
+                        >
+                          <div className="relative flex h-full flex-col justify-between">
+                            <div className="flex items-start justify-between gap-2">
+                              <span className="text-sm font-semibold">{day}</span>
+                            </div>
+                            {showCheckmark ? (
+                              <span className="pointer-events-none absolute inset-0 flex items-center justify-center text-4xl font-bold text-[#2f9e44]">
+                                ✓
+                              </span>
+                            ) : null}
+                            <span
+                              className={[
+                                "text-[11px] leading-4",
+                                showCheckmark
+                                  ? "text-stone-800"
+                                  : isActive
+                                    ? "text-stone-400"
+                                    : "text-stone-600",
+                              ].join(" ")}
+                            >
+                              {isActive
+                                ? `${dayRecord.locationIds.length} dateline${
+                                    dayRecord.locationIds.length === 1 ? "" : "s"
+                                  }`
+                                : "No data"}
+                            </span>
+                          </div>
+                        </button>
+                        );
+                    })}
+                  </div>
                 );
               })}
+                </div>
+              </div>
             </div>
           </div>
         </div>
