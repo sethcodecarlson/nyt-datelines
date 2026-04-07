@@ -473,10 +473,6 @@ export function DatelineExplorer() {
             </h1>
           </div>
           <WorldMap markers={selectedMarkers} />
-          <p className="mt-3 text-right text-xs leading-5 text-stone-500">
-            * Countries and U.S. states where The Times maintains an ongoing
-            physical presence are highlighted.
-          </p>
         </div>
 
         <div className="grid gap-x-8 gap-y-3 lg:grid-cols-[1.05fr_0.95fr] lg:items-start">
